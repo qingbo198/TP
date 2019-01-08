@@ -1,0 +1,49 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>新闻分类列表</title>
+		<link href="/TP/Public/Css/style.css" rel="stylesheet" type="text/css" />
+			
+	</head>
+
+	<body>
+	<span>新闻分类列表</span>&nbsp;&nbsp;
+	<a href="javascript:history.go(-1);">返回>></a>
+	
+		<div>
+			<form>
+				<table class="tb">
+					<tr>
+						<th>ID</th>
+						<th width="60%">分类名称</th>
+						<th>操作</th>
+					</tr>
+<?php foreach($list as $v){?>
+					<tr>
+						<td><?php echo $v["id"]?></td>
+						<td align="left"><?php echo str_repeat("&brvbar;---",$v["lev"]).$v["name"]?></td>
+						<td>
+							<a href="add?id=<?php echo $v['id'] ?>" class="button_add">新增</a>
+							<a href="edit?fid=<?php echo $v['fid']?>&id=<?php echo $v['id'] ?>" class="button_edit">修改</a>
+							<a href="del?id=<?php echo $v['id']?>" class="button_del">删除</a>
+						</td>
+					</tr>
+<?php }?>
+					 <tr class="content">
+                <!--<td colspan="3" bgcolor="#FFFFFF">&nbsp;<?php echo ($page); ?></td>-->
+						<td colspan=6 bgcolor="#FFFFFF">
+							<div class="pages">
+								<?php echo ($page); ?>
+							</div>
+						</td>  
+					 </tr>
+				</table>
+				
+			</form>
+			
+		</div>
+		
+	</body>
+</html>

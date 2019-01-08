@@ -1,0 +1,89 @@
+input{
+	background:#525252;
+	border:solid #B3B3B3 1px;
+	color:white;
+	border-radius:10px;height:30px;
+}
+textarea{
+	background:#525252;
+	border:solid #B3B3B3 1px;
+	color:white;
+}
+.divall{
+	/*border:solid red 1px;*/
+   height:600px;
+   width:800px;
+   position:absolute;  
+   left:30%;  
+   top:15%;  
+   background:#666666 	
+}
+
+hr{
+	margin-top:-40px;
+}
+.message{
+	color:white;
+	font-size:50px;
+}
+.message1{
+margin-left:20px;
+	margin-top:20px;
+}
+.message2{
+margin-left:20px;
+	margin-top:-50px;
+}
+.table{
+	float:left;
+	margin-left:20px;
+	/*border:solid red 1px;*/
+	height:400px;
+	width:400px;
+}
+/*td{
+	border:solid red 1px;
+}*/
+table{
+	border-collapse: collapse;
+	margin-top:5px;
+	/*border:solid red 1px;*/
+	height:390px;
+	width:390px;
+}
+.last{
+	margin-left:65px;
+}
+.question{
+	float:left;
+	/*border:solid red 1px;*/
+	height:388px;
+	width:310px;
+	margin-left:40px;
+}
+.question1{
+	/*border:solid red 1px;*/
+	height:138px;
+	width:305px;
+}
+p{
+	color:white;
+	font-size:18px;
+	font-weight:bold;
+}
+.cation{
+	margin-top:5px;
+}
+ul{
+	margin-top:2px;
+	margin-left:-34px;
+}
+li{
+	margin-top:-8px;
+	width:250px;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+	list-style-position: inside;
+	color:white;
+}

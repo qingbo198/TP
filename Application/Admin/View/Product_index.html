@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+</head>
+<style>
+    .list_tab{width:90%;border:solid #ccc 1px;margin:5px auto;border-collapse: collapse;text-align: center;}
+    .list_tab th{border:solid #ccc 1px;}
+    .list_tab td{border:solid #ccc 1px;}
+    a{text-decoration: none;cursor: pointer;color:black;}
+    .add_pro{margin-left: 84px;border: solid #707070 1px;border-radius: 3px;}
+    .pages a,.pages span {
+        display:inline-block;
+        padding:2px 5px;
+        margin:0 1px;
+        border:1px solid #f0f0f0;
+        -webkit-border-radius:3px;
+        -moz-border-radius:3px;
+        border-radius:3px;
+    }
+    .pages a,.pages li {
+        display:inline-block;
+        list-style: none;
+        text-decoration:none; color:#58A0D3;
+    }
+    .pages a.first,.pages a.prev,.pages a.next,.pages a.end{
+        margin:0;
+    }
+    .pages a:hover{
+        border-color:#50A8E6;
+    }
+    .pages span.current{
+        background:#50A8E6;
+        color:#FFF;
+        font-weight:700;
+        border-color:#50A8E6;
+    }
+    .search_p{float: right;margin-right: 86px;}
+</style>
+<body>
+<div class="list">
+    <a class="add_pro" href="{:U('Product/add')}">新增商品</a>
+    <form action="{:U('Product/index')}" method="get">
+    <p class="search_p">商品名称：<input type="text" name="name" value="" />&nbsp<button>查询</button></p>
+    </form>
+    <table class="list_tab">
+        <tr>
+            <th>ID</th>
+            <th>排序</th>
+            <th>商品名称</th>
+            <th>所属分类</th>
+            <th>价格</th>
+            <th>商品图片</th>
+            <th>库存</th>
+            <th>添加时间</th>
+            <th>更新时间</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        <volist name="list" id="vo">
+            <tr>
+                <td>{$vo.id}</td>
+                <td>{$vo.sort}</td>
+                <td>{$vo.name}</td>
+                <td>{$vo.type}</td>
+                <td>{$vo.price}</td>
+                <td>
+                    <volist name="vo.img" id="v">
+                        <img src="{$v}" width="70" onclick="showImg(this.src)" />
+                    </volist>
+                </td>
+                <td>{$vo.stock}</td>
+                <td>{$vo.add_time}</td>
+                <td>{$vo.last_time}</td>
+                <if condition="$vo.status eq 1">
+                    <td>显示</td>
+                <elseif condition="$vo.status eq 0" />
+                    <td>隐藏</td>
+                </if>
+
+                <td>
+                    <a class="edit" href="{:U('Product/edit')}?id={$vo.id}&pid={$vo.pid}">编辑</a>
+                    <a class="delete" data-id="{$vo.id}">删除</a>
+                </td>
+
+            </tr>
+        </volist>
+        <tr class="content">
+            <!--<td colspan="3" bgcolor="#FFFFFF">&nbsp;{$page}</td>-->
+            <td colspan="11" bgcolor="#FFFFFF">
+                <div class="pages">
+                {$page}
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
+<script>
+
+//点击查看大图
+    function showImg(url) {
+        var img = "<img src='" + url + "' />";
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            area: ['auto', 'auto'],
+            skin: 'layui-layer-nobg', //没有背景色
+            shadeClose: true,
+            content: img
+        });
+    }
+
+    $(function(){
+        $('.delete').click(function(){
+            var id = $(this).attr('data-id');//获取自定义属性值
+            layer.msg('确定要删除改商品吗？',{
+                time:0,//不自动关闭，
+                btn:['确定','取消'],
+                yes:function(){
+                    $.ajax({
+                        url:'delete',
+                        type:'post',
+                        data:{id:id},
+                        dataType:'json',
+                        success:function(data){
+                            if(data.status=='1'){
+                                layer.msg(data.msg,{icon:1});
+                            }else if(data.status=='2'||data.status=='3'){
+                                layer.msg(data.msg,{icon:2});
+                            }
+
+                        }
+                    })
+                }
+            })
+
+        })
+    })
+</script>
+</body>
+</html>

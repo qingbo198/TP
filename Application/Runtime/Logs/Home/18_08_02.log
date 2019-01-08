@@ -1,0 +1,147 @@
+[ 2018-08-02T08:47:45+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010950s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.010690s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010771s ]
+NOTIC: [8] Undefined index: user G:\phpStudy\PHPTutorial\WWW\TP\Application\Runtime\Cache\Home\0d6509e863112dc5821b22ecb897e16e.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014813s ]
+
+[ 2018-08-02T08:47:47+08:00 ] ::1 /TP/Home/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2018-08-02T08:48:16+08:00 ] ::1 /TP/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0843s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'qingbo198'  [ RunTime:0.0137s ]
+
+[ 2018-08-02T08:49:03+08:00 ] ::1 /TP/Home/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'qingbo198'  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 G:\phpStudy\PHPTutorial\WWW\TP\uc_client\model\base.php 第 63 行.
+NOTIC: [2] mysql_result(): Unable to jump to row 0 on MySQL result index 46 G:\phpStudy\PHPTutorial\WWW\TP\uc_client\lib\db.class.php 第 112 行.
+NOTIC: [2] mysql_result(): Unable to jump to row 0 on MySQL result index 48 G:\phpStudy\PHPTutorial\WWW\TP\uc_client\lib\db.class.php 第 112 行.
+SQL: INSERT INTO `user` (`username`,`password`,`phone`,`addr`,`lasttime`) VALUES ('qingbo198','123456','15161515577','trfghrthrt','2018-08-02 08:49;02') [ RunTime:0.0009s ]
+
+[ 2018-08-02T08:49:07+08:00 ] ::1 /TP/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2018-08-02T08:49:13+08:00 ] ::1 /TP/Home/User/quit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001884s ]
+
+[ 2018-08-02T08:49:15+08:00 ] ::1 /TP/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: user G:\phpStudy\PHPTutorial\WWW\TP\Application\Runtime\Cache\Home\0d6509e863112dc5821b22ecb897e16e.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2018-08-02T11:57:30+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: user G:\phpStudy\PHPTutorial\WWW\TP\Application\Runtime\Cache\Home\0d6509e863112dc5821b22ecb897e16e.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+

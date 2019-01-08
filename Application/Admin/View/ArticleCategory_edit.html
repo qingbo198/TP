@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>编辑文章分类</title>
+		<link href="__CSS__/style.css" rel="stylesheet" type="text/css" />
+		<!--<script src="__JS__/jquery-1.9.1.js" type="text/javascript"></script>
+		<script src="__JS__/jquery.validate.min.js" type="text/javascript"></script>
+		<script src="__JS__/my.js" type="text/javascript"></script>-->
+		
+	
+<style>
+.error{
+	color:red;
+}
+</style>
+</head>
+<span>编辑文章分类</span>&nbsp;&nbsp;&nbsp;
+<a href="JavaScript:history.go(-1)">返回</a>
+<body>
+<form class="cmxform" id="signupForm" method="post" action="edit">
+  <table class="tb_add">
+	<tr>
+		<td width="200px" align="right"> <label for="username">所属分类</label></td>
+		<td>
+		<notempty name="result">
+		<volist name="result" id="vo">
+			<input type="text" name="father" value={$vo.name}  readonly="readonly">
+			<input type="hidden" name="fid" value={$vo.id}>
+		</volist>
+		</notempty>
+		<empty name="result">
+		<input type="text" name="father" value="顶级分类"  readonly="readonly">
+		</empty>
+		</td>
+	</tr>
+	<tr>
+		<td align="right"><label for="name">分类名称:</label></td>
+		
+		<td>
+				<input type="text" name="name" value={$category['name']}>
+				<input type="hidden" name="id" value={$category['id']}>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td colspan=2 align="center"><input class="submit" type="submit" name="submit" value="编辑"></td>
+	</tr>
+
+   </table>
+</form>
+</body>
+</html>

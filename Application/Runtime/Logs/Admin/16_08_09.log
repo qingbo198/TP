@@ -1,0 +1,2757 @@
+[ 2016-08-09T14:01:11+08:00 ] ::1 /TP/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+
+[ 2016-08-09T14:01:13+08:00 ] ::1 /TP/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-08-09T14:01:21+08:00 ] ::1 /TP/Admin/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `tp_admin` WHERE `user` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2016-08-09T14:01:24+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2016-08-09T14:01:24+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2016-08-09T14:01:27+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0431s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-08-09T14:03:25+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-08-09T14:03:25+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2016-08-09T14:03:28+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2016-08-09T14:07:27+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-08-09T14:07:28+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2016-08-09T14:07:30+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-08-09T14:07:33+08:00 ] ::1 /TP/Admin/ArticleCategory/add?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-08-09T14:07:44+08:00 ] ::1 /TP/Admin/ArticleCategory/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined index: id D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+SQL: INSERT INTO `tp_category` (`fid`,`name`) VALUES ('0','教育') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2016-08-09T14:07:46+08:00 ] ::1 /TP/Admin/ArticleCategory/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2016-08-09T14:07:58+08:00 ] ::1 /TP/Admin/ArticleCategory/add?id=19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2016-08-09T14:08:21+08:00 ] ::1 /TP/Admin/ArticleCategory/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined index: id D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+SQL: INSERT INTO `tp_category` (`fid`,`name`) VALUES ('19','升学') [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-08-09T14:08:23+08:00 ] ::1 /TP/Admin/ArticleCategory/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 29 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-08-09T14:18:50+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-08-09T14:18:50+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2016-08-09T14:18:52+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+
+[ 2016-08-09T14:19:54+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2016-08-09T14:19:55+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2016-08-09T14:19:57+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-08-09T14:20:03+08:00 ] ::1 /TP/Admin/ArticleCategory/add?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2016-08-09T14:20:12+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-08-09T14:24:57+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2016-08-09T14:24:57+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-08-09T14:24:59+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2016-08-09T14:25:02+08:00 ] ::1 /TP/Admin/ArticleCategory/add?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2016-08-09T14:25:25+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-08-09T14:58:08+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2016-08-09T14:58:09+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2016-08-09T14:58:11+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-08-09T14:58:47+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2016-08-09T14:58:47+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2016-08-09T14:58:49+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-08-09T15:01:30+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2016-08-09T15:01:30+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-08-09T15:01:32+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-08-09T15:01:43+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=2?fid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Illegal string offset 'id' D:\wwwroot\TP\Application\Common\Common\function.php 第 53 行.
+NOTIC: [2] Illegal string offset 'id' D:\wwwroot\TP\Application\Common\Common\function.php 第 53 行.
+NOTIC: [2] Illegal string offset 'id' D:\wwwroot\TP\Application\Common\Common\function.php 第 53 行.
+
+[ 2016-08-09T15:02:01+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=3?fid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Illegal string offset 'id' D:\wwwroot\TP\Application\Common\Common\function.php 第 53 行.
+NOTIC: [2] Illegal string offset 'id' D:\wwwroot\TP\Application\Common\Common\function.php 第 53 行.
+NOTIC: [2] Illegal string offset 'id' D:\wwwroot\TP\Application\Common\Common\function.php 第 53 行.
+
+[ 2016-08-09T15:02:07+08:00 ] ::1 /TP/Admin/ArticleCategory/add?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-08-09T15:02:13+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=1?fid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Illegal string offset 'id' D:\wwwroot\TP\Application\Common\Common\function.php 第 53 行.
+NOTIC: [2] Illegal string offset 'id' D:\wwwroot\TP\Application\Common\Common\function.php 第 53 行.
+NOTIC: [2] Illegal string offset 'id' D:\wwwroot\TP\Application\Common\Common\function.php 第 53 行.
+
+[ 2016-08-09T15:03:33+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2016-08-09T15:03:34+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-08-09T15:03:36+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2016-08-09T15:03:41+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=4?fid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-08-09T15:03:52+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=6?fid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:05:46+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-08-09T15:05:46+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-08-09T15:05:48+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2016-08-09T15:05:54+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=7?fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2016-08-09T15:06:17+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-08-09T15:06:17+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2016-08-09T15:06:19+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2016-08-09T15:06:28+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=7?fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:06:47+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-08-09T15:06:47+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2016-08-09T15:06:49+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2016-08-09T15:06:57+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=7?fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:07:44+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2016-08-09T15:07:44+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-08-09T15:07:47+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-08-09T15:07:50+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=7?fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:08:15+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2016-08-09T15:08:15+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2016-08-09T15:08:17+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2016-08-09T15:08:23+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=7?fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:08:40+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-08-09T15:08:40+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-08-09T15:08:42+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-08-09T15:09:16+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=11?fid=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:10:17+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-08-09T15:10:17+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-08-09T15:10:19+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-08-09T15:10:24+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=5?fid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:16:10+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2016-08-09T15:16:10+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2016-08-09T15:16:11+08:00 ] ::1 /TP/Admin/Index/article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+ERR: 非法操作:article
+
+[ 2016-08-09T15:16:15+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2016-08-09T15:16:18+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=7?fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+
+[ 2016-08-09T15:16:44+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-08-09T15:16:44+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2016-08-09T15:16:46+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-08-09T15:17:02+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=8?fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+
+[ 2016-08-09T15:17:39+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2016-08-09T15:17:39+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2016-08-09T15:17:44+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2016-08-09T15:17:49+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?id=7;fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+NOTIC: [8] Undefined index: fid D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 43 行.
+
+[ 2016-08-09T15:19:18+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2016-08-09T15:19:18+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2016-08-09T15:19:23+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-08-09T15:19:25+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: id D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 42 行.
+
+[ 2016-08-09T15:19:44+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2016-08-09T15:19:45+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2016-08-09T15:19:47+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-08-09T15:19:50+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?fid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-08-09T15:20:04+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?fid=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-08-09T15:20:30+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?fid=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined variable: id D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 45 行.
+SQL: SELECT * FROM `tp_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:20:47+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?fid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: id D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 45 行.
+SQL: SELECT * FROM `tp_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:21:01+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2016-08-09T15:21:01+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-08-09T15:21:03+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2016-08-09T15:21:28+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?fid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined variable: id D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 45 行.
+SQL: SELECT * FROM `tp_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:23:36+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-08-09T15:23:36+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-08-09T15:23:39+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-08-09T15:23:43+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?fid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined variable: id D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 45 行.
+SQL: SELECT * FROM `tp_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+
+[ 2016-08-09T15:24:09+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2016-08-09T15:24:10+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-08-09T15:24:12+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2016-08-09T15:24:17+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?fid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined variable: id D:\wwwroot\TP\Application\Admin\Controller\ArticleCategoryController.class.php 第 45 行.
+SQL: SELECT * FROM `tp_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0003s ]
+
+[ 2016-08-09T15:33:23+08:00 ] ::1 /TP/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+
+[ 2016-08-09T15:33:23+08:00 ] ::1 /TP/Admin/Index/shouye.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-08-09T15:33:26+08:00 ] ::1 /TP/Admin/ArticleCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: vo D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 31 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 36 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\9c78777aec9662ad4f5801930dba32de.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2016-08-09T15:33:29+08:00 ] ::1 /TP/Admin/ArticleCategory/edit?fid=3&id=16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+
