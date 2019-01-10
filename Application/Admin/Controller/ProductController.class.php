@@ -16,6 +16,11 @@
             $search = array();
             $where['1'] = '1';
             if($_GET){
+                if($_GET['field']){
+                    $field = $_GET['field'];
+                    $order = "'id desc'";
+                }
+                $order = "'id desc'";
                 //$url = parse_url($_SERVER['REQUEST_URI']);
                 //parse_str($url['query'],$arr);
                 //print_r($arr);die;
@@ -28,11 +33,8 @@
             $pro_cat = M('product_catgory');
             $count = $product->where($where)->count();
             $p = getpage($count,8);
-            $list = $product->field(true)->where($where)->order('id desc')->limit($p->firstRow, $p->listRows)->select();
-            //$pro_cat = $pro_cat->select();
-            //$pro_cat = findson($pro_cat,0,0);
-            //$list = $product->select();
-            //print_r($list);die;
+            $list = $product->field(true)->where($where)->order($order)->limit($p->firstRow, $p->listRows)->select();
+            //echo $product->getLastSql();
             foreach($list as $key=>$value){
                 $list[$key]['img'] = json_decode($value['img']);
                 $list[$key]['type'] = $pro_cat->where('id='.$value['pid'])->getField('name');

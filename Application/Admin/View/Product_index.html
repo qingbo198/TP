@@ -53,7 +53,7 @@
             <th>价格</th>
             <th>商品图片</th>
             <th>库存</th>
-            <th>添加时间</th>
+            <th class="sort" data-id="add_time" style="cursor: pointer;">添加时间</th>
             <th>更新时间</th>
             <th>状态</th>
             <th>操作</th>
@@ -99,6 +99,25 @@
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
 <script>
+    //排序
+    $('.sort').click(function(){
+        var field = $(this).attr('data-id');//获取自定义属性值
+        //layer.alert(field);return;
+        $.ajax({
+            url:'index',
+            type:'get',
+            data:{field:field},
+            dataType:'json',
+            success:function (data) {
+                window.location.reload();
+            },
+            error:function () {
+                window.location.reload();
+            }
+        })
+    })
+
+
 
 //点击查看大图
     function showImg(url) {
