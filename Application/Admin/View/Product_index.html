@@ -37,6 +37,7 @@
         border-color:#50A8E6;
     }
     .search_p{float: right;margin-right: 86px;}
+    /*.sortway{display: none;}*/
 </style>
 <body>
 <div class="list">
@@ -46,22 +47,22 @@
     </form>
     <table class="list_tab">
         <tr>
-            <th>ID</th>
-            <th>排序</th>
-            <th>商品名称</th>
+            <th><a href="{:U(Product/index)}?orderby=id&orderway=desc">ID&nbsp▼</a><a href="{:U(Product/index)}?orderby=id&orderway=asc">▲</a></th>
+            <!--<th>排序</th>-->
+            <th width="9%">商品名称</th>
             <th>所属分类</th>
-            <th>价格</th>
+            <th  data-id="price"><a class="sortby" href="{:U('Product/index')}?orderby=price&orderway=desc">价格&nbsp▼</a><a class="sortway" href="{:U('Product/index')}?orderby=price&orderway=asc">▲</a></th>
             <th>商品图片</th>
             <th>库存</th>
             <th class="sort" data-id="add_time" style="cursor: pointer;">添加时间</th>
-            <th>更新时间</th>
+            <th><a href="{:U(Product/index)}?orderby=last_time&orderway=desc">更新时间&nbsp▼</a><a href="{:U(Product/index)}?orderby=last_time&orderway=asc">▲</a></th>
             <th>状态</th>
             <th>操作</th>
         </tr>
         <volist name="list" id="vo">
             <tr>
                 <td>{$vo.id}</td>
-                <td>{$vo.sort}</td>
+                <!--<td>{$vo.sort}</td>-->
                 <td>{$vo.name}</td>
                 <td>{$vo.type}</td>
                 <td>{$vo.price}</td>
@@ -100,22 +101,7 @@
 <script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
 <script>
     //排序
-    $('.sort').click(function(){
-        var field = $(this).attr('data-id');//获取自定义属性值
-        //layer.alert(field);return;
-        $.ajax({
-            url:'index',
-            type:'get',
-            data:{field:field},
-            dataType:'json',
-            success:function (data) {
-                window.location.reload();
-            },
-            error:function () {
-                window.location.reload();
-            }
-        })
-    })
+
 
 
 
