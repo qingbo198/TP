@@ -14,13 +14,15 @@
         public function index(){
             $search = array();
             $where['1'] = '1';
-            if($_GET['orderby']){
-                $orderby = $_GET['orderby'];
-                $orderway = $_GET['orderway'];
+            if($_GET['name']){
                 $name = $_REQUEST['name'];
                 //$where .= " and p.name  = '" . $name . "'";
                 $where['name'] = array('like','%'.$_REQUEST['name'].'%');
                 $search['name'] = $name;
+            }
+            if($_GET['orderby']){
+                $orderby = $_GET['orderby'];
+                $orderway = $_GET['orderway'];
             }else{
                 $orderby = 'id';
                 $orderway = 'desc';
@@ -28,7 +30,7 @@
             $product = M('product p');
             $pro_cat = M('product_catgory');
             $count = $product->where($where)->count();
-            $p = getpage($count,8);
+            $p = getpage($count,1);
             $list = $product->field(true)->where($where)->order("$orderby $orderway")->limit($p->firstRow, $p->listRows)->select();
             //echo $product->getLastSql();
             foreach($list as $key=>$value){
@@ -39,7 +41,7 @@
             $this->assign('list',$list);
             $this->assign('pro_cat',$pro_cat);
             $this->assign('page',$p->show());
-            $this->assign("query", http_build_query($search));
+//            $this->assign("query", http_build_query($search));
             $this->display();
         }
         
