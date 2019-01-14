@@ -32,25 +32,25 @@
 			li a:hover{color:white;cursor: pointer;}
 			.nav{margin-left: 15.5%;}
 			.nav span{margin-left:6px;color: #b0b0b0;}
-			.header_nav_out{border:solid red 1px;width:100%;height:100px;}
-			.header_nav{width:1230px;margin: 0 auto;height:100px;border:solid green 1px;}
+			.header_nav_out{border:solid red 0px;width:100%;height:100px;}
+			.header_nav{width:1230px;margin: 0 auto;height:55px;border:solid green 0px;}
 			.logo_mi{width:55px;height:55px;background: #FF6700;background-position:center center;background-image: url('/TP/Public/Image/mi-logo.png');
-				margin-top: 24px;float: left;
+				margin-top: -24px;float: left;
 				}
-			.logo_11{float: left;margin-top: 19px;margin-left: 10px;}
+			.logo_11{float: left;margin-top: -30px;margin-left: 10px;}
 			.header_nav ul{margin-top: 40px;}
 			.header_nav li{float: left;margin-left: 15px;list-style: none;font-size: 16px;}
 			.header_nav a:hover{color: #FF6700;cursor: pointer;}
-			.banner{border:solid green 1px;width:1230px;height:460px;margin: 0 auto;}
-			.banner_left{border:solid red 1px;width:225px;height:460px;background: #616161;}
-			.banner_left li{list-style: none;border:solid green 1px;height:40px;line-height: 40px;padding-left:40px;
+			.banner{border:solid green 0px;width:1230px;height:460px;margin: 0 auto;}
+			.banner_left{border:solid red 0px;width:225px;height:460px;background: #616161;}
+			.banner_left li{list-style: none;border:solid green 0px;height:40px;line-height: 40px;padding-left:40px;
 				color: white;}
 			.banner_left li:hover{background: #FF6700;}
 			.banner_left ul{margin-top: 18px;width:100%;margin-left: -40px;}
 			.banner div{float:left;}
-			.banner_right{border:solid blue 1px;width: 1001px;height:459px;}
-			.product_out{border:solid green 1px;width:1150px;margin: 0 auto;padding:15px 40px;text-align: center;}
-			.product{width: 200px;height:250px;border:solid red 1px;float: left;margin-right: 40px;margin-left: 43px;
+			.banner_right{border:solid blue 0px;width: 1001px;height:459px;}
+			.product_out{border:solid green 0px;width:1150px;margin: 0 auto;padding:15px 40px;text-align: center;}
+			.product{width: 200px;height:250px;border:solid #ccc 1px;float: left;margin-right: 40px;margin-left: 43px;
 				font-family: "微软雅黑", "宋体", Tahoma, Arial, sans-serif;margin-top: 50px;}
 			.pic{text-align: center;}
 			.sp{margin-top: 10px;display: block;font-size: 16px;cursor: pointer}
