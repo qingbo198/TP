@@ -30,7 +30,7 @@
             $product = M('product p');
             $pro_cat = M('product_catgory');
             $count = $product->where($where)->count();
-            $p = getpage($count,1);
+            $p = getpage($count,8);
             $list = $product->field(true)->where($where)->order("$orderby $orderway")->limit($p->firstRow, $p->listRows)->select();
             //echo $product->getLastSql();
             foreach($list as $key=>$value){

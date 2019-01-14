@@ -47,32 +47,39 @@
 <div class="list">
     <a class="add_pro">购物车列表</a>
     <table class="list_tab">
-        <tr>
-            <!--<th>ID</th>-->
-            <th>商品名称</th>
-            <th>价格</th>
-            <th>商品图片</th>
-            <th>数量</th>
-            <th>小计</th>
-            <th>操作</th>
-        </tr>
-        <volist name="list" id="vo">
+        <if condition="$list eq ''">
             <tr>
-                <!--<td>{$vo.id}</td>-->
-                <if condition="$vo.name neq ''">
-                    <td>{$vo.name}</td>
-                    <td>{$vo.price}</td>
-                    <td>
-                        <img src="{$vo['img'][0]}" width="70px;" />
-                    </td>
-                    <td><button class="reduce" data-id="{$vo.id}">-</button>&nbsp&nbsp<input type="text" value="{$vo.num}" style="width: 30px;text-align: center;">&nbsp&nbsp<button class="plus" data-id="{$vo.id}">+</button></td>
-                    <td class="subtotal">{$vo["price"]*$vo["num"]}元</td>
-                    <td>
-                        <a class="delete" data-id="{$vo.id}">删除</a>
-                    </td>
-                </if>
+                <!--<th>ID</th>-->
+                <th>购物车暂无商品</th>
             </tr>
-        </volist>
+        <else />
+            <tr>
+                <!--<th>ID</th>-->
+                <th>商品名称</th>
+                <th>价格</th>
+                <th>商品图片</th>
+                <th>数量</th>
+                <th>小计</th>
+                <th>操作</th>
+            </tr>
+            <volist name="list" id="vo">
+                <tr>
+                    <!--<td>{$vo.id}</td>-->
+                    <if condition="$vo.name neq ''">
+                        <td>{$vo.name}</td>
+                        <td>{$vo.price}</td>
+                        <td>
+                            <img src="{$vo['img'][0]}" width="70px;" />
+                        </td>
+                        <td><button class="reduce" data-id="{$vo.id}">-</button>&nbsp&nbsp<input type="text" value="{$vo.num}" style="width: 30px;text-align: center;">&nbsp&nbsp<button class="plus" data-id="{$vo.id}">+</button></td>
+                        <td class="subtotal">{$vo["price"]*$vo["num"]}元</td>
+                        <td>
+                            <a class="delete" data-id="{$vo.id}">删除</a>
+                        </td>
+                    </if>
+                </tr>
+            </volist>
+        </if>
     </table>
     <div class="total" style="width:100px;height: 100px;border:solid red px;margin-right: 100px">
         <div class="total_div">总价：</div>

@@ -129,28 +129,33 @@
 <div class="list">
     <a class="add_pro">购物车列表</a>
     <table class="list_tab">
-        <tr>
-            <!--<th>ID</th>-->
-            <th>商品名称</th>
-            <th>价格</th>
-            <th>商品图片</th>
-            <th>数量</th>
-            <th>小计</th>
-            <th>操作</th>
-        </tr>
-        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                <!--<td><?php echo ($vo["id"]); ?></td>-->
-                <?php if($vo["name"] != ''): ?><td><?php echo ($vo["name"]); ?></td>
-                    <td><?php echo ($vo["price"]); ?></td>
-                    <td>
-                        <img src="<?php echo ($vo['img'][0]); ?>" width="70px;" />
-                    </td>
-                    <td><button class="reduce" data-id="<?php echo ($vo["id"]); ?>">-</button>&nbsp&nbsp<input type="text" value="<?php echo ($vo["num"]); ?>" style="width: 30px;text-align: center;">&nbsp&nbsp<button class="plus" data-id="<?php echo ($vo["id"]); ?>">+</button></td>
-                    <td class="subtotal"><?php echo ($vo["price"]*$vo["num"]); ?>元</td>
-                    <td>
-                        <a class="delete" data-id="<?php echo ($vo["id"]); ?>">删除</a>
-                    </td><?php endif; ?>
-            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+        <?php if($list == ''): ?><tr>
+                <!--<th>ID</th>-->
+                <th>购物车暂无商品</th>
+            </tr>
+        <?php else: ?>
+            <tr>
+                <!--<th>ID</th>-->
+                <th>商品名称</th>
+                <th>价格</th>
+                <th>商品图片</th>
+                <th>数量</th>
+                <th>小计</th>
+                <th>操作</th>
+            </tr>
+            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                    <!--<td><?php echo ($vo["id"]); ?></td>-->
+                    <?php if($vo["name"] != ''): ?><td><?php echo ($vo["name"]); ?></td>
+                        <td><?php echo ($vo["price"]); ?></td>
+                        <td>
+                            <img src="<?php echo ($vo['img'][0]); ?>" width="70px;" />
+                        </td>
+                        <td><button class="reduce" data-id="<?php echo ($vo["id"]); ?>">-</button>&nbsp&nbsp<input type="text" value="<?php echo ($vo["num"]); ?>" style="width: 30px;text-align: center;">&nbsp&nbsp<button class="plus" data-id="<?php echo ($vo["id"]); ?>">+</button></td>
+                        <td class="subtotal"><?php echo ($vo["price"]*$vo["num"]); ?>元</td>
+                        <td>
+                            <a class="delete" data-id="<?php echo ($vo["id"]); ?>">删除</a>
+                        </td><?php endif; ?>
+                </tr><?php endforeach; endif; else: echo "" ;endif; endif; ?>
     </table>
     <div class="total" style="width:100px;height: 100px;border:solid red px;margin-right: 100px">
         <div class="total_div">总价：</div>
