@@ -96,7 +96,6 @@
 <script>
 
     $(function () {
-
         ////////////////////////////////////////////////图片上传//////////////////////////////////////////////
         //声明变量
         var $button = $('#upload'),
@@ -123,6 +122,11 @@
                 reviewFile(curFile[i])
             }
             $('.file-list').fadeIn(2500);
+            layer.alert($("li").length);
+            if($("li").length > 4){
+                layer.alert('最多可以上传4张图片！');
+                return;
+            }
         })
 
         function reviewFile(file) {
@@ -135,7 +139,7 @@
             //监听它的onload事件，load完读取的结果就在它的result属性里了
             fd.onload = function () {
                 if (/^image\/[jpeg|png|jpg|gif]/.test(fileType)) {
-                    $list.append('<li style="border:solid red px; margin:5px 5px;" class="file-item"><img src="' + this.result + '" alt="" height="70"><span class="file-name" style="display: block;">' + file.name + '</span><span class="file-del">删除</span></li>').children(':last').hide().fadeIn(2500);
+                    $list.append('<li style="border:solid red px; margin:5px 5px;" class="file-item"><img src="' + this.result + '" alt="" height="70"><span class="file-del">删除</span></li>').children(':last').hide().fadeIn(2500);
                 } else {
                     $list.append('<li class="file-item"><span class="file-name">' + file.name + '</span><span class="file-del">删除</span></li>')
                 }
