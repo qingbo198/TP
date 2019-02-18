@@ -71,6 +71,7 @@
     <p>
         <span>图片：</span>
         <input type="file" name="" id="choose-file" multiple="multiple"/>
+        <!--<input type="file" name="" id="choose-file" />-->
     </p>
     <p>
     <ul class="file-list ">
@@ -114,7 +115,25 @@
         var curFile;
         // 选择按钮change事件，实例化fileReader,调它的readAsDataURL并把原生File对象传给它，
         // 监听它的onload事件，load完读取的结果就在它的result属性里了。它是一个base64格式的，可直接赋值给一个img的src.
-        $file.on('change', function () {
+        $file.on('change', function (e) {
+            //上传过图片后再次上传时限值数量
+            var numold = $('li').length;
+            if(numold >= 6){
+                layer.alert('最多上传6张图片');
+                return;
+            }
+            //限制单次批量上传的数量
+            var num = e.target.files.length;
+            var numall = numold + num;
+            if(num >6 ){
+               layer.alert('最多上传6张图片');
+               return;
+            }else if(numall > 6){
+                layer.alert('最多上传6张图片');
+                return;
+            }
+            //layer.alert($("li").length);
+
             //原生的文件对象，相当于$file.get(0).files;//files[0]为第一张图片的信息;
             curFile = this.files;
             //curFile = $file.get(0).files;
@@ -126,12 +145,8 @@
                 reviewFile(curFile[i])
             }
             $('.file-list').fadeIn(2500);
-            layer.alert($("li").length);
-            if($("li").length > 4){
-                layer.alert('最多可以上传4张图片！');
-                return;
-            }
         })
+
 
         function reviewFile(file) {
             //实例化fileReader,
@@ -147,6 +162,7 @@
                 } else {
                     $list.append('<li class="file-item"><span class="file-name">' + file.name + '</span><span class="file-del">删除</span></li>')
                 }
+
             }
         }
 
@@ -197,7 +213,10 @@
             else if (fileList.length == 0) {
                 layer.alert('请选择商品图片');
                 return;
-
+            }
+            else if(fileList.length > 6){
+                    layer.alert('最多允许上传6张图片');
+                    return;
             } else {
                 var formData = new FormData();
                 for (var i = 0, len = fileList.length; i < len; i++) {

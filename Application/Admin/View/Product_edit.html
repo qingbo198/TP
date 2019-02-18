@@ -135,9 +135,20 @@ ul{float: left;}
         var curFile;
         // 选择按钮change事件，实例化fileReader,调它的readAsDataURL并把原生File对象传给它，
         // 监听它的onload事件，load完读取的结果就在它的result属性里了。它是一个base64格式的，可直接赋值给一个img的src.
-        $file.on('change', function () {
-            if($("li").length == 6){
-                layer.alert('最多可以上传6张图片！');
+        $file.on('change', function (e) {
+            var numold = $('li').length;
+            if(numold >= 6){
+                layer.alert('最多上传6张图片');
+                return;
+            }
+            //限制单次批量上传的数量
+            var num = e.target.files.length;
+            var numall = numold + num;
+            if(num >6 ){
+                layer.alert('最多上传6张图片');
+                return;
+            }else if(numall > 6){
+                layer.alert('最多上传6张图片');
                 return;
             }
             //原生的文件对象，相当于$file.get(0).files;//files[0]为第一张图片的信息;
