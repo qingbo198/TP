@@ -114,18 +114,18 @@
         $file.on('change', function (e) {
             //上传过图片后再次上传时限值数量
             var numold = $('li').length;
-            if(numold >= 4){
-                layer.alert('最多上传4张图片');
+            if(numold >= 6){
+                layer.alert('最多上传6张图片');
                 return;
             }
             //限制单次批量上传的数量
             var num = e.target.files.length;
             var numall = numold + num;
-            if(num >4 ){
-               layer.alert('最多上传4张图片');
+            if(num >6 ){
+               layer.alert('最多上传6张图片');
                return;
-            }else if(numall > 4){
-                layer.alert('最多上传4张图片');
+            }else if(numall > 6){
+                layer.alert('最多上传6张图片');
                 return;
             }
             //layer.alert($("li").length);
@@ -210,8 +210,8 @@
                 layer.alert('请选择商品图片');
                 return;
             }
-            else if(fileList.length > 4){
-                    layer.alert('最多允许上传4张图片');
+            else if(fileList.length > 6){
+                    layer.alert('最多允许上传6张图片');
                     return;
             } else {
                 var formData = new FormData();

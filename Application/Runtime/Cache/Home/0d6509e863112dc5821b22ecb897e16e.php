@@ -25,11 +25,12 @@
 
 			body {font-size: 13px;font-family: "Microsoft Yahei";color: #333;}
 			*{margin: 0px;}
+			.clear{clear: both;}
 			.header{height: 40px;width: 100%;line-height: 40px;background: #333333;}
 			.header a{text-decoration: none;color:#b0b0b0;}
 			.user_login span{float:right;padding-right: 7px;}
 			.nav li{float:left;margin-left: 7px;list-style: none;}
-			li a:hover{color:white;cursor: pointer;}
+			.nav li a:hover{color:white;cursor: pointer;}
 			.nav{margin-left: 15.5%;}
 			.nav span{margin-left:6px;color: #b0b0b0;}
 			.header_nav_out{border:solid red 0px;width:100%;height:100px;}
@@ -166,12 +167,87 @@
 							<span class="sp" data-id="<?php echo ($vo["id"]); ?>">加入购物车</span>
 						</div>
 					</div><?php endforeach; endif; else: echo "" ;endif; ?>
-				<div style="clear: both;"></div>
+				<div class="clear"></div>
 				<span class="pages">
 					<?php echo ($page); ?>
 				</span>
 			</div>
 		</div>
+		<div class="clear"></div>
+		<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			.bottom{margin-top: 120px;font-size: 16px;width: 100%;margin-bottom: 50px;}
+			.first{width: 1060px;margin: 0 auto;border-bottom: solid #ccc 1px;height: 80px}
+			.ul_f li{float: left;list-style: none;margin-left: 45px;line-height: 80px;}
+			.ul_f li span{margin-left: 45px;color: #ccc;}
+			.second .link{float: left;width: 150px;height: 112px;}
+			.second{width: 1060px;margin: 0 auto;border: solid red 0px;height: 112px;margin-top: 40px;}
+			.link dt{font-size: 14px;}
+			.link dd{font-size: 12px;margin-top: 10px;}
+			.belief{width: 230px;margin: 0 auto;margin-top: 20px;border: solid red 0px;}
+			.link1{margin-left:120px;}
+		</style>
+	</head>
+	<body>
+		<div class="bottom">
+			<div class="first">
+				<ul class="ul_f">
+					<li><a>预约维修服务</a><span>|</span></li>
+					<li><a>7天无理由退货</a><span>|</span></li>
+					<li><a>15天免费换货</a><span>|</span></li>
+					<li><a>满150元包邮</a><span>|</span></li>
+					<li><a>520余家售后网点</a><span></span></li>
+				</ul>
+			</div>
+			<div class="second">
+
+				<dl class="link link1">
+					<dt>帮助中心</dt>
+					<dd>账户管理</dd>
+					<dd>购物指南</dd>
+					<dd>订单操作</dd>
+				</dl>
+				<dl class="link">
+					<dt>服务支持</dt>
+					<dd>售后政策</dd>
+					<dd>自助服务</dd>
+					<dd>相关下载</dd>
+				</dl>
+				<dl class="link">
+					<dt>线下门店</dt>
+					<dd>小米之家</dd>
+					<dd>服务网点</dd>
+					<dd>授权体验店</dd>
+				</dl>
+				<dl class="link">
+					<dt>关于小米</dt>
+					<dd>了解小米</dd>
+					<dd>加入小米</dd>
+					<dd>投资者关系</dd>
+				</dl>
+				<dl class="link">
+					<dt>关注我们</dt>
+					<dd>新浪微博</dd>
+					<dd>官方微信</dd>
+					<dd>联系我们</dd>
+				</dl>
+				<dl class="link">
+					<dt>特色服务</dt>
+					<dd>F 码通道</dd>
+					<dd>礼物码</dd>
+					<dd>防伪查询</dd>
+				</dl>
+			</div>
+			<p class="belief">探索黑科技，小米为发烧而生！</p>
+		</div>
+				
+
+		
+	</body>
+</html>
 
 		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>

@@ -25,11 +25,12 @@
 
 			body {font-size: 13px;font-family: "Microsoft Yahei";color: #333;}
 			*{margin: 0px;}
+			.clear{clear: both;}
 			.header{height: 40px;width: 100%;line-height: 40px;background: #333333;}
 			.header a{text-decoration: none;color:#b0b0b0;}
 			.user_login span{float:right;padding-right: 7px;}
 			.nav li{float:left;margin-left: 7px;list-style: none;}
-			li a:hover{color:white;cursor: pointer;}
+			.nav li a:hover{color:white;cursor: pointer;}
 			.nav{margin-left: 15.5%;}
 			.nav span{margin-left:6px;color: #b0b0b0;}
 			.header_nav_out{border:solid red 0px;width:100%;height:100px;}
@@ -169,12 +170,14 @@
 						</div>
 					</div>
 				</volist>
-				<div style="clear: both;"></div>
+				<div class="clear"></div>
 				<span class="pages">
 					{$page}
 				</span>
 			</div>
 		</div>
+		<div class="clear"></div>
+		<include file="./public/bottom.html"/>
 
 		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
