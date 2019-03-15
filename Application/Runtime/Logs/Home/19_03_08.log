@@ -1,0 +1,214 @@
+[ 2019-03-08T08:59:26+08:00 ] 127.0.0.1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.1150s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`borrow_duration`,`repayment_type`,`borrow_fee`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcode`,`sex`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard` FROM lzh_borrow_info bi left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE `borrow_status` = 6 OR ( (`second_verify_time` > '1472054399') AND (`borrow_status` = 7) ) LIMIT 10   [ RunTime:0.2670s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0980s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=373 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1504799999 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 373-2017-09-07 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=373 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1482681599 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1485359999 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1488038399 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 381-2016-09-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 381-2016-10-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 381-2016-11-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 381-2016-12-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 381-2017-01-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 381-2017-02-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=381 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 382-2016-09-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 382-2016-10-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 382-2016-11-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=382 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=383 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1475164799 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1477756799 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1480435199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 383-2016-09-29 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 383-2016-10-29 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 383-2016-11-29 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=383 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1503676799 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 385-2017-08-25 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=385 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 386-2016-09-26 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 386-2016-10-26 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 386-2016-11-26 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=386 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=387 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1504195199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 387-2017-08-31 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=387 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=388 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1475251199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1477843199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1480521599 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 388-2016-09-30 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 388-2016-10-30 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 388-2016-11-30 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=388 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=389 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1475251199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1477843199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1480521599 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 389-2016-09-30 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 389-2016-10-30 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 389-2016-11-30 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=389 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=390 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1475164799 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1477756799 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1480435199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1483027199 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1485705599 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 1488383999 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined index: 390-2016-09-29 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 390-2016-10-29 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 390-2016-11-29 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 390-2016-12-29 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 390-2017-01-29 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+NOTIC: [8] Undefined index: 390-2017-03-01 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 238 行.
+SQL: SELECT COUNT(DISTINCT investor_uid) AS tp_count FROM `lzh_investor_detail` WHERE ( borrow_id=390 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
