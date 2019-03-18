@@ -1186,3 +1186,902 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2019-03-15T21:39:45+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0110s ]
+SQL: SELECT bi.id FROM lzh_borrow_info bi LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid LEFT JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid LEFT JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid LEFT JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE ( (`second_verify_time` > 1472054399) AND (`second_verify_time` <= 1472399999) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0100s ]
+SQL: SELECT lid.borrow_id FROM lzh_investor_detail lid left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id  WHERE ( (`repayment_time` > 1472054399) AND (`repayment_time` <= 1472399999) AND (`second_verify_time` > 1472054399) )  [ RunTime:0.0360s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`has_pay`,`borrow_duration`,`repayment_type`,`borrow_fee`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcode`,`sex`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE bi.id IN ('381','382','385','386','391')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1482681599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1485359999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1488038399 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+
+[ 2019-03-15T21:40:27+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0100s ]
+SQL: SELECT bi.id FROM lzh_borrow_info bi LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid LEFT JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid LEFT JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid LEFT JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE ( (`second_verify_time` > 1472054399) AND (`second_verify_time` <= 1472399999) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0090s ]
+SQL: SELECT lid.borrow_id FROM lzh_investor_detail lid left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id  WHERE ( (`repayment_time` > 1472054399) AND (`repayment_time` <= 1472399999) AND (`second_verify_time` > 1472054399) )  [ RunTime:0.0350s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`has_pay`,`borrow_duration`,`repayment_type`,`borrow_fee`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcode`,`sex`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE bi.id IN ('381','382','385','386','391')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1482681599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1485359999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1488038399 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `lzh_borrow_investor` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=381 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=382 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1503676799 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=385 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=386 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=391 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=391 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-15T21:45:15+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0100s ]
+SQL: SELECT bi.id FROM lzh_borrow_info bi LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid LEFT JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid LEFT JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid LEFT JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE ( (`second_verify_time` > 1472054399) AND (`second_verify_time` <= 1472399999) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0100s ]
+SQL: SELECT lid.borrow_id FROM lzh_investor_detail lid left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id  WHERE ( (`repayment_time` > 1472054399) AND (`repayment_time` <= 1472399999) AND (`second_verify_time` > 1472054399) )  [ RunTime:0.0340s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`has_pay`,`borrow_duration`,`repayment_type`,`borrow_fee`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcode`,`sex`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE bi.id IN ('381','382','385','386','391')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1482681599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1485359999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1488038399 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `lzh_borrow_investor` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=381 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=382 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1503676799 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=385 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=386 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=391 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=391 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-15T21:45:17+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0120s ]
+SQL: SELECT bi.id FROM lzh_borrow_info bi LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid LEFT JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid LEFT JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid LEFT JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE ( (`second_verify_time` > 1472054399) AND (`second_verify_time` <= 1472399999) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0110s ]
+SQL: SELECT lid.borrow_id FROM lzh_investor_detail lid left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id  WHERE ( (`repayment_time` > 1472054399) AND (`repayment_time` <= 1472399999) AND (`second_verify_time` > 1472054399) )  [ RunTime:0.0360s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`has_pay`,`borrow_duration`,`repayment_type`,`borrow_fee`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcode`,`sex`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE bi.id IN ('381','382','385','386','391')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1482681599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1485359999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1488038399 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `lzh_borrow_investor` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=381 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=382 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1503676799 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=385 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=386 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=391 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=391 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 325 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-15T21:46:13+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0090s ]
+SQL: SELECT bi.id FROM lzh_borrow_info bi LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid LEFT JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid LEFT JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid LEFT JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE ( (`second_verify_time` > 1472054399) AND (`second_verify_time` <= 1472399999) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0100s ]
+SQL: SELECT lid.borrow_id FROM lzh_investor_detail lid left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id  WHERE ( (`repayment_time` > 1472054399) AND (`repayment_time` <= 1472399999) AND (`second_verify_time` > 1472054399) )  [ RunTime:0.0350s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`has_pay`,`borrow_duration`,`repayment_type`,`borrow_fee`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcode`,`sex`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE bi.id IN ('381','382','385','386','391')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1482681599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1485359999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1488038399 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+
+[ 2019-03-15T21:47:35+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0110s ]
+SQL: SELECT bi.id FROM lzh_borrow_info bi LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid LEFT JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid LEFT JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid LEFT JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE ( (`second_verify_time` > 1472054399) AND (`second_verify_time` <= 1472399999) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0100s ]
+SQL: SELECT lid.borrow_id FROM lzh_investor_detail lid left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id  WHERE ( (`repayment_time` > 1472054399) AND (`repayment_time` <= 1472399999) AND (`second_verify_time` > 1472054399) )  [ RunTime:0.0350s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`has_pay`,`borrow_duration`,`repayment_type`,`borrow_fee`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcode`,`sex`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE bi.id IN ('381','382','385','386','391')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1482681599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1485359999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1488038399 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `lzh_borrow_investor` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=381 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=382 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1503676799 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=385 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=386 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=391 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=391 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-15T21:48:05+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0100s ]
+SQL: SELECT bi.id FROM lzh_borrow_info bi LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid LEFT JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid LEFT JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid LEFT JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE ( (`second_verify_time` > 1472054399) AND (`second_verify_time` <= 1472399999) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0100s ]
+SQL: SELECT lid.borrow_id FROM lzh_investor_detail lid left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id  WHERE ( (`repayment_time` > 1472054399) AND (`repayment_time` <= 1472399999) AND (`second_verify_time` > 1472054399) )  [ RunTime:0.0350s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`has_pay`,`borrow_duration`,`repayment_type`,`borrow_fee`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcode`,`sex`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE bi.id IN ('381','382','385','386','391')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1482681599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1485359999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1488038399 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SHOW COLUMNS FROM `lzh_borrow_investor` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=381 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=382 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1503676799 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=385 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=386 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=391 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474905599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1477497599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined offset: 1480175999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 197 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 198 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+NOTIC: [8] Undefined index: reveive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 243 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=391 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: repay_status D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 326 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

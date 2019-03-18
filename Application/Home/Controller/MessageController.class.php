@@ -124,13 +124,14 @@ header("Content-type: text/html; charset=utf-8");
 		
 		//2016年8月24日以后
 		public function zhj_borrow(){
-			$beg = strtotime('2016-8-24 23:59:59');//2016.8.24
-			$begin = strtotime('2016-8-24 23:59:59');
-			$end = strtotime('2016-8-28 23:59:59');
-			//for($i = 1;$i<100;$i++){
-				$where['second_verify_time&second_verify_time&borrow_status'] = array(array('gt',$begin),array('elt',$end),array('in',array('7','9')),'_multi'=>true);
+			// $ii = strtotime('2016-9-25');
+			// echo $ii;die;
+			$beg = strtotime('2016-8-24 23:59:59');//2016.8.24  1472054399
+			$begin = strtotime('2016-9-2 23:59:59');
+			$end = strtotime('2016-9-3 23:59:59'); //1472140799
+			//for($i = 1;$i<10;$i++){
+				$where['second_verify_time&borrow_status'] = array(array('between',array($begin,$end)),array('in',array('7','9')),'_multi'=>true);
 				$list = M('lzh_borrow_info bi')
-					//->field('bi.id,borrow_name,second_verify_time,borrow_money,deadline,borrow_interest_rate,borrow_duration,repayment_type,borrow_fee,has_pay,borrow_interest,borrow_uid,borrow_status,is_advanced,is_prepayment,idcode,sex,idcard,custrole_type,bankname,idno,cardid,bankid,zhaiquan_idcard,lz.type as lztype,zhaiquan_bankinfo')
 					->field('bi.id')
 					->join('LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid')
 					->join('LEFT JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid')
@@ -138,104 +139,186 @@ header("Content-type: text/html; charset=utf-8");
 					->join('LEFT JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id')
 					->where($where)
 					->select();
-				//echo M()->getLastSql();echo "<br>";
+				echo M()->getLastSql();echo "<br>";
 				//print_r($list);
-				$status['repayment_time&repayment_time&second_verify_time'] =array(array('gt',$begin),array('elt',$end),array('gt',$beg),'_multi'=>true);
-				if(!empty($list)){
-					$list_repayment = M('lzh_investor_detail lid')
-						->field('lid.borrow_id')
-						->join('left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id')
-						->where($status)->select();
-					echo "<hr>";
-					//print_r($list_repayment);echo "哈哈哈哈哈哈哈";
+				
+				//echo "我是当天成立的";print_r($list1);echo '<br>';
+				$status['repayment_time&second_verify_time'] =array(array('between',array($begin,$end)),array('gt',$beg),'_multi'=>true);
+				$list_repayment = M('lzh_investor_detail lid')
+					->DISTINCT(true)
+					->field('lid.borrow_id')
+					->join('left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id')
+					->where($status)->select();
+				echo M()->getLastSql();echo "<br>";
+				if(!empty($list) && !empty($list_repayment)){
 					foreach($list as $keyy=>$valuee){
 						$list1[] = $valuee['id'];
 					}
-					echo "我是当天成立的";print_r($list1);
-					if(!empty($list_repayment)){
-						foreach ($list_repayment as $k=>$v){
-							$list_repayment1[] = $v['borrow_id'];
-						}
-						echo "<a style='color: red'>我是当天还款的</a>";print_r($list_repayment1);
-						$new_array = array_merge($list1,$list_repayment1);
-						echo "<a style='color: yellow'>我是合并后的</a>";print_r($new_array);
-					}else{
-						$new_array = $list1;
-					}
-				}else{
-					$list_repayment = M('lzh_investor_detail lid')
-						->field('lid.borrow_id')
-						->join('left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id')
-						->where($status)->select();
 					foreach ($list_repayment as $k=>$v){
 						$list_repayment1[] = $v['borrow_id'];
 					}
+					echo "<a style='color: blue'>我是新成立和还款中合并后的标：</a>";
+					$new_array = array_merge($list1,$list_repayment1);
+					print_r($new_array);echo "<br>";
+				}elseif(!empty($list)&&empty($list_repayment)){
+					foreach($list as $keyy=>$valuee){
+						$list1[] = $valuee['id'];
+					}
+					echo "<a style='color: green'>我是当天成立的</a>";
+					$new_array = $list1;
+					print_r($new_array);echo "<br>";
+				}elseif(empty($list) && !empty($list_repayment)){
+					foreach ($list_repayment as $k=>$v){
+						$list_repayment1[] = $v['borrow_id'];
+					}
+					echo "<a style='color: red'>我是当天还款的</a>";
 					$new_array = $list_repayment1;
+					print_r($new_array);echo "<br>";
 				}
+				
 				if(!empty($new_array)){
 					$status2['bi.id'] = array('in',$new_array);
+					//$status2['bi.id'] = 1266;
 					$list_new_array = M('lzh_borrow_info bi')
 						->field('bi.id,borrow_name,second_verify_time,borrow_money,deadline,borrow_interest_rate,has_pay,
-            borrow_duration,repayment_type,borrow_fee,has_pay,borrow_interest,borrow_uid,borrow_status,is_advanced,is_prepayment,
-            idcode,sex,idcard,custrole_type,bankname,idno,cardid,bankid,zhaiquan_idcard,lz.type as lztype,zhaiquan_bankinfo,mortgage')
+				        borrow_duration,repayment_type,borrow_fee,has_pay,borrow_interest,borrow_uid,borrow_status,is_advanced,is_prepayment,
+				        idcode,sex,idcard,custrole_type,bankname,idno,cardid,bankid,zhaiquan_idcard,lz.type as lztype,zhaiquan_bankinfo,mortgage')
 						->join('left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid')
 						->join('left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid')
 						->join('left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid')
 						->join('left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id')
+						->order('id asc')
 						->where($status2)
-						// ->limit(50)
 						->select();
-					echo M()->getLastSql();;
-					//print_r($list_new_array);
+					//echo M()->getLastSql();
+					//print_r($list_new_array);die;
+					$borrow_info = '';//项目信息
+					$borrower = '';//借款人信息
+					$investor = '';//出借人信息
 					
-					foreach($list_new_array as $kkk=>$value){
-						$repay_detail = M('lzh_investor_detail')->where('borrow_id='.$value['id'])->select();
-						//提前还款
-						//if($value['is_advanced'] != 0||$vvv['is_prepayment']= 1){
-						if(true){
-							//本期还款状态；
-							
-							$arr1 = array();
-							foreach($repay_detail as $yyy=>$y){
-								// $arr1[$value['id']."-".date('Y-m-d',$vvv['repayment_time'])]['receive_capital'] += $vvv['receive_capital'];
-								// $arr1[$value['id']."-".date('Y-m-d',$vvv['repayment_time'])]['receive_interest'] += $vvv['receive_interest'];
-								// $arr1[$value['id']."-".date('Y-m-d',$vvv['repayment_time'])]['repayment_time'] = date('Y-m-d',$vvv['repayment_time']);
-								$arr1[$value['id']."-".date('Y-m-d',$y['repayment_time'])]['total'] = $y['total'];
+					$borrow_ids = array();
+					
+					foreach($list_new_array as $aaa=>$value){
+						$repay_detail = M('lzh_investor_detail')->field('borrow_id,repayment_time,deadline,interest,capital,receive_interest,receive_capital,substitute_money,sort_order,total')->where('borrow_id='.$value['id'])->select();
+						//print_r($repay_detail);die;
+						//约定还款计划；
+						$arr = array();
+						foreach($repay_detail as $k=>$v){
+							$arr[$v['deadline']]['capital'] += $v['capital'];
+							$arr[$v['deadline']]['interest'] += $v['interest'];
+							$arr[$v['deadline']]['deadline'] = $v['deadline'];
+						}
+						//print_r($arr);die;
+						foreach($arr as $kk=>$vv){
+							$data[] = date("Y-m-d",$vv['deadline']).":".$this->getFloatValue($vv['capital'],4).":".$this->getFloatValue($vv['interest'],4);
+						}
+						
+						//当天发生还款当期实际还款记录
+						//非提前还款
+						$arr1 = array();
+						foreach($repay_detail as $kkk=>$vvv){
+							$arr1[$vvv['borrow_id'].":".date('Y-m-d',$vvv['repayment_time'])]['receive_capital'] += $vvv['receive_capital'];
+							$arr1[$vvv['borrow_id'].":".date('Y-m-d',$vvv['repayment_time'])]['receive_interest'] += $vvv['receive_interest'];
+							$arr1[$vvv['borrow_id'].":".date('Y-m-d',$vvv['repayment_time'])]['repayment_time'] = date('Y-m-d',$vvv['repayment_time']);
+							$arr1[$vvv['borrow_id'].":".date('Y-m-d',$vvv['repayment_time'])]['substitute_money'] += $vvv['substitute_money'];
+							$arr1[$vvv['borrow_id'].":".date('Y-m-d',$vvv['repayment_time'])]['sort_order'] = $vvv['sort_order'];
+						}
+						unset($arr1['1970-01-01']);
+						//print_r($arr1);echo $value['id'];//die;echo $begin."-".$end;
+						
+						//本期还款状态；
+						$arr2 = array();
+						foreach($repay_detail as $yyy=>$y){
+							$arr2[$value['id']."-".date('Y-m-d',$y['repayment_time'])]['total'] = $y['total'];
+						}
+						//print_r($arr2);die;
+						$repay_num = count($arr2);//累计实际还款次数
+						
+						//针对提前还款标的
+						if(count($arr1)!=$repay_detail[0]['total']){
+							//echo 111;die;
+							$arr3 = array();
+							foreach($repay_detail as $real=>$re){
+								if($re['sort_order']<=count($arr1)) {
+									$arr3[$value['id'] . "-" . date('Y-m-d', $re['repayment_time'])]['receive_interest'] += $re['receive_interest'];
+									$arr3[$value['id'] . "-" . date('Y-m-d', $re['repayment_time'])]['sort_order'] = $re['sort_order'];
+								}
+								$arr3[$value['id']."-".date('Y-m-d',$re['repayment_time'])]['receive_capital'] += $re['receive_capital'];
+								$arr3[$value['id']."-".date('Y-m-d',$re['repayment_time'])]['repayment_time'] = date('Y-m-d',$re['repayment_time']);
+								$arr3[$value['id']."-".date('Y-m-d',$re['repayment_time'])]['substitute_money'] += $re['substitute_money'];
 							}
+							//print_r($arr3);die;
+							unset($arr1);
+							$arr1 =array();
+							$arr1 = $arr3;
 							//print_r($arr1);die;
-							$repay_num = count($arr1);
-							$receive_capital = '';
-							$receive_interest = '';
-							$repayment_time = '';
-							$repay_way = '';
-							$present_capital = '';
-							$present_interest = '';
-							foreach ($repay_detail as $eee=>$e){
-								//当期实际还款记录以及还款状态
-								if($e['repayment_time']>$begin&&$e['repayment_time']<$end){
-									$repayment_time = date("Y-m-d",$e['repayment_time']);
-									$receive_capital += $e['reveive_capital'];
-									$receive_interest += $e['reveive_capital'];
-									$repay_way += $e['substitute_money'];
-									$repay_way = $repay_way == 0 ? "01" : "03";
-									$repay_status = $e['sort_order'] == $repay_num ? '04':'02';
+						}
+						
+						$present_capital = '';
+						$present_interest = '';
+						foreach ($arr1 as $eee=>$e){
+							//当期实际还款记录以及还款状态
+							if((strtotime($e['repayment_time']) > $begin )&& (strtotime($e['repayment_time']) < $end)){
+								$repayment_time = $e['repayment_time'];
+								$receive_capital = $e['receive_capital'];
+								$receive_interest = $e['receive_interest'];
+								$repay_way = $e['substitute_money'];
+								$repay_way = $repay_way == 0 ? "01" : "03";
+								
+								//发生还款时的状态   非提前还款标的
+								if($value['is_advanced'] == 0 || $value['is_prepayment'] == 0){
+									//除了和最后一期都是还款中的状态 02
+									if($e['sort_order'] != $repay_detail[0]['total']){
+										$repay_status = '02';
+									}else{
+										$repay_status = '03';//最后一期正常还款已结清；
+									}
 								}else{
-									$repayment_time = date("Y-m-d",$value['second_verify_time']);
-									$receive_capital = 0;
-									$receive_interest = 0;
-									$repay_way = "01";
+									//提前标的最后一期之前还款时的状态 02
+									if($e['sort_order'] != $repay_num){
+										$repay_status = '02';
+									}else{
+										$repay_status = '03';//最后一期提前还款已结清；
+									}
 								}
-								//实际累计还款本金，利息
-								if($e['sort_order']<= $repay_num){
-									$present_capital += $e['reveive_capital'];
-									$present_interest += $e['receive_interest'];
-								}
+							}elseif(($value['second_verify_time'] > $begin) && ($value['second_verify_time'] < $end)){
+								//项目新成立无还款记录；
+								$repayment_time = date("Y-m-d",$value['second_verify_time']);
+								$receive_capital = 0;
+								$receive_interest = 0;
+								$repay_way = "01";
+								$repay_status = '01';
 							}
-							//当期实际还款记录   还款时间 本金 利息 还款方式
-							$data = $repayment_time.":".$receive_capital.":".$receive_interest.":".$repay_way;
+							//累计还款本金、利息
+							//echo strtotime($e['repayment_time'])."---".$end;die;
+							if(strtotime($e['repayment_time']) < $end){
+								$present_capital += $e['receive_capital'];
+								$present_interest += $e['receive_interest'];
+							}elseif(($value['second_verify_time'] > $begin) && ($value['second_verify_time'] < $end)){
+								$present_capital = 0;
+								$present_interest = 0;
+							}
+							//剩余本金利息
+							$capital_last = $value['borrow_money'] - $present_capital;
+							//提前还款标的最后一期剩余的利息为0;
+								if(($value['is_advanced'] != 0 || $value['is_prepayment'] != 0)){
+									if((strtotime($e['repayment_time']) > $begin )&& (strtotime($e['repayment_time']) < $end)){
+										if($e['sort_order'] == $repay_num){
+											$interest_last = 0;
+										}else{
+											$interest_last =$value['borrow_interest'] - $present_interest;
+										}
+									}
+								}else{
+									$interest_last =$value['borrow_interest'] - $present_interest;
+								}
 							
 							
 						}
+						//unset($arr1);
+						//当期实际还款记录   还款时间 本金 利息 还款方式
+						$data1 = $repayment_time.":".$this->getFloatValue($receive_capital,4).":".$this->getFloatValue($receive_interest,4).":".$repay_way;
+						
 						//项目费用、费率
 						switch ($value['borrow_duration']) {
 							case '1':
@@ -262,10 +345,9 @@ header("Content-type: text/html; charset=utf-8");
 						//出借人个数
 						// $investor_num = M('investor_detail')->where('borrow_id='.$value['id'])->count('DISTINCT investor_uid');
 						$investor_num = M('lzh_borrow_investor')->where('borrow_id='.$value['id'])->count();
-						//echo $investor_num;die;
 						
+						//担保公司
 						$motrgage = $value['mortgage'];
-						
 						
 						//还款方式
 						if($value['repayment_type'] == 4){
@@ -275,12 +357,6 @@ header("Content-type: text/html; charset=utf-8");
 						}
 						
 						
-						//剩余本金利息
-						$capital_last = $value['borrow_money'] - $present_capital;
-						$interest_last =$value['borrow_interest'] - $present_interest;
-						
-						
-						$borrow_info = '';
 						//项目信息
 						$borrow_info .= "91320200323591589D1".$value['id']."|".//项目唯一编号
 							"91320200323591589D"."|".//社会信用代码
@@ -302,8 +378,8 @@ header("Content-type: text/html; charset=utf-8");
 							$value['borrow_duration']."|".//还款期数
 							"02"."|".//担保方式
 							$motrgage."|".//担保公司名称
-							//implode(";",$data)."|".//约定还款计划
-							implode(";",$data)."|".//实际还款记录
+							implode(";",$data)."|".//约定还款计划
+							$data1."|".//实际还款记录
 							$this->getFloatValue($present_capital,4)."|".//实际累计本金偿还额
 							$this->getFloatValue($present_interest,4)."|".//实际累计利息偿还额
 							$this->getFloatValue($capital_last,4)."|".//借款剩余本金余额
@@ -315,37 +391,133 @@ header("Content-type: text/html; charset=utf-8");
 							$repayment_type."|".//还款方式
 							"03"."|".//借款用途
 							$investor_num//出借人个数
-							."\r\n";
+							."<br>";
+						
+						unset($data);
+						unset($data1);
+						unset($present_capital);
+						unset($present_interest);
+						
+						//取消执行
+						if(true){
+							//借款人累计借款次数
+							// $capitalinfo = getMemberBorrowScan($value['borrow_uid']);
+							$count_borrow['borrow_uid'] = $value['borrow_uid'];
+							$count_borrow['borrow_status'] = array('in', array('2', '4', '6', '7', '9'));
+							$num = M('lzh_borrow_info')->where($count_borrow)->count();
+							// $num = $capitalinfo['tj']['jkcgcs'];
+							
+							//借款角色
+							
+							$borrower_type = '01';//借款人类型 01:自然人 02:法人
+							//证件号码
+							if(substr($value['zhaiquan_idcard'],17,1) == 'x'){
+								$idcode = substr($value['zhaiquan_idcard'],0,17).'X';
+							}else{
+								$idcode = $value['zhaiquan_idcard'];
+							}
+							//性别
+							$sexint = substr($value['zhaiquan_idcard'],16,1);
+							
+							if($sexint % 2 == 0){
+								$sex = '2';
+							}elseif ($sexint % 2 != 0){
+								$sex = '1';
+							}else{
+								$sex = '0';
+							}
+							//职业种类
+							$career = '80000';//自然人时 职业类型80000不便分类的其他从业人员
+							//所属地区
+							$area = substr($idcode,0,6);
+							//开户银行名称
+							$bankname = $value['zhaiquan_bankinfo'];
+							
+							//企业借款人
+							if($value['lztype'] == 2){
+								$borrower_type = '02';
+								$sex = '';
+								$career = '';
+								$area = substr($idcode,1,6);
+							}
+							
+							
+							//借款人信息
+							$borrower .= "91320200323591589D1".$value['id']."|".//项目唯一编号
+								$borrower_type."|".//借款人类型
+								$value['borrow_uid']."|".//借款人ID
+								"01"."|".//证件类型
+								$idcode."|".//证件号码////////////////////////////待添加
+								$sex."|".//性别
+								"|".//借款人年平均收入
+								"|".//借款人主要收入来源
+								$career."|".//职业类型80000不便分类的其他从业人员
+								$area."|".//所属地区////////////////////////////待添加
+								"|".//实缴资本
+								"|".//注册资本
+								"|".//所属行业
+								"|".//机构成立时间
+								$bankname."|".//开户银行名称////////////////////////////待添加
+								"|".//收款账户开户行所在地区
+								"|".//借款人信用评级
+								$num.//借款人累计借款次数
+								"<br>";//\r\n
+							
+							//存储所有标的ID
+							$borrow_ids[] = $value['id'];
+						}
+						//取消执行END
+					}
+					
+					$status3['id.borrow_id'] = array('in', $borrow_ids);
+					
+					$investor_arr = M('lzh_borrow_investor id')
+						->field('borrow_id,investor_uid,investor_capital,idcard')
+						->join('lzh_member_info as lmi on lmi.uid = id.investor_uid')
+						->where($status3)
+						->select();
+					echo M()->getLastSql();echo "<hr>";
+					//echo 'debug<br><pre>'; print_r($investor_arr); exit;
+					foreach($investor_arr as $invest=>$inv){
+						//出借人身份证号码
+						if(substr($inv['idcard'],17,1) == 'x'){
+							$idcode_investor = substr($inv['idcard'],0,17).'X';
+						}else{
+							$idcode_investor = $inv['idcard'];
+						}
+						$investor .= "91320200323591589D1".$inv['borrow_id']."|".//项目唯一编号
+							"01"."|".//出借人类型
+							$inv['investor_uid']."|".//出借人ID
+							"01"."|".//证件类型
+							$idcode_investor."|".//证件号码////////////////////////////待添加
+							"|".//职业类型
+							"|".//所属地区
+							"|".//所属行业
+							$this->getFloatValue($inv['investor_capital'],4)."|".//出借金额
+							"01"//出借状态
+							."<br>";//\r\n
+						unset($total_investor);
+						
 						
 					}
-					echo $borrow_info."<br>";
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+					echo $borrow_info."<hr>";
+					echo $borrower."<hr>";
+					echo $investor;
 					
 					
 				}else{
 					echo '当天无业务数据';
 				}
 				
-				
-				
-				
-				
-				
 				unset($list);
+				unset($list1);
+				unset($list_repayment1);
+				unset($new_array);
 				echo "<hr>";
-				$begin += 86400;
-				$end += 86400;
-			//}
-			
+			// 	$begin += 86400;
+			// 	$end += 86400;
+			// 		echo $begin."--".$end;
+			// }
 		}
 		
 		
