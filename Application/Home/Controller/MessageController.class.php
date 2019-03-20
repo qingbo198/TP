@@ -127,8 +127,8 @@ header("Content-type: text/html; charset=utf-8");
 			// $ii = strtotime('2016-9-25');
 			// echo $ii;die;
 			$beg = strtotime('2016-8-24 23:59:59');//2016.8.24  1472054399
-			$begin = strtotime('2016-9-2 23:59:59');
-			$end = strtotime('2016-9-3 23:59:59'); //1472140799
+			$begin = strtotime('2016-9-24 23:59:59');
+			$end = strtotime('2016-9-25 23:59:59'); //1472140799
 			//for($i = 1;$i<10;$i++){
 				$where['second_verify_time&borrow_status'] = array(array('between',array($begin,$end)),array('in',array('7','9')),'_multi'=>true);
 				$list = M('lzh_borrow_info bi')
