@@ -5,7 +5,7 @@ use Think\Controller;
 
 header("Content-type: text/html; charset=utf-8");
 	class MessageController extends Controller {
-		//末期本息提前还款时  还款本金和利息不对的标的.,,,..,,；
+		//末期本息提前还款时  还款本金和利息不对的标的.,,,..；
 		public function index()
 		{
 			set_time_limit(0);
