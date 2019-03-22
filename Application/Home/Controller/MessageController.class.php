@@ -526,6 +526,45 @@ header("Content-type: text/html; charset=utf-8");
 		{
 			return  number_format($f,$len,'.','');
 		}
+
+		//导出表格
+		public function excelout(){
+			//1.引入PHPexcle类
+			import("Org.Util.PHPExcel");
+			$objPHPExcel = new \PHPExcel();
+			//print_r($objPHPExcel);die;
+			$objPHPExcel->getproperties()->setCreator("Matthew_man");
+			//写入数据
+			$list = M('lzh_borrow_info')->field('id,borrow_name,borrow_money')->limit(10)->select();
+			//echo 'debug<br><pre>'; print_r($list); exit;
+			$objPHPExcel->getSheet(0)->setTitle('借款信息');
+			foreach ($list as $key => $value) {
+				$objPHPExcel->setActiveSheetIndex(0)
+				    ->setCellValue('A1','borrow_id')
+				    ->setCellValue('B1','标的名称')
+				    ->setCellValue('C1','借款金额')
+				    ->setCellValue('A'.($key+2),$value['id'])
+				    ->setCellValue('B'.($key+2),$value['borrow_name'])
+				    ->setCellValue('C'.($key+2),$value['borrow_money']);
+			}
+			$list_member = M('lzh_member_info')->field('uid,cell_phone,idcard')->limit(10)->select();
+			//创建一个新的工作空间(sheet)
+			$objPHPExcel->createSheet();
+			 $objPHPExcel->getSheet(1)->setTitle('会员信息');
+			foreach ($list_member as $key => $value) {
+				$objPHPExcel->setActiveSheetIndex(1)
+				    ->setCellValue('A1','uid')
+				    ->setCellValue('B1','手机号码')
+				    ->setCellValue('C1','身份证号码')
+				    ->setCellValue('A'.($key+2),$value['uid'])
+				    ->setCellValue('B'.($key+2),$value['cell_phone'])
+				    ->setCellValue('C'.($key+2),$value['idcard']);
+			}
+			import("Org.Util.PHPExcel.IOfactory");
+			$objwriter = \PHPExcel_IOFactory::createWriter($objPHPExcel,'Excel2007');
+			$objwriter->save('D:\\text1.xlsx');
+			echo 111;
+		}
 		
 		
 		

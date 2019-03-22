@@ -1,0 +1,954 @@
+[ 2019-03-22T20:52:11+08:00 ] ::1 /tp/home/message/zhj_borrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.2230s ]
+SQL: SELECT bi.id FROM lzh_borrow_info bi LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid LEFT JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid LEFT JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid LEFT JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE ( (`second_verify_time` BETWEEN 1474732799 AND 1474819199) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.5060s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.1020s ]
+SQL: SELECT DISTINCT  lid.borrow_id FROM lzh_investor_detail lid left join lzh_borrow_info as lbi on lbi.id =lid.borrow_id  WHERE ( (`repayment_time` BETWEEN 1474732799 AND 1474819199) AND (`second_verify_time` > 1472054399) )  [ RunTime:0.3810s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`has_pay`,`borrow_duration`,`repayment_type`,`borrow_fee`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcode`,`sex`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi left join lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid left join lzh_member_info as lmi on bi.borrow_uid = lmi.uid left join lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid left join lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE bi.id IN ('381','382') ORDER BY id asc  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0160s ]
+SQL: SELECT `borrow_id`,`repayment_time`,`deadline`,`interest`,`capital`,`receive_interest`,`receive_capital`,`substitute_money`,`sort_order`,`total` FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 208 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 208 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 208 行.
+NOTIC: [8] Undefined offset: 1482681599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 208 行.
+NOTIC: [8] Undefined offset: 1485359999 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 208 行.
+NOTIC: [8] Undefined offset: 1488038399 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 208 行.
+NOTIC: [8] Undefined index: 381:2016-09-25 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 221 行.
+NOTIC: [8] Undefined index: substitute_money D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 223 行.
+NOTIC: [8] Undefined index: 381:2016-10-25 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 221 行.
+NOTIC: [8] Undefined index: substitute_money D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 223 行.
+NOTIC: [8] Undefined index: 381:2016-11-25 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 221 行.
+NOTIC: [8] Undefined index: substitute_money D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 223 行.
+NOTIC: [8] Undefined index: 381:2016-12-25 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 221 行.
+NOTIC: [8] Undefined index: substitute_money D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 223 行.
+NOTIC: [8] Undefined index: 381:2017-01-25 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 221 行.
+NOTIC: [8] Undefined index: substitute_money D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 223 行.
+NOTIC: [8] Undefined index: 381:2017-02-25 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 221 行.
+NOTIC: [8] Undefined index: substitute_money D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 223 行.
+SQL: SHOW COLUMNS FROM `lzh_borrow_investor` [ RunTime:0.0470s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=381 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_info` WHERE `borrow_uid` = 3706 AND `borrow_status` IN ('2','4','6','7','9') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `borrow_id`,`repayment_time`,`deadline`,`interest`,`capital`,`receive_interest`,`receive_capital`,`substitute_money`,`sort_order`,`total` FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1474819199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 208 行.
+NOTIC: [8] Undefined offset: 1477411199 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 208 行.
+NOTIC: [8] Undefined offset: 1480089599 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 207 行.
+NOTIC: [8] Undefined index: interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 208 行.
+NOTIC: [8] Undefined index: 382:2016-09-25 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 221 行.
+NOTIC: [8] Undefined index: substitute_money D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 223 行.
+NOTIC: [8] Undefined index: 382:2016-10-25 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 221 行.
+NOTIC: [8] Undefined index: substitute_money D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 223 行.
+NOTIC: [8] Undefined index: 382:2016-11-25 D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 220 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 221 行.
+NOTIC: [8] Undefined index: substitute_money D:\wwwroot\TP\Application\Home\Controller\MessageController.class.php 第 223 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_investor` WHERE ( borrow_id=382 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lzh_borrow_info` WHERE `borrow_uid` = 3707 AND `borrow_status` IN ('2','4','6','7','9') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_investor` [ RunTime:0.0190s ]
+SQL: SELECT `borrow_id`,`investor_uid`,`investor_capital`,`idcard` FROM lzh_borrow_investor id INNER JOIN lzh_member_info as lmi on lmi.uid = id.investor_uid  WHERE id.borrow_id IN ('381','382')  [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2019-03-22T20:52:22+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-03-22T21:07:48+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-03-22T21:08:05+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2019-03-22T21:08:13+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012000s ]
+
+[ 2019-03-22T21:08:27+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-22T21:10:05+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-22T21:14:27+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0260s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+
+[ 2019-03-22T21:14:38+08:00 ] 127.0.0.1 /TP/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0250s ]
+SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.0150s ]
+NOTIC: [8] Undefined variable: new D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: newss D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\TP\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+
+[ 2019-03-22T21:25:04+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-03-22T21:25:22+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+
+[ 2019-03-22T21:28:37+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-03-22T21:28:52+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+
+[ 2019-03-22T21:29:04+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0170s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+ERR: Invalid cell coordinate 01
+
+[ 2019-03-22T21:32:49+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+ERR: Invalid cell coordinate 1
+
+[ 2019-03-22T21:33:15+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0260s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-03-22T22:17:53+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2019-03-22T22:19:36+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-03-22T22:24:29+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2019-03-22T22:25:53+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+ERR: Invalid cell coordinate A0+2
+
+[ 2019-03-22T22:27:04+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0250s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-03-22T22:27:58+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-03-22T22:28:20+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-03-22T22:32:09+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0170s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+ERR: You tried to set a sheet active by the out of bounds index: 1. The actual number of sheets is 1.
+
+[ 2019-03-22T22:32:49+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+
+[ 2019-03-22T22:33:01+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+ERR: You tried to set a sheet active by the out of bounds index: 1. The actual number of sheets is 1.
+
+[ 2019-03-22T22:43:11+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0270s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2019-03-22T22:47:19+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0270s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0200s ]
+ERR: 1054:Unknown column 'tell_phone' in 'field list'
+ [ SQL语句 ] : SELECT `uid`,`tell_phone`,`id_card` FROM `lzh_member_info` LIMIT 10  
+ERR: 1054:Unknown column 'tell_phone' in 'field list'
+ [ SQL语句 ] : SELECT `uid`,`tell_phone`,`id_card` FROM `lzh_member_info` LIMIT 10  
+
+[ 2019-03-22T22:47:36+08:00 ] 127.0.0.1 /TP/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0220s ]
+SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: new D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: newss D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\TP\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+
+[ 2019-03-22T22:47:38+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0160s ]
+ERR: 1054:Unknown column 'id_card' in 'field list'
+ [ SQL语句 ] : SELECT `uid`,`cell_phone`,`id_card` FROM `lzh_member_info` LIMIT 10  
+ERR: 1054:Unknown column 'id_card' in 'field list'
+ [ SQL语句 ] : SELECT `uid`,`cell_phone`,`id_card` FROM `lzh_member_info` LIMIT 10  
+
+[ 2019-03-22T22:48:19+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0190s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-03-22T22:58:18+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0220s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2019-03-22T22:58:48+08:00 ] 127.0.0.1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0120s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2019-03-22T23:01:36+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0140s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-22T23:12:24+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-03-22T23:12:42+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0270s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+
+[ 2019-03-22T23:14:47+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0150s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-22T23:15:43+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0210s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-03-22T23:16:29+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0180s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-22T23:18:25+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0180s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+
+[ 2019-03-22T23:19:58+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0260s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0200s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+
+[ 2019-03-22T23:20:34+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0250s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0160s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-03-22T23:21:28+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0400s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0040s ]
+NOTIC: [2] array_splice() expects parameter 2 to be long, string given D:\wwwroot\TP\ThinkPHP\Library\Org\Util\PHPExcel.class.php 第 533 行.
+ERR: You tried to set a sheet active by the out of bounds index: 1. The actual number of sheets is 1.
+
+[ 2019-03-22T23:26:44+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0170s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2019-03-22T23:28:22+08:00 ] ::1 /tp/home/message/excelout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`borrow_name`,`borrow_money` FROM `lzh_borrow_info` LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_member_info` [ RunTime:0.0180s ]
+SQL: SELECT `uid`,`cell_phone`,`idcard` FROM `lzh_member_info` LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
