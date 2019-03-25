@@ -17,7 +17,7 @@ header("Content-type: text/html; charset=utf-8");
 			$end_time = strtotime($end);//前一天上报数据截止时间今天零点
 			
 			
-			$where['second_verify_time'] = array('in',array($start_time,$send_time));
+			$where['second_verify_time'] = array('between',array($start_time,$end_time));
 			
 			$list = M('lzh_borrow_info')->field()->where($where)->select();
 			
