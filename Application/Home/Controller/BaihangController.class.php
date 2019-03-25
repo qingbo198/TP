@@ -11,11 +11,10 @@ header("Content-type: text/html; charset=utf-8");
 		//循环执行任务方法
 		public function SendtoBaiHang_D2(){
 		
-			$start = date("Y-m-d",time());
-			$start_time = strtotime($start);//当天零点
-			$send_time = time();//当天上报数据时间
-			$time = date("Y-m-d",strtotime(20160825));
-			echo $time;die;
+			$start = date("Y-m-d",(time()-86400));
+			$start_time = strtotime($start);//前一天零点
+			$send_time = time()-86400;//前一天上报数据时间
+			//echo $start_time;die;
 			
 			$where['second_verify_time'] = array('in',array($start_time,$send_time));
 			
