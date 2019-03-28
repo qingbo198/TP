@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ 2019-03-26T20:36:00+08:00 ] 127.0.0.1 /TP/
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -9,6 +10,19 @@ SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0630s ]
 SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0040s ]
 SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0710s ]
 SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.0190s ]
+=======
+[ 2019-03-26T09:36:44+08:00 ] 127.0.0.1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.2300s ]
+SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.1200s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.0100s ]
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
 NOTIC: [8] Undefined variable: new D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
 NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
 NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
@@ -178,6 +192,7 @@ ERR: 1064:You have an error in your SQL syntax; check the manual that correspond
 ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
  [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
 
+<<<<<<< HEAD
 [ 2019-03-26T20:36:13+08:00 ] 127.0.0.1 /TP/home/text
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -203,10 +218,51 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
 
 [ 2019-03-26T20:39:03+08:00 ] 127.0.0.1 /TP/home/text
+=======
+[ 2019-03-26T09:38:40+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow_new
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0100s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`borrow_duration`,`repayment_type`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi INNER JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid INNER JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid INNER JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid INNER JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE `second_verify_time` BETWEEN 1553443199 AND 1553529600  [ RunTime:0.3000s ]
+
+[ 2019-03-26T09:40:53+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow_new
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0100s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`borrow_duration`,`repayment_type`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi INNER JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid INNER JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid INNER JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid INNER JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE `second_verify_time` BETWEEN 1553443199 AND 1553529600  [ RunTime:0.0100s ]
+ERR: 1146:Table 'thinkphp.investor_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `investor_detail`
+ERR: 1146:Table 'thinkphp.investor_detail' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `investor_detail`
+
+[ 2019-03-26T09:41:43+08:00 ] 127.0.0.1 /TP/home/message/zhj_borrow_new
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0100s ]
+SQL: SELECT bi.id,`borrow_name`,`second_verify_time`,`borrow_money`,`deadline`,`borrow_interest_rate`,`borrow_duration`,`repayment_type`,`has_pay`,`borrow_interest`,`borrow_uid`,`borrow_status`,`is_advanced`,`is_prepayment`,`idcard`,`custrole_type`,`bankname`,`idno`,`cardid`,`bankid`,`zhaiquan_idcard`,lz.type as lztype,`zhaiquan_bankinfo`,`mortgage` FROM lzh_borrow_info bi INNER JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid INNER JOIN lzh_member_info as lmi on bi.borrow_uid = lmi.uid INNER JOIN lzh_member_chinapnr as lmc on bi.borrow_uid = lmc.uid INNER JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE `second_verify_time` BETWEEN 1553443199 AND 1553529600  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0200s ]
+SQL: SELECT id.repayment_time,id.borrow_id,id.capital,id.interest,id.receive_interest,id.receive_capital,id.deadline,id.sort_order,id.total,bi.borrow_name,bi.second_verify_time,bi.borrow_money,bi.deadline as borrow_deadline,bi.borrow_interest_rate,bi.borrow_duration,bi.repayment_type,bi.borrow_interest,bi.borrow_uid,bi.borrow_status,bi.borrow_zhaiquan,bi.is_prepayment,bi.is_advanced,lz.zhaiquan_idcard,lz.type as lztype,lz.zhaiquan_bankinfo,lz.mortgage FROM lzh_investor_detail id INNER JOIN lzh_borrow_info as bi on bi.id = id.borrow_id INNER JOIN lzh_zhaiquan as lz on bi.borrow_zhaiquan = lz.id  WHERE `repayment_time` BETWEEN 1553443199 AND 1553529600 GROUP BY borrow_id  [ RunTime:0.4300s ]
+
+[ 2019-03-26T10:15:04+08:00 ] 127.0.0.1 /TP/home/message/calculate_mo
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
 
@@ -227,10 +283,42 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 
 [ 2019-03-26T20:40:09+08:00 ] 127.0.0.1 /TP/home/text
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2019-03-26T10:16:52+08:00 ] 127.0.0.1 /TP/home/message/calculate_mo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2019-03-26T10:20:27+08:00 ] 127.0.0.1 /TP/home/message/calculate_mo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T11:06:28+08:00 ] 127.0.0.1 /TP/home/message/calculate_mo
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
 
@@ -251,50 +339,934 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
 
 [ 2019-03-26T20:40:26+08:00 ] 127.0.0.1 /TP/home/text
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T11:15:12+08:00 ] 127.0.0.1 /TP/home/message/calculate_mo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T11:37:42+08:00 ] 127.0.0.1 /TP/home/message/calculate_mo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T13:13:47+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T13:18:16+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.1440s ]
+SQL: SELECT * FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) ORDER BY m.id  [ RunTime:0.1880s ]
+
+[ 2019-03-26T13:21:27+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+SQL: SELECT `real_name`,`idcard` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) ORDER BY m.id  [ RunTime:0.0150s ]
+
+[ 2019-03-26T13:26:03+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0060s ]
+ERR: 1052:Column 'uid' in field list is ambiguous
+ [ SQL语句 ] : SELECT `uid`,`real_name`,`idcard` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) ORDER BY m.id 
+ERR: 1052:Column 'uid' in field list is ambiguous
+ [ SQL语句 ] : SELECT `uid`,`real_name`,`idcard` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) ORDER BY m.id 
+
+[ 2019-03-26T13:26:54+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0060s ]
+SQL: SELECT mi.uid,`real_name`,`idcard` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) ORDER BY m.id  [ RunTime:0.0140s ]
+
+[ 2019-03-26T13:32:09+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+SQL: SELECT mi.uid,`real_name`,`idcard` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) ORDER BY m.id  [ RunTime:0.0070s ]
+
+[ 2019-03-26T13:32:33+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0060s ]
+SQL: SELECT mi.uid,`real_name`,`idcard`,`borrow_name`,`borrow_money` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) ORDER BY m.id  [ RunTime:0.0090s ]
+
+[ 2019-03-26T13:37:52+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  mi.uid,`real_name`,`idcard`,`borrow_name`,`borrow_money` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) ORDER BY m.id  [ RunTime:0.0090s ]
+
+[ 2019-03-26T13:42:19+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant mi - assumed 'mi' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 15 行.
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 15 行.
+ERR: 1054:Unknown column 'miuid' in 'group statement'
+ [ SQL语句 ] : SELECT mi.uid,`real_name`,`idcard`,`borrow_name`,`borrow_money` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) GROUP BY miuid ORDER BY m.id 
+ERR: 1054:Unknown column 'miuid' in 'group statement'
+ [ SQL语句 ] : SELECT mi.uid,`real_name`,`idcard`,`borrow_name`,`borrow_money` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) GROUP BY miuid ORDER BY m.id 
+
+[ 2019-03-26T13:42:29+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 15 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,`borrow_name`,`borrow_money` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) GROUP BY uid ORDER BY m.id  [ RunTime:0.0090s ]
+
+[ 2019-03-26T14:09:14+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id  [ RunTime:0.0060s ]
+
+[ 2019-03-26T14:10:11+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id  [ RunTime:0.0060s ]
+
+[ 2019-03-26T14:13:36+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+
+[ 2019-03-26T14:57:06+08:00 ] ::1 /TP/
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
 
 [ 2019-03-26T20:40:33+08:00 ] 127.0.0.1 /TP/home/text
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: new D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: newss D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\TP\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+
+[ 2019-03-26T14:57:40+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+NOTIC: [2] str_pad(): Padding string cannot be empty D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 28 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T14:58:33+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+
+[ 2019-03-26T14:59:17+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:01:11+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:02:04+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
 
 [ 2019-03-26T20:40:46+08:00 ] 127.0.0.1 /TP/home/text
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:02:05+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:02:05+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:02:05+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:02:22+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:02:22+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:02:23+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
 
 [ 2019-03-26T20:41:00+08:00 ] 127.0.0.1 /TP/home/text
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:02:23+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:02:35+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:03:56+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
 
 [ 2019-03-26T20:41:21+08:00 ] 127.0.0.1 /TP/home/text
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:04:24+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:04:45+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T20:41:25+08:00 ] 127.0.0.1 /TP/home/text
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:04:46+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:04:46+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:04:46+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T15:05:02+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:05:12+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0080s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:05:26+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:07:56+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:08:04+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant nbsp - assumed 'nbsp' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:08:34+08:00 ] ::1 /TP/home/shanghaizixin/search_report
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0080s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
-[ 2019-03-26T20:41:25+08:00 ] 127.0.0.1 /TP/home/text
+[ 2019-03-26T15:08:54+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0080s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:09:22+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0080s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:09:38+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:21:29+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0090s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0060s ]
+NOTIC: [8] Use of undefined constant Q10153000HUV00 - assumed 'Q10153000HUV00' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 38 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:30:07+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+NOTIC: [8] Use of undefined constant Q10153000HUV00 - assumed 'Q10153000HUV00' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 38 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-03-26T15:56:57+08:00 ] ::1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0050s ]
+
+[ 2019-03-26T17:26:12+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0100s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0100s ]
+
+[ 2019-03-26T17:26:14+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0100s ]
+
+[ 2019-03-26T17:26:24+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 16 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0100s ]
+
+[ 2019-03-26T17:26:55+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 17 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0100s ]
+
+[ 2019-03-26T17:26:55+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 17 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0100s ]
+
+[ 2019-03-26T17:26:56+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 17 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0000s ]
+
+[ 2019-03-26T17:27:00+08:00 ] 127.0.0.1 /TP/home/shanghaizixin/search_report
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_members` [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wwwroot\TP\Application\Home\Controller\ShanghaizixinController.class.php 第 17 行.
+SQL: SELECT mi.uid,`real_name`,`idcard`,bi.id,`borrow_name`,`borrow_money`,`is_jshbank`,`is_asyn_chinapnr` FROM lzh_members m left join lzh_member_info as mi on m.id = mi.uid left join lzh_members_status as ms on m.id = ms.uid right join lzh_borrow_info as bi on m.id = bi.borrow_uid  WHERE `is_vip` = 1 AND ( `jshbank_status` = 1 OR `jshbank_status` = 2 ) AND ( `is_jshbank` = 1 OR `is_asyn_chinapnr` = 1 ) GROUP BY uid ORDER BY m.id LIMIT 1,20   [ RunTime:0.0100s ]
+>>>>>>> 5cddd2ff6e58875a5e6bda647dc71034bc507235
 

@@ -13,8 +13,10 @@ header("Content-type: text/html; charset=utf-8");
 		
 			$start = date("Y-m-d",(time()-86400));
 			$start_time = strtotime($start)-1;//前天23:59：59开始时间
+			//echo $start_time;die;
 			$end = date("Y-m-d",time());
 			$end_time = strtotime($end);//前一天上报数据截止时间今天零点
+			echo $end_time;die;
 			
 			
 			$where['second_verify_time'] = array('between',array($start_time,$end_time));
