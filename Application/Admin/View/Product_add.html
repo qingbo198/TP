@@ -33,9 +33,6 @@
         margin-left: 20px;
     }
 
-    .file-list .file-item .file-name {
-    }
-
     .file-list .file-item .file-del {
         display: block;
         margin-left: 20px;
@@ -140,7 +137,7 @@
             //console.log(curFile);
             //将FileList对象变成数组
             fileList = fileList.concat(Array.from(curFile));
-            //console.log(fileList);
+            console.log(fileList);
             for (var i = 0, len = curFile.length; i < len; i++) {
                 reviewFile(curFile[i])
             }
@@ -168,14 +165,20 @@
 
         //点击删除按钮事件：
         $(".file-list").on('click', '.file-del', function () {
-            let $parent = $(this).parent();
-            console.log($parent);
-            let index = $parent.index();
+            let parent = $(this).parent();
+            let index = parent.index();
             fileList.splice(index, 1);
-            $parent.fadeOut(850, function () {
-                $parent.remove()
+            parent.fadeOut(850, function () {
+                parent.remove()
             });
             //$parent.remove()
+            console.log(fileList);
+            var linum = $('li').length;
+            console.log(fileList);
+
+            var filess = document.getElementById('choose-file');
+            filess.value = '';
+
         });
         //点击上传按钮事件：
         $button.on('click', function () {

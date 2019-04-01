@@ -1,0 +1,180 @@
+[ 2019-04-01T14:18:46+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.5090s ]
+SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.5180s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: new D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: newss D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\TP\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+

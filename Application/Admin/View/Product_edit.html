@@ -197,6 +197,8 @@ ul{float: left;}
                 $parent.remove()
             });
             //$parent.remove()
+            var filess = document.getElementById('choose-file');
+            filess.value = '';
         });
         $(".file-lists").on('click', '.file-del', function () {
             if($("li").length == 1){
@@ -213,6 +215,8 @@ ul{float: left;}
                 $parent.remove()
             });
             //$parent.remove()
+            var filess = document.getElementById('choose-file');
+            filess.value = '';
         });
         //点击上传按钮事件：
         $button.on('click', function () {
