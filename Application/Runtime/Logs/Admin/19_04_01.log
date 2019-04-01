@@ -5737,3 +5737,671 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2019-04-01T16:56:31+08:00 ] ::1 /TP/index.php/Admin/Product/edit.html?id=55&pid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_catgory`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T16:56:33+08:00 ] ::1 /TP/index.php/Admin/Product/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 140 行.
+NOTIC: [8] Undefined index: id D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 141 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `product_catgory`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( id=55 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `product` SET `img`='[\"\\/TP\\/Public\\/Image\\/images\\/201904011633222782.jpg\"]',`name`='小米9SE',`pid`='2',`price`='2399',`desc`='            132
+                    ',`stock`='1',`status`='1',`last_time`='2019-04-01 16:56:33' WHERE ( id=55 ) [ RunTime:0.0000s ]
+
+[ 2019-04-01T16:56:39+08:00 ] ::1 /TP/index.php/Admin/Product/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: pid D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 140 行.
+NOTIC: [8] Undefined index: id D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 141 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_catgory`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE ( id=55 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `product` SET `name`='小米9SE',`pid`='2',`price`='2399',`img`='[\"\\/TP\\/Public\\/Image\\/images\\/201904011633222782.jpg\",\"\\/TP\\/Public\\/Image\\/images\\/201904011656397508.jpg\"]',`desc`='            132
+                    ',`stock`='1',`status`='1',`last_time`='2019-04-01 16:56:39' WHERE ( id=55 ) [ RunTime:0.0010s ]
+
+[ 2019-04-01T16:56:42+08:00 ] ::1 /TP/index.php/Admin/ProductCatgory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `product_catgory`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\d65b7bdd1bd3c0288619e2fe280df640.php 第 32 行.
+NOTIC: [8] Undefined variable: page D:\wwwroot\TP\Application\Runtime\Cache\Admin\d65b7bdd1bd3c0288619e2fe280df640.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:56:43+08:00 ] ::1 /TP/index.php/Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+NOTIC: [8] Undefined index: orderby D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:56:51+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=price&orderway=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY price asc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:56:53+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=price&orderway=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY price asc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:56:54+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=price&orderway=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY price desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:56:55+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=price&orderway=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY price asc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:56:59+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=id&orderway=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY id asc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:57:00+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=id&orderway=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T16:57:02+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=last_time&orderway=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY last_time asc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:57:03+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=last_time&orderway=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY last_time desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:57:04+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=last_time&orderway=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY last_time asc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-01T16:57:06+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=last_time&orderway=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY last_time desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:57:10+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=last_time&orderway=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY last_time asc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-01T16:57:13+08:00 ] ::1 /TP/index.php/Admin/Product/index.html?orderby=last_time&orderway=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\wwwroot\TP\Application\Admin\Controller\ProductController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product_catgory` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM product p WHERE (  1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`pid`,`name`,`price`,`img`,`desc`,`status`,`add_time`,`stock`,`last_time` FROM product p WHERE (  1 ) ORDER BY last_time desc LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `product_catgory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 50 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+NOTIC: [2] Division by zero D:\wwwroot\TP\Application\Runtime\Cache\Admin\e81ab272a2db490ca13db5e7a9293ba0.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
