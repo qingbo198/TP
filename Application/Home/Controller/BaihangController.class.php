@@ -6,9 +6,8 @@ use Think\Controller;
 header("Content-type: text/html; charset=utf-8");
 	class BaihangController extends Controller {
 		
-		//百行D2接口报送贷款账户信息
-		//T+1
-		//循环执行任务方法
+		//百行D2接口报送贷款账户信息(增量数据)
+		//T+1 隔天上报
 		public function SendtoBaiHang_D2(){
 		
 			$start = date("Y-m-d",(time()-86400));
