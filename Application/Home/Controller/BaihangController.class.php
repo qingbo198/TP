@@ -15,7 +15,7 @@ header("Content-type: text/html; charset=utf-8");
 			//echo $start_time;die;
 			$end = date("Y-m-d",time());
 			$end_time = strtotime($end);//前一天上报数据截止时间今天零点
-			$start_time = 1550216651;
+			$start_time = 1530216651;
 			$end_time = 1550216653;
 
 			$where['second_verify_time'] = array('between',array($start_time,$end_time));
@@ -26,6 +26,7 @@ header("Content-type: text/html; charset=utf-8");
 			->join('left join lzh_member_info as mi on mi.uid = bi.borrow_uid')
 			->join('left join lzh_members as m on m.id = bi.borrow_uid')
 			->where($where)
+			->limit(2)
 			->select();
 			echo $msg->getLastSql().'<br>';
 			//print_r($list);die();
@@ -66,8 +67,9 @@ header("Content-type: text/html; charset=utf-8");
 					unset($data);
 					$parama['gracePeriod'] = 3;
 					$parama['device'] = array('deviceType'=> 2,'imei'=>null,'mac'=>null,'ipAddress'=>null, 'osName'=>6);
-
-					echo $this->toJson($parama).'<br>';die;
+					
+					echo 'debug<br><pre>'; print_r($parama);
+					//echo $this->toJson($parama).'<br>';die;
 				}
 			}else{
 				echo "无新增借款数据";
@@ -78,7 +80,7 @@ header("Content-type: text/html; charset=utf-8");
 		
 		
 		
-		//还款业务数据D3
+		//还款业务数据D3(增量数据)
 		public function SendtoBaiHang_D3(){
 			$start = date("Y-m-d",(time()-86400));
 			$start_time = strtotime($start)-1;//前天23:59：59开始时间
@@ -157,22 +159,110 @@ header("Content-type: text/html; charset=utf-8");
 			}
 			
 
-
-
-			
-			
-			 
-			
-			$expireDays = ($value['deadline'] - $value['repayment_time'])/(24 *3600);
-			
-			
-			
-			//根据还款方式判断本笔贷款状态  4:先息后本; 5:末期本息;
-			
-			echo 'debug<br><pre>'; print_r($parama); exit;
-			echo $this->JSON($parama).'<br>';die;
 			
 		}
+		
+		
+		//还款数据(存量数据)
+		public function bhd3_modify()
+		{
+			//$where['second_verify_time&borrow_status'] = array(array('gt','1472054399'),array('in',array('7','9')),'_multi'=>true);
+			//$where['bi.id'] = 1534;
+			$where['bi.id'] = array('in',array('1227','1534'));
+			
+			//获取以上标的 还款明细  id.repayment_time, id.borrow_id, id.investor_uid,, id.sort_order, id.total, id.status, id.deadline, id.capital, id.interest, id.receive_capital, id.receive_interest
+			$list = M("lzh_borrow_info bi")
+				->field("bi.id as bid,bi.is_advanced,has_pay,is_prepayment,bi.borrow_money,repayment_type,lz.zhaiquan_name,real_name,lz.zhaiquan_idcard,mi.cell_phone")
+				->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
+				->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
+				->where($where)
+				->limit(50)
+				->select();
+			//echo M()->getLastSql(); exit;
+			$arr1 = array();
+			$arr2 = array();
+			foreach ($list as $k=>$v){
+				$result = M('lzh_investor_detail')->where('borrow_id='.$v['bid'])->select();
+				foreach ($result as $kk=>$vv){
+					$arr1[date('Y-m-d',$vv['repayment_time'])]['total'] = $vv['total'];
+				}
+				//echo 'debug<br><pre>';print_r($arr1);die;
+				$real_total = count($arr1);//实际总共还款期数
+				//echo $real_total;die;
+				foreach($result as $kkk=>$vvv){
+					//先息后本提前还款
+					if(($v['repayment_type'] == 4 && $v['is_advanced'] != 0) || ($v['repayment_type'] == 4 && $v['is_prepayment'] != 0)){
+						if($vvv['sort_order'] <= $real_total){
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['plan_interest'] += $vvv['interest'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_interest'] += $vvv['receive_interest'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['repayment_time'] = $vvv['repayment_time'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['deadline'] = $vvv['deadline'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['sort_order'] = $vvv['sort_order'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['total'] = $vvv['total'];
+						}
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['plan_capital'] += $vvv['capital'];
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_capital'] += $vvv['receive_capital'];
+					}else{
+						//非提前还款
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['plan_interest'] += $vvv['interest'];
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_interest'] += $vvv['receive_interest'];
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['repayment_time'] = $vvv['repayment_time'];
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['deadline'] = $vvv['deadline'];
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['sort_order'] = $vvv['sort_order'];
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['total'] = $vvv['total'];
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['plan_capital'] += $vvv['capital'];
+						$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_capital'] += $vvv['receive_capital'];
+					}
+				}
+				//组装接口数据
+				foreach ($arr2 as $kkkk=>$vvvv){
+					$parama['reqID'] = $this->randReqID($v['borrow_uid']);//reqId   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
+					$parama['opCode'] = 'A';
+					$parama['uploadTs'] = date('Y-m-d\TH:i:s',time());
+					$parama['loanId'] = $v['bid'];
+					$parama['name'] = $v['real_name'];
+					if(substr($v['zhaiquan_idcard'],17,1) == 'x'){
+						$parama['pid'] = substr($v['zhaiquan_idcard'],0,17).'X';
+					}else{
+						$parama['pid'] = $v['zhaiquan_idcard'];
+					}
+					$parama['mobile'] = $v['cell_phone'];
+					$parama['termNo'] = $vvvv['sort_order'];
+					$parama['termStatus'] = 'normal';
+					$parama['targetRepaymentDate'] = date('Y-m-d',$vvvv['deadline']);
+					$parama['realRepaymentDate'] = date('Y-m-d\TH:i:s',$vvvv['repayment_time']);
+					$parama['plannedPayment'] = $vvvv['plan_capital'] + $vvvv['plan_interest'];
+					$parama['targetRepayment'] = 0;
+					$parama['realRepayment'] = $vvvv['receive_capital'] + $vvvv['receive_interest'];
+					$parama['overdueStatus'] = '';
+					$parama['statusConfirmAt'] = date('Y-m-d\TH:i:s',strtotime("-1 hour",  time()));;
+					$parama['overdueAmount'] = 0;
+					if($v['repayment_type'] == 5){
+						$parama['remainingAmount'] = 0;
+					}elseif ($v['repayment_type'] == 4){
+						if($vvvv['sort_order'] == $real_total){
+							$parama['remainingAmount'] = 0;
+						}else{
+							$parama['remainingAmount'] = $v['borrow_money'];//贷款剩余额度
+						}
+					}
+					if($v['repayment_type'] == 5){
+						$parama['loanStatus'] = 3;
+					}else{
+						$parama['loanStatus'] = ($vvvv['sort_order'] == $real_total)? 3 : 1;
+					}
+					
+					//unset($real_total);
+					echo 'debug<br><pre>';print_r($parama);
+					unset($arr1,$arr2);
+				}
+				
+				
+			}
+			
+			
+		}
+		
 		
 		//新增贷款、还款记录上报表操作
 		public function post_table(){
