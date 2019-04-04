@@ -1,0 +1,1306 @@
+[ 2019-04-04T09:58:17+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0900s ]
+SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.2570s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: new D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: newss D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\TP\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+
+[ 2019-04-04T09:58:23+08:00 ] ::1 /TP/home/baihang/bhd3_modify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0120s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1227','1534') LIMIT 50   [ RunTime:0.2440s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1227 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2017-08-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-09-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-10-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-11-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-12-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-12-29 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1534 )  [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: 2018-01-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-02-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-03-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-04-20 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-05-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-06-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-07-20 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-08-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-09-17 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-10-19 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-11-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-12-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2019-04-04T10:04:14+08:00 ] ::1 /TP/home/baihang/bhd3_modify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1227','1534') LIMIT 50   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1227 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2017-08-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-09-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-10-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-11-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-12-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-12-29 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1534 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: 2018-01-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-02-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-03-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-04-20 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-05-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-06-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-07-20 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-08-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-09-17 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-10-19 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-11-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-12-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+NOTIC: [8] Undefined index: borrow_uid D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 219 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-04T10:05:58+08:00 ] ::1 /TP/home/baihang/bhd3_modify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1227','1534') LIMIT 50   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1227 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2017-08-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-09-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-10-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-11-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-12-04 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+NOTIC: [8] Undefined index: 2017-12-29 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 196 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 197 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 203 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 204 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1534 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: 2018-01-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-02-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-03-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-04-20 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-05-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-06-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-07-20 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-08-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-09-17 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-10-19 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-11-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+NOTIC: [8] Undefined index: 2018-12-21 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 207 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 208 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 213 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 214 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-04T13:17:24+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 2   [ RunTime:0.4070s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+
+[ 2019-04-04T13:24:55+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+
+[ 2019-04-04T13:25:50+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+
+[ 2019-04-04T13:26:32+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+
+[ 2019-04-04T13:27:43+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+
+[ 2019-04-04T13:35:05+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: 2016-12-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: 2017-01-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: 2017-02-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: 2017-08-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: 2016-09-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: 2016-10-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: 2016-11-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 273 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 279 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-04T14:00:59+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-12-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-01-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-02-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2017-08-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2019-04-04T14:09:19+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-12-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-01-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-02-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2017-08-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 329 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-04T14:10:17+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-12-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-01-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-02-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2017-08-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-04T16:29:51+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-12-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-01-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-02-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2017-08-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-04T16:31:13+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-12-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-01-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-02-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2017-08-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-04T16:34:30+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-12-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-01-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2017-02-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2017-08-25 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: arr2 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: 2016-09-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-10-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+NOTIC: [8] Undefined index: 2016-11-26 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 274 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 275 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 280 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 281 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-04T16:36:32+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+
+[ 2019-04-04T16:37:03+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+
+[ 2019-04-04T16:39:28+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+
+[ 2019-04-04T16:42:03+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0010s ]
+
+[ 2019-04-04T16:42:55+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `real_name`,`add_time`,mi.idcard,`cell_phone`,`first_verify_time`,m.reg_time,bi.second_verify_time,bi.deadline,bi.borrow_money,bi.borrow_duration,`borrow_uid`,bi.id borrow_id FROM lzh_borrow_info bi left join lzh_member_info as mi on mi.uid = bi.borrow_uid left join lzh_members as m on m.id = bi.borrow_uid  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=381 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=382 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=385 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=386 )  [ RunTime:0.0000s ]
+
