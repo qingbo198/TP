@@ -15,6 +15,7 @@ header("Content-type: text/html; charset=utf-8");
 			$status['second_verify_time'] = array('between',array($start_time,$end_time));
 			
 			$list_apply = M("lzh_borrow_info bi")
+				->order('second_verify_time')
 				->field("bi.id as borrow_id,zhaiquan_idcard,cell_phone,borrow_money,zhaiquan_name,real_name,idcard")
 				->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
 				->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
@@ -62,17 +63,17 @@ header("Content-type: text/html; charset=utf-8");
 			$end_time = 1550216653;
 
 			$where['second_verify_time'] = array('between',array($start_time,$end_time));
-			$msg = M('lzh_borrow_info bi');
-			$list = $msg->order('bi.add_time')
+			$list = M('lzh_borrow_info bi')
+			->order('second_verify_time')
 			->field('real_name,add_time,mi.idcard,cell_phone,first_verify_time,m.reg_time,bi.second_verify_time
-			,bi.deadline,bi.borrow_money,bi.borrow_duration,borrow_uid,bi.id borrow_id,lz.borrow_type')
+			,bi.deadline,bi.borrow_money,bi.borrow_duration,borrow_uid,bi.id borrow_id,lz.borrow_type,repayment_type')
 			->join('left join lzh_member_info as mi on mi.uid = bi.borrow_uid')
 			->join('left join lzh_members as m on m.id = bi.borrow_uid')
 			->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
 			->where($where)
 			->limit(2)
 			->select();
-			echo $msg->getLastSql().'<br>';
+			echo M()->getLastSql().'<br>';
 			//print_r($list);die();
 			if(!empty($list)){
 				foreach ($list as $key => $value) {
@@ -100,7 +101,11 @@ header("Content-type: text/html; charset=utf-8");
 					$parama['issueDate'] = date("Y-m-d\TH:i:s",$value['second_verify_time']);//贷款放款时间
 					$parama['dueDate'] = date("Y-m-d",$value['deadline']);//贷款到期日期
 					$parama['loanAmount'] = $value['borrow_money'];//贷款金额
-					$parama['totalTerm'] = $value['borrow_duration'];//还款总期数
+					if($value['repayment_type'] == 4){
+						$parama['totalTerm'] = $value['borrow_duration'];//还款总期数
+					}elseif ($value['repayment_type'] == 5){
+						$parama['totalTerm'] = 1; //末期本息视为单期
+					}
 					$parama['targetRepayDateType'] = 2;//账单日类型
 					$parama['termPeriod'] = -1;//每期还款周期
 					//获取还款记录信息
@@ -147,6 +152,7 @@ header("Content-type: text/html; charset=utf-8");
 				}
 				$status2['bi.id'] = array('in',$repay_array);
 				$list = M("lzh_borrow_info bi")
+				->order('second_verify_time')
 				->field('bi.id as bid, mi.real_name, mi.cell_phone, 	
 				mi.idcard,bi.has_pay,bi.repayment_type,bi.borrow_duration,bi.borrow_money,bi.borrow_status')
 				->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
@@ -212,22 +218,23 @@ header("Content-type: text/html; charset=utf-8");
 		//百行征信存量数据C1、D2、D3
 		public function baihang_stock()
 		{
-			if(true){
+			if(false){
 				//C1贷款申请信息接口
-				$status['second_verify_time&borrow_status'] = array(array('gt','1472054399'),array('in',array('7','9')),'_multi'=>true);
+				$status['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
 				$status['cell_phone'] = array('neq','');
-				$status['lz.type'] = 1;//自然人
+				//$status['lz.type'] = 1;//自然人
 				//$status['bi.id'] = 1534;
 				//$status['bi.id'] = array('in',array('1227','1534'));
 				
 				$list_apply = M("lzh_borrow_info bi")
+					->order('second_verify_time')
 					->field("bi.id as borrow_id,borrow_uid,zhaiquan_idcard,cell_phone,borrow_money,zhaiquan_name")
 					->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
 					->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
 					->where($status)
 					->limit(4)
 					->select();
-				echo M()->getLastSql(); die;
+				echo M()->getLastSql(); //die;
 				$loanApplyInfo = "#loanApplyInfo"."\r\n";
 				foreach ($list_apply as $m => $n) {
 					$apply['reqID'] = $n['borrow_id']."C1"."U".$n['borrow_uid'];//记录唯一标识
@@ -251,15 +258,17 @@ header("Content-type: text/html; charset=utf-8");
 				}
 				//echo $loanApplyInfo;
 			}
+			//die;
 
 			if(true){
 				//D2贷款账户信息
-				$map['second_verify_time&borrow_status'] = array(array('gt','1472054399'),array('in',array('7','9')),'_multi'=>true);
+				$map['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
 				$map['cell_phone'] = array('neq','');
-				$map['lz.type'] = 1;//自然人
+				//$map['lz.type'] = 1;//自然人
 				$list_account = M('lzh_borrow_info bi')
+					->order('second_verify_time')
 					->field('real_name,add_time,mi.idcard,cell_phone,first_verify_time,m.reg_time,bi.second_verify_time
-					,bi.deadline,bi.borrow_money,bi.borrow_duration,borrow_uid,bi.id borrow_id,lz.borrow_type')
+					,bi.deadline,bi.borrow_money,repayment_type,bi.borrow_duration,borrow_uid,bi.id borrow_id,lz.borrow_type')
 					->join('left join lzh_member_info as mi on mi.uid = bi.borrow_uid')
 					->join('left join lzh_members as m on m.id = bi.borrow_uid')
 					->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
@@ -294,7 +303,11 @@ header("Content-type: text/html; charset=utf-8");
 						$account['issueDate'] = date("Y-m-d\TH:i:s",$value['second_verify_time']);//贷款放款时间
 						$account['dueDate'] = date("Y-m-d",$value['deadline']);//贷款到期日期
 						$account['loanAmount'] = $value['borrow_money'];//贷款到期日期
-						$account['totalTerm'] = $value['borrow_duration'];//还款总期数
+						if($value['repayment_type'] == 4){
+							$account['totalTerm'] = $value['borrow_duration'];//还款总期数
+						}elseif ($value['repayment_type'] == 5){
+							$account['totalTerm'] = 1; //末期本息视为单期
+						}
 						$account['targetRepayDateType'] = 2;//账单日类型
 						$account['termPeriod'] = -1;//每期还款周期
 						//获取计划还款信息
@@ -310,8 +323,7 @@ header("Content-type: text/html; charset=utf-8");
 						$account['gracePeriod'] = 7;//宽限期
 						$account['device'] = array('deviceType'=> 2,'imei'=>null,'mac'=>null,'ipAddress'=>null, 'osName'=>6);//设备信息
 						
-						//echo 'debug<br><pre>'; print_r($account);
-						//echo $this->toJson($parama).'<br>';die;
+						echo 'debug<br><pre>'; print_r($account);
 						$singleLoanAccountInfo .= $this->toJson($account)."\r\n";
 						
 					}
@@ -321,11 +333,11 @@ header("Content-type: text/html; charset=utf-8");
 					echo "无新增贷款数据";
 				}
 			}
-			
+			die;
 			
 			if(true){
 				//D3贷款贷后还款数据
-				$where['second_verify_time&borrow_status'] = array(array('gt','1472054399'),array('in',array('7','9')),'_multi'=>true);
+				$where['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
 				$where['cell_phone'] = array('neq','');
 				$where['lz.type'] = 1;
 				//$where['bi.id'] = 1534;
@@ -333,6 +345,7 @@ header("Content-type: text/html; charset=utf-8");
 				
 				//获取以上标的 还款明细  id.repayment_time, id.borrow_id, id.investor_uid,, id.sort_order, id.total, id.status, id.deadline, id.capital, id.interest, id.receive_capital, id.receive_interest
 				$list = M("lzh_borrow_info bi")
+					->order('second_verify_time')
 					->field("bi.id as bid,bi.is_advanced,has_pay,is_prepayment,bi.borrow_uid,bi.borrow_money,repayment_type,lz.zhaiquan_name,real_name,lz.zhaiquan_idcard,mi.cell_phone")
 					->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
 					->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
