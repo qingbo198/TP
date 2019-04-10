@@ -65,9 +65,10 @@ header("Content-type: text/html; charset=utf-8");
 			$msg = M('lzh_borrow_info bi');
 			$list = $msg->order('bi.add_time')
 			->field('real_name,add_time,mi.idcard,cell_phone,first_verify_time,m.reg_time,bi.second_verify_time
-			,bi.deadline,bi.borrow_money,bi.borrow_duration,borrow_uid,bi.id borrow_id')
+			,bi.deadline,bi.borrow_money,bi.borrow_duration,borrow_uid,bi.id borrow_id,lz.borrow_type')
 			->join('left join lzh_member_info as mi on mi.uid = bi.borrow_uid')
 			->join('left join lzh_members as m on m.id = bi.borrow_uid')
+			->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
 			->where($where)
 			->limit(2)
 			->select();
@@ -88,13 +89,17 @@ header("Content-type: text/html; charset=utf-8");
 					$parama['mobile'] = $value['cell_phone'];//手机号码
 					$parama['loanID'] = $value['borrow_id'];//贷款编号
 					$parama['originalLoan'] = null;//原贷款编号
-					$parama['guaranteeType'] = 2;//贷款担保类型
+					if($value['borrow_type'] == 1){
+						$parama['guaranteeType'] = 2;//贷款担保类型 2 抵押
+					}elseif ($value['borrow_type'] == 2){
+						$parama['guaranteeType'] = 3;//贷款担保类型 3 质押
+					}
 					$parama['loanPurpose'] = 1;//贷款用途
 					$parama['applyDate'] = date("Y-m-d\TH:i:s",$value['add_time']);//贷款申请时间
 					$parama['accountOpenDate'] = date("Y-m-d\TH:i:s",$value['first_verify_time']);//账户开立时间
 					$parama['issueDate'] = date("Y-m-d\TH:i:s",$value['second_verify_time']);//贷款放款时间
 					$parama['dueDate'] = date("Y-m-d",$value['deadline']);//贷款到期日期
-					$parama['loanAmount'] = $value['borrow_money'];//贷款到期日期
+					$parama['loanAmount'] = $value['borrow_money'];//贷款金额
 					$parama['totalTerm'] = $value['borrow_duration'];//还款总期数
 					$parama['targetRepayDateType'] = 2;//账单日类型
 					$parama['termPeriod'] = -1;//每期还款周期
@@ -168,9 +173,9 @@ header("Content-type: text/html; charset=utf-8");
 							$parama['termStatus'] = 'normal';//本期还款状态
 							$parama['targetRepaymentDate'] = date('Y-m-d',$v['deadline']);//本期应还款日
 							$parama['realRepaymentDate'] = date('Y-m-d\TH:i:s',$v['repayment_time']);//实际还款时间
-							$parama['plannedPayment'] += $v['capital'];//本期计划应还款金额,只包含本金
-							$parama['targetRepayment'] = $v['capital'];//无逾期时为本期还款金额
-							$parama['realRepayment'] += $v['receive_capital'];//本次还款金额
+							$parama['plannedPayment'] += $v['capital'] + $v['interest'];//本期计划应还款金额
+							$parama['targetRepayment'] += $v['capital'] + $v['interest'];//无逾期时为本期还款金额
+							$parama['realRepayment'] += $v['receive_capital'] + $v['receive_interest'];//本次还款金额
 							$parama['overdueStatus'] = '';//当前逾期天数
 							$parama['statusConfirmAt'] = date('Y-m-d\TH:i:s',strtotime("-1 hour",  time()));//本期还款状态确认时间
 							$parama['overdueAmount'] = 0;//当前逾期总额
