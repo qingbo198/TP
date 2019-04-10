@@ -8,6 +8,12 @@ header("Content-type: text/html; charset=utf-8");
 		//末期本息提前还款时  还款本金和利息不对的标的.,,,；
 		public function index()
 		{
+			$borrowinfo = M("lzh_borrow_info bi")->field('bi.*,zq.zhaiquan_carbrand,zq.zhaiquan_cartype,zq.zhaiquan_name,zq.zhaiquan_id,zq.zhaiquan_idcard,zq.zhaiquan_address,zq.provid,zq.areaid,zq.borrow_type as zq_borrow_type,ac.title,ac.id as aid')
+			->join('left join lzh_article ac on ac.id= bi.danbao')->join("left join lzh_zhaiquan zq ON zq.id=bi.borrow_zhaiquan")
+			->where('bi.id=1860')
+			->find();
+			echo M()->getLastSql();die;
+			echo strtotime('2019-03-25 23:59:59');die;
 			set_time_limit(0);
 			$where['second_verify_time&borrow_status&is_advanced&repayment_type'] = array(array('gt','1472054399'),7,1,5,'_multi'=>true);
 			$list = M('lzh_borrow_info bi')->where($where)->select();

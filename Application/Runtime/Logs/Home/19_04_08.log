@@ -1,0 +1,10 @@
+[ 2019-04-08T13:25:05+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.4360s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name` FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > '1472054399') AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' AND lz.type = 1 LIMIT 4   [ RunTime:0.3450s ]
+

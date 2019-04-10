@@ -15,7 +15,7 @@ header("Content-type: text/html; charset=utf-8");
 			$status['second_verify_time'] = array('between',array($start_time,$end_time));
 			
 			$list_apply = M("lzh_borrow_info bi")
-				->field("bi.id as borrow_id,zhaiquan_idcard,cell_phone,borrow_money,zhaiquan_name")
+				->field("bi.id as borrow_id,zhaiquan_idcard,cell_phone,borrow_money,zhaiquan_name,real_name,idcard")
 				->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
 				->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
 				->where($status)
@@ -24,8 +24,12 @@ header("Content-type: text/html; charset=utf-8");
 			echo M()->getLastSql(); 
 				$loanApplyInfo = "#loanApplyInfo"."\r\n";
 				foreach ($list_apply as $m => $n) {
-					$apply['name'] = $n['zhaiquan_name'];//姓名：只能为合法的中国姓名
-					$apply['pid'] = $n['zhaiquan_idcard'];//身份证号码
+					$apply['name'] = $n['real_name'];//姓名：只能为合法的中国姓名
+					if(substr($n['idcard'],17,1) == 'x'){
+						$apply['pid'] = substr($n['idcard'],0,17).'X';
+					}else{
+						$apply['pid'] = $n['idcard'];//身份证号码
+					}
 					$apply['mobile'] = $n['cell_phone'];//手机号码
 					$apply['queryReason'] = 1;//查询原因 1：授信审批
 					$apply['guaranteeType'] = 2;//贷款担保类型 2：抵押
@@ -72,7 +76,7 @@ header("Content-type: text/html; charset=utf-8");
 			if(!empty($list)){
 				foreach ($list as $key => $value) {
 					//接口数据///////////////////////////
-					$parama['reqID'] = $this->randReqID($value['borrow_uid']);//记录唯一标识   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
+					$parama['reqID'] = $value['borrow_id']."D2"."U".$value['borrow_uid'];//记录唯一标识   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
 					$parama['opCode'] = 'A';//操作代码：A- “新增数据”，M-“修改数据”，D-“删除数据”
 					$parama['uploadTs'] = date("Y-m-d\TH:i:s",time());//记录生成时间
 					$parama['name'] = $value['real_name'];//借款人姓名
@@ -144,26 +148,24 @@ header("Content-type: text/html; charset=utf-8");
 				->where($status2)
 				->select();
 				//echo M()->getLastSql(); die();
-
 				foreach ($list as $key => $value) {
-					$parama['reqID'] = $this->randReqID($value['borrow_uid']);//reqId   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
-					$parama['opCode'] = 'A';//操作代码
-					$parama['uploadTs'] = date('Y-m-d\TH:i:s',time());//记录生成时间
-					$parama['loanId'] = $value['bid'];//贷款编号
-					$parama['name'] = $value['real_name'];//借款人姓名
-					if(substr($value['idcard'],17,1) == 'x'){
-						$parama['pid'] = substr($value['idcard'],0,17).'X';
-					}else{
-						$parama['pid'] = $value['idcard'];//身份证号码
-					}
-					$parama['mobile'] = $value['cell_phone'];//手机号码
-					$parama['termNo'] = $value['has_pay'];//当期还款期数
-					$parama['termStatus'] = 'normal';//本期还款状态
-
 					$detail = M('lzh_investor_detail');
 					$result = $detail->where('borrow_id='.$value['bid'])->select();
 					foreach($result as $k=>$v){
 						if($v['sort_order'] == $value['has_pay']){
+							$parama['reqID'] = $value['bid']."D3".$value['borrow_uid']."D".$v['sort_order'];//reqId   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
+							$parama['opCode'] = 'A';//操作代码
+							$parama['uploadTs'] = date('Y-m-d\TH:i:s',time());//记录生成时间
+							$parama['loanId'] = $value['bid'];//贷款编号
+							$parama['name'] = $value['real_name'];//借款人姓名
+							if(substr($value['idcard'],17,1) == 'x'){
+								$parama['pid'] = substr($value['idcard'],0,17).'X';
+							}else{
+								$parama['pid'] = $value['idcard'];//身份证号码
+							}
+							$parama['mobile'] = $value['cell_phone'];//手机号码
+							$parama['termNo'] = $value['has_pay'];//当期还款期数
+							$parama['termStatus'] = 'normal';//本期还款状态
 							$parama['targetRepaymentDate'] = date('Y-m-d',$v['deadline']);//本期应还款日
 							$parama['realRepaymentDate'] = date('Y-m-d\TH:i:s',$v['repayment_time']);//实际还款时间
 							$parama['plannedPayment'] += $v['capital'];//本期计划应还款金额,只包含本金
@@ -220,7 +222,7 @@ header("Content-type: text/html; charset=utf-8");
 					->where($status)
 					->limit(4)
 					->select();
-				//echo M()->getLastSql(); 
+				echo M()->getLastSql(); die;
 				$loanApplyInfo = "#loanApplyInfo"."\r\n";
 				foreach ($list_apply as $m => $n) {
 					$apply['reqID'] = $n['borrow_id']."C1"."U".$n['borrow_uid'];//记录唯一标识
