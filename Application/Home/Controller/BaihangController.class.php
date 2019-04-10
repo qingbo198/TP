@@ -259,7 +259,7 @@ header("Content-type: text/html; charset=utf-8");
 				$map['lz.type'] = 1;//自然人
 				$list_account = M('lzh_borrow_info bi')
 					->field('real_name,add_time,mi.idcard,cell_phone,first_verify_time,m.reg_time,bi.second_verify_time
-					,bi.deadline,bi.borrow_money,bi.borrow_duration,borrow_uid,bi.id borrow_id')
+					,bi.deadline,bi.borrow_money,bi.borrow_duration,borrow_uid,bi.id borrow_id,lz.borrow_type')
 					->join('left join lzh_member_info as mi on mi.uid = bi.borrow_uid')
 					->join('left join lzh_members as m on m.id = bi.borrow_uid')
 					->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
@@ -283,7 +283,11 @@ header("Content-type: text/html; charset=utf-8");
 						$account['mobile'] = $value['cell_phone'];//手机号码
 						$account['loanID'] = $value['borrow_id'];//贷款编号
 						$account['originalLoan'] = null;//原贷款编号
-						$account['guaranteeType'] = 2;//贷款担保类型
+						if($value['borrow_type'] == 1){
+							$account['guaranteeType'] = 2;//贷款担保类型 2 抵押
+						}elseif ($value['borrow_type'] == 2){
+							$account['guaranteeType'] = 3;//贷款担保类型 3 质押
+						}
 						$account['loanPurpose'] = 1;//贷款用途
 						$account['applyDate'] = date("Y-m-d\TH:i:s",$value['add_time']);//贷款申请时间
 						$account['accountOpenDate'] = date("Y-m-d\TH:i:s",$value['first_verify_time']);//账户开立时间
@@ -293,7 +297,7 @@ header("Content-type: text/html; charset=utf-8");
 						$account['totalTerm'] = $value['borrow_duration'];//还款总期数
 						$account['targetRepayDateType'] = 2;//账单日类型
 						$account['termPeriod'] = -1;//每期还款周期
-						//获取还款记录信息
+						//获取计划还款信息
 						$detail = M('lzh_investor_detail');
 						$result = $detail->where('borrow_id='.$value['borrow_id'])->select();
 						foreach($result as $k=>$v){
