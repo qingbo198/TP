@@ -1,0 +1,55 @@
+[ 2019-04-11T11:46:40+08:00 ] 127.0.0.1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0120s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name` FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > 1472054399) AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' ORDER BY second_verify_time LIMIT 4   [ RunTime:2.8772s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 443 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 443 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-11T11:50:51+08:00 ] 127.0.0.1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0110s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,`real_name`,`idcard`,lz.borrow_type FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > 1472054399) AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' ORDER BY second_verify_time LIMIT 4   [ RunTime:2.9642s ]
+
+[ 2019-04-11T11:51:11+08:00 ] 127.0.0.1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0110s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,`real_name`,`idcard`,lz.borrow_type FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > 1472054399) AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' ORDER BY second_verify_time LIMIT 4   [ RunTime:2.9622s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 539 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 539 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-11T11:52:30+08:00 ] 127.0.0.1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0110s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,`real_name`,`idcard`,lz.borrow_type FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > 1472054399) AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' ORDER BY second_verify_time LIMIT 4   [ RunTime:2.9802s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 539 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 539 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
