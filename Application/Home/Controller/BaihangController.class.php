@@ -140,6 +140,9 @@ header("Content-type: text/html; charset=utf-8");
 			$end = date("Y-m-d",time());
 			$end_time = strtotime($end);//前一天上报数据截止时间今天零点
 
+			$start_time = strtotime('2019-3-25 23:59:59');
+			$end_time = strtotime('2019-3-27 00:00:00');
+			
 			$status['repayment_time'] =array('between',array($start_time,$end_time));
 			$list_repayment = M('lzh_investor_detail lid')
 				->DISTINCT(true)
@@ -150,11 +153,12 @@ header("Content-type: text/html; charset=utf-8");
 				foreach ($list_repayment as $k=>$v){
 					$repay_array[] = $v['borrow_id'];
 				}
-				$status2['bi.id'] = array('in',$repay_array);
+				//$status2['bi.id'] = array('in',$repay_array);
+				$status2['bi.id'] = 1825;
 				$list = M("lzh_borrow_info bi")
 				->order('second_verify_time')
 				->field('bi.id as bid, mi.real_name, mi.cell_phone, 	
-				mi.idcard,bi.has_pay,bi.repayment_type,bi.borrow_duration,bi.borrow_money,bi.borrow_status')
+				mi.idcard,bi.is_advanced,bi.is_prepayment,bi.repayment_type,bi.borrow_duration,bi.borrow_status,bi.borrow_money,bi.borrow_status')
 				->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
 				->where($status2)
 				->select();
@@ -162,8 +166,48 @@ header("Content-type: text/html; charset=utf-8");
 				foreach ($list as $key => $value) {
 					$detail = M('lzh_investor_detail');
 					$result = $detail->where('borrow_id='.$value['bid'])->select();
-					foreach($result as $k=>$v){
-						if($v['sort_order'] == $value['has_pay']){
+					//若当期发生提前还款（先息后本）
+					$arr1 = array();
+					$arr2 = array();
+					foreach ($result as $m=>$n){
+						$arr1[date('Y-m-d',$n['repayment_time'])]['total'] = $n['total'];
+					}
+					unset($arr1['1970-01-01']);//删除还未还款的期数
+					$real_total = count($arr1);
+					
+					//echo 'debug<br><pre>'; print_r($arr1);echo $real_total; exit;
+					foreach($result as $kkk=>$vvv){
+						//先息后本提前还款
+						//处理每期计划还款金额和实际还款金额数据
+						if(($value['repayment_type'] == 4 && $value['is_advanced'] != 0) || ($value['repayment_type'] == 4 && $value['is_prepayment'] != 0)){
+							if($vvv['sort_order'] <= $real_total){
+								$arr2[date('Y-m-d',$vvv['repayment_time'])]['plan_interest'] += $vvv['interest'];
+								$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_interest'] += $vvv['receive_interest'];
+								$arr2[date('Y-m-d',$vvv['repayment_time'])]['repayment_time'] = $vvv['repayment_time'];
+								$arr2[date('Y-m-d',$vvv['repayment_time'])]['deadline'] = $vvv['deadline'];
+								$arr2[date('Y-m-d',$vvv['repayment_time'])]['sort_order'] = $vvv['sort_order'];
+								$arr2[date('Y-m-d',$vvv['repayment_time'])]['total'] = $vvv['total'];
+							}
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['plan_capital'] += $vvv['capital'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_capital'] += $vvv['receive_capital'];
+						}else{
+							//非先息后本提前还款
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['plan_interest'] += $vvv['interest'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_interest'] += $vvv['receive_interest'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['repayment_time'] = $vvv['repayment_time'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['deadline'] = $vvv['deadline'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['sort_order'] = $vvv['sort_order'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['total'] = $vvv['total'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['plan_capital'] += $vvv['capital'];
+							$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_capital'] += $vvv['receive_capital'];
+						}
+					}
+					unset($arr2['1970-01-01']);
+					
+					//echo 'debug<br><pre>'; print_r($arr2); exit;
+					
+					foreach($arr2 as $k=>$v){
+						if(($v['repayment_time'] > $start_time) && ($v['repayment_time'] < $end_time)){
 							$parama['reqID'] = $value['bid']."D3".$value['borrow_uid']."D".$v['sort_order'];//reqId   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
 							$parama['opCode'] = 'A';//操作代码
 							$parama['uploadTs'] = date('Y-m-d\TH:i:s',$v['repayment_time']);//记录生成时间:本业务在机构业务系统发生的时间；
@@ -175,34 +219,41 @@ header("Content-type: text/html; charset=utf-8");
 								$parama['pid'] = $value['idcard'];//身份证号码
 							}
 							$parama['mobile'] = $value['cell_phone'];//手机号码
-							$parama['termNo'] = $value['has_pay'];//当期还款期数
+							$parama['termNo'] = $v['sort_order'];//当期还款期数
 							$parama['termStatus'] = 'normal';//本期还款状态
 							$parama['targetRepaymentDate'] = date('Y-m-d',$v['deadline']);//本期应还款日
 							$parama['realRepaymentDate'] = date('Y-m-d\TH:i:s',$v['repayment_time']);//实际还款时间
-							$parama['plannedPayment'] += $v['capital'] + $v['interest'];//本期计划应还款金额
-							$parama['targetRepayment'] += $v['capital'] + $v['interest'];//无逾期时为本期还款金额
+							$parama['plannedPayment'] += $v['plan_capital'] + $v['plan_interest'];//本期计划应还款金额
+							$parama['targetRepayment'] += $v['receive_capital'] + $v['receive_interest'];//无逾期时为本期还款金额
 							$parama['realRepayment'] += $v['receive_capital'] + $v['receive_interest'];//本次还款金额
 							$parama['overdueStatus'] = '';//当前逾期天数
 							$parama['statusConfirmAt'] = date('Y-m-d\TH:i:s',strtotime("+1 hour",  $v['repayment_time']));//本期还款状态确认时间
 							$parama['overdueAmount'] = 0;//当前逾期总额
 							if($value['repayment_type'] == 5){
 								$parama['remainingAmount'] = 0;
-							}elseif ($value['repayment_type'] == 4){
-								if($value['has_pay'] == $value['borrow_duration']){
-									$parama['remainingAmount'] = 0;
-								}else{
+							}elseif ($value['repayment_type'] == 4){ //是否是先息后本
+								if($value['borrow_status'] == 6){ //判断是不是还款中标的
 									$parama['remainingAmount'] = $value['borrow_money'];//贷款余额：未还金额
+								}elseif($value['borrow_status'] == 7 || $value['borrow_status'] == 9){
+									$parama['remainingAmount'] = ($v['sort_order'] == $real_total) ? 0 : $value['borrow_money'];
+								}
+							}
+							if($value['repayment_type'] == 5){
+								$parama['loanStatus'] = 3;//本笔贷款状态
+							}elseif($value['repayment_type'] == 4){
+								if($value['borrow_status'] == 6){ //判断是不是还款中标的
+									$parama['loanStatus'] = 1;
+								}elseif($value['borrow_status'] == 7 || $value['borrow_status'] == 9){
+									$parama['loanStatus'] = ($v['sort_order'] == $real_total)? 3 : 1;
 								}
 							}
 						}
 					}
-					if($value['repayment_type'] == 5){
-						$parama['loanStatus'] = ($value['has_pay'] == 1)? 3 : 1;//本笔贷款状态
-					}else{
-						$parama['loanStatus'] = ($value['has_pay'] == $value['borrow_duration'])? 3 : 1;
-					}
+					unset($arr1,$arr2);
+					
+					echo 'debug<br><pre>'; print_r($parama);
 
-					echo $this->toJson($parama).'<br>';die;
+					//echo $this->toJson($parama).'<br>';die;
 				}
 
 
@@ -349,7 +400,7 @@ header("Content-type: text/html; charset=utf-8");
 				//获取以上标的 还款明细  id.repayment_time, id.borrow_id, id.investor_uid,, id.sort_order, id.total, id.status, id.deadline, id.capital, id.interest, id.receive_capital, id.receive_interest
 				$list = M("lzh_borrow_info bi")
 					->order('second_verify_time')
-					->field("bi.id as bid,bi.is_advanced,has_pay,is_prepayment,bi.borrow_uid,bi.borrow_money,repayment_type,lz.zhaiquan_name,real_name,lz.zhaiquan_idcard,mi.cell_phone")
+					->field("bi.id as bid,bi.is_advanced,has_pay,is_prepayment,bi.borrow_uid,borrow_status,bi.borrow_money,repayment_type,lz.zhaiquan_name,real_name,lz.zhaiquan_idcard,mi.cell_phone")
 					->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
 					->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
 					->where($where)
@@ -357,14 +408,15 @@ header("Content-type: text/html; charset=utf-8");
 					->select();
 				//echo M()->getLastSql(); exit;
 				$singleLoanRepayInfo = "#singleLoanRepayInfo"."\r\n";
-				$arr1 = array();
-				$arr2 = array();
 				foreach ($list as $k=>$v){
 					$result = M('lzh_investor_detail')->where('borrow_id='.$v['bid'])->select();
+					$arr1 = array();
+					$arr2 = array();
 					foreach ($result as $kk=>$vv){
 						$arr1[date('Y-m-d',$vv['repayment_time'])]['total'] = $vv['total'];
 					}
 					//echo 'debug<br><pre>';print_r($arr1);die;
+					unset($arr1['1970-01-01']);//删除还未还款的期数
 					$real_total = count($arr1);//实际总共还款期数
 					//echo $real_total;die;
 					foreach($result as $kkk=>$vvv){
@@ -393,6 +445,7 @@ header("Content-type: text/html; charset=utf-8");
 							$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_capital'] += $vvv['receive_capital'];
 						}
 					}
+					unset($arr2['1970-01-01']);//删除还未还款的期数
 					//组装接口数据
 					foreach ($arr2 as $kkkk=>$vvvv){
 						$parama['reqID'] = $v['bid']."D3"."U".$v['borrow_uid']."D".$vvvv['sort_order'];//reqId   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
@@ -418,24 +471,28 @@ header("Content-type: text/html; charset=utf-8");
 						$parama['overdueAmount'] = 0;//当前逾期总额
 						if($v['repayment_type'] == 5){
 							$parama['remainingAmount'] = 0;
-						}elseif ($v['repayment_type'] == 4){
-							if($vvvv['sort_order'] == $real_total){
-								$parama['remainingAmount'] = 0;
-							}else{
-								$parama['remainingAmount'] = $v['borrow_money'];//贷款剩余额度
+						}elseif ($v['repayment_type'] == 4){ //是否是先息后本
+							if($v['borrow_status'] == 6){ //判断是不是还款中标的
+								$parama['remainingAmount'] = $v['borrow_money'];//贷款余额：未还金额
+							}elseif($v['borrow_status'] == 7 || $v['borrow_status'] == 9){
+								$parama['remainingAmount'] = ($vvvv['sort_order'] == $real_total) ? 0 : $v['borrow_money'];
 							}
 						}
 						if($v['repayment_type'] == 5){
 							$parama['loanStatus'] = 3;
-						}else{
-							$parama['loanStatus'] = ($vvvv['sort_order'] == $real_total)? 3 : 1;//本笔贷款状态
+						}elseif($v['repayment_type'] == 4){
+							if($v['borrow_status'] == 6){ //判断是不是还款中标的
+								$parama['loanStatus'] = 1;
+							}elseif($v['borrow_status'] == 7 || $v['borrow_status'] == 9){
+								$parama['loanStatus'] = ($vvvv['sort_order'] == $real_total)? 3 : 1;
+							}
 						}
 						
 						//unset($real_total);
 						echo 'debug<br><pre>';print_r($parama);
 						$singleLoanRepayInfo .= $this->toJson($parama)."\r\n";
-						unset($arr1,$arr2);
 					}
+					unset($arr1,$arr2);
 				}
 				//echo $singleLoanRepayInfo;
 			}
