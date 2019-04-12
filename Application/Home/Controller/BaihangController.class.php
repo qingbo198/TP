@@ -158,7 +158,7 @@ header("Content-type: text/html; charset=utf-8");
 				$list = M("lzh_borrow_info bi")
 				->order('second_verify_time')
 				->field('bi.id as bid, mi.real_name, mi.cell_phone, 	
-				mi.idcard,bi.is_advanced,bi.is_prepayment,bi.repayment_type,bi.borrow_duration,bi.borrow_status,bi.borrow_money,bi.borrow_status')
+				mi.idcard,bi.is_advanced,bi.is_prepayment,bi.repayment_type,bi.borrow_duration,bi.borrow_uid,bi.borrow_status,bi.borrow_money,bi.borrow_status')
 				->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
 				->where($status2)
 				->select();
@@ -208,7 +208,7 @@ header("Content-type: text/html; charset=utf-8");
 					
 					foreach($arr2 as $k=>$v){
 						if(($v['repayment_time'] > $start_time) && ($v['repayment_time'] < $end_time)){
-							$parama['reqID'] = $value['bid']."D3".$value['borrow_uid']."D".$v['sort_order'];//reqId   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
+							$parama['reqID'] = $value['bid']."D3"."U".$value['borrow_uid']."D".$v['sort_order'];//reqId   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
 							$parama['opCode'] = 'A';//操作代码
 							$parama['uploadTs'] = date('Y-m-d\TH:i:s',$v['repayment_time']);//记录生成时间:本业务在机构业务系统发生的时间；
 							$parama['loanId'] = $value['bid'];//贷款编号
