@@ -140,8 +140,8 @@ header("Content-type: text/html; charset=utf-8");
 			$end = date("Y-m-d",time());
 			$end_time = strtotime($end);//前一天上报数据截止时间今天零点
 
-			$start_time = strtotime('2019-3-25 23:59:59');
-			$end_time = strtotime('2019-3-27 00:00:00');
+			$start_time = strtotime('2019-3-18 23:59:59');
+			$end_time = strtotime('2019-3-20 00:00:00');
 			
 			$status['repayment_time'] =array('between',array($start_time,$end_time));
 			$list_repayment = M('lzh_investor_detail lid')
@@ -153,8 +153,8 @@ header("Content-type: text/html; charset=utf-8");
 				foreach ($list_repayment as $k=>$v){
 					$repay_array[] = $v['borrow_id'];
 				}
-				//$status2['bi.id'] = array('in',$repay_array);
-				$status2['bi.id'] = 1825;
+				$status2['bi.id'] = array('in',$repay_array);
+				//$status2['bi.id'] = 1825;
 				$list = M("lzh_borrow_info bi")
 				->order('second_verify_time')
 				->field('bi.id as bid, mi.real_name, mi.cell_phone, 	
@@ -223,9 +223,9 @@ header("Content-type: text/html; charset=utf-8");
 							$parama['termStatus'] = 'normal';//本期还款状态
 							$parama['targetRepaymentDate'] = date('Y-m-d',$v['deadline']);//本期应还款日
 							$parama['realRepaymentDate'] = date('Y-m-d\TH:i:s',$v['repayment_time']);//实际还款时间
-							$parama['plannedPayment'] += $v['plan_capital'] + $v['plan_interest'];//本期计划应还款金额
-							$parama['targetRepayment'] += $v['receive_capital'] + $v['receive_interest'];//无逾期时为本期还款金额
-							$parama['realRepayment'] += $v['receive_capital'] + $v['receive_interest'];//本次还款金额
+							$parama['plannedPayment'] = $v['plan_capital'] + $v['plan_interest'];//本期计划应还款金额
+							$parama['targetRepayment'] = $v['receive_capital'] + $v['receive_interest'];//无逾期时为本期还款金额
+							$parama['realRepayment'] = $v['receive_capital'] + $v['receive_interest'];//本次还款金额
 							$parama['overdueStatus'] = '';//当前逾期天数
 							$parama['statusConfirmAt'] = date('Y-m-d\TH:i:s',strtotime("+1 hour",  $v['repayment_time']));//本期还款状态确认时间
 							$parama['overdueAmount'] = 0;//当前逾期总额
@@ -269,7 +269,7 @@ header("Content-type: text/html; charset=utf-8");
 		//百行征信存量数据C1、D2、D3
 		public function baihang_stock()
 		{
-			if(false){
+			if(true){
 				//C1贷款申请信息接口
 				$status['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
 				$status['cell_phone'] = array('neq','');
@@ -279,19 +279,25 @@ header("Content-type: text/html; charset=utf-8");
 				
 				$list_apply = M("lzh_borrow_info bi")
 					->order('second_verify_time')
-					->field("bi.id as borrow_id,borrow_uid,zhaiquan_idcard,cell_phone,borrow_money,zhaiquan_name")
+					->field("bi.id as borrow_id,borrow_uid,zhaiquan_idcard,cell_phone,borrow_money,zhaiquan_name,mi.real_name,mi.idcard")
 					->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
 					->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
 					->where($status)
-					->limit(4)
+					//->limit(4)
 					->select();
 				echo M()->getLastSql(); //die;
 				$loanApplyInfo = "#loanApplyInfo"."\r\n";
+				
+				
+				$regx = "/^[\u4E00-\u9FA5\uf900-\ufa2d·s]{2,20}$/";
 				foreach ($list_apply as $m => $n) {
+					if(!preg_match("/^[\x{4e00}-\x{9fa5}]+$/u",$n['real_name'])){
+						$res[] = $n['borrow_uid'];
+					}
 					$apply['reqID'] = $n['borrow_id']."C1"."U".$n['borrow_uid'];//记录唯一标识
 					$apply['uploadTs'] = '';//记录生成时间  非必填
-					$apply['name'] = $n['zhaiquan_name'];//姓名：只能为合法的中国姓名
-					$apply['pid'] = $n['zhaiquan_idcard'];//身份证号码
+					$apply['name'] = $n['real_name'];//姓名：只能为合法的中国姓名
+					$apply['pid'] = $n['idcard'];//身份证号码
 					$apply['mobile'] = $n['cell_phone'];//手机号码
 					$apply['queryReason'] = 1;//查询原因 1：授信审批
 					$apply['guaranteeType'] = 2;//贷款担保类型 2：抵押
@@ -308,6 +314,7 @@ header("Content-type: text/html; charset=utf-8");
 					echo 'debug<br><pre>'; print_r($apply);
 				}
 				//echo $loanApplyInfo;
+				echo 'debug<br><pre>'; print_r($res);
 			}
 			
 			
