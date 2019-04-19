@@ -1,0 +1,506 @@
+[ 2019-04-19T10:23:37+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0950s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > 1472054399) AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' ORDER BY second_verify_time LIMIT 4   [ RunTime:3.2812s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-19T10:24:06+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > 1472054399) AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' ORDER BY second_verify_time LIMIT 4   [ RunTime:2.8852s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-19T10:24:15+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > 1472054399) AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' ORDER BY second_verify_time LIMIT 4   [ RunTime:2.8812s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-19T10:24:21+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > 1472054399) AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' ORDER BY second_verify_time LIMIT 4   [ RunTime:2.9242s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-19T10:25:54+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0090s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE ( (`second_verify_time` > 1472054399) AND (`borrow_status` IN ('7','9')) ) AND `cell_phone` <> '' ORDER BY second_verify_time LIMIT 4   [ RunTime:2.9132s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-19T10:53:52+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1644','1650','1054','1059','1226','1227','1003','1021','1818','1821') ORDER BY second_verify_time LIMIT 4   [ RunTime:0.0230s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-19T10:53:59+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`borrow_money`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1644','1650','1054','1059','1226','1227','1003','1021','1818','1821') ORDER BY second_verify_time  [ RunTime:0.0220s ]
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: singleLoanRepayInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-19T11:42:40+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.2040s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.0160s ]
+NOTIC: [8] Undefined variable: new D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: newss D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\TP\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+
+[ 2019-04-19T11:42:47+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: 2018-01-12 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 443 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 443 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 449 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 505 行.
+NOTIC: [8] Undefined variable: loanApplyInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 505 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-19T11:47:24+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0090s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2018-01-12 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 443 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 443 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 449 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+
+[ 2019-04-19T11:47:39+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0090s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 2018-01-12 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 443 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 443 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 449 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+
+[ 2019-04-19T11:50:47+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0010s ]
+
+[ 2019-04-19T11:51:09+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0000s ]
+
+[ 2019-04-19T11:51:20+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0000s ]
+
+[ 2019-04-19T11:52:41+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 2018-01-12 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 445 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 451 行.
+
+[ 2019-04-19T11:52:44+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2018-01-12 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 445 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 451 行.
+
+[ 2019-04-19T11:57:03+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0120s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1240 ORDER BY second_verify_time  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1240 )  [ RunTime:0.0270s ]
+NOTIC: [8] Undefined index: 2017-12-29 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 445 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 451 行.
+
+[ 2019-04-19T12:23:41+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 2018-01-12 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 445 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 451 行.
+
+[ 2019-04-19T12:30:52+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: 2018-01-12 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 445 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 451 行.
+
+[ 2019-04-19T12:32:51+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1003 ORDER BY second_verify_time  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1003 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 2018-01-12 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 445 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 451 行.
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: loanApplyInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-19T13:45:09+08:00 ] ::1 /TP/home/baihang/baihang_stock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT bi.id as bid,bi.is_advanced,`has_pay`,`is_prepayment`,bi.borrow_uid,`borrow_status`,bi.borrow_money,`repayment_type`,lz.zhaiquan_name,`real_name`,lz.zhaiquan_idcard,mi.cell_phone FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id = 1522 ORDER BY second_verify_time  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1522 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: 1970-01-01 D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: plan_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 444 行.
+NOTIC: [8] Undefined index: receive_interest D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 445 行.
+NOTIC: [8] Undefined index: plan_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 450 行.
+NOTIC: [8] Undefined index: receive_capital D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 451 行.
+NOTIC: [8] Undefined variable: singleLoanAccountInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+NOTIC: [8] Undefined variable: loanApplyInfo D:\wwwroot\TP\Application\Home\Controller\BaihangController.class.php 第 507 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

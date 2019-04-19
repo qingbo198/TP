@@ -1,0 +1,961 @@
+[ 2019-04-18T09:03:36+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.1060s ]
+SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.2080s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.1320s ]
+NOTIC: [8] Undefined variable: new D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: newss D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\TP\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+
+[ 2019-04-18T09:03:53+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-18T09:05:10+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-18T09:12:58+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN '2019-03-01 00:00:00' AND '2019-03-31 23:59:59'  ) ORDER BY second_verify_time  [ RunTime:0.0680s ]
+
+[ 2019-04-18T09:14:47+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN '2019-03-01 00:00:00' AND '2019-03-31 23:59:59'  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:14:47+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN '2019-03-01 00:00:00' AND '2019-03-31 23:59:59'  ) ORDER BY second_verify_time  [ RunTime:0.0030s ]
+
+[ 2019-04-18T09:14:48+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN '2019-03-01 00:00:00' AND '2019-03-31 23:59:59'  ) ORDER BY second_verify_time  [ RunTime:0.0030s ]
+
+[ 2019-04-18T09:14:48+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN '2019-03-01 00:00:00' AND '2019-03-31 23:59:59'  ) ORDER BY second_verify_time  [ RunTime:0.0030s ]
+
+[ 2019-04-18T09:15:52+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1554048000 AND 1556639999  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:16:05+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1554048000 AND 1556639999  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:16:49+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1551369600 AND 1556639999  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:17:04+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN '2019-03-01 00:00:00' AND '2019-03-31 23:59:59'  ) ORDER BY second_verify_time  [ RunTime:0.0030s ]
+
+[ 2019-04-18T09:17:13+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-18T09:19:17+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1551369600 AND 1554047999  ) ORDER BY second_verify_time  [ RunTime:0.0010s ]
+
+[ 2019-04-18T09:21:01+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1551369600 AND 1554047999  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:21:21+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1551369600 AND 1553961599  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:21:21+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1551369600 AND 1553961599  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:21:22+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1551369600 AND 1553961599  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:21:50+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-18T09:21:59+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN '2019-03-01 00:00:00' AND '2019-03-31 23:59:59'  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:23:12+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1551369600 AND 1554047999  ) ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:24:18+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0090s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1551369600 AND 1554047999  ) ORDER BY second_verify_time  [ RunTime:0.0030s ]
+
+[ 2019-04-18T09:27:10+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE ( `second_verify_time` BETWEEN 1551369600 AND 1554047999  ) ORDER BY second_verify_time  [ RunTime:0.0010s ]
+
+[ 2019-04-18T09:33:03+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-18T09:33:20+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+
+[ 2019-04-18T09:34:21+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.2390s ]
+
+[ 2019-04-18T09:36:32+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0050s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0400s ]
+
+[ 2019-04-18T09:59:02+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0410s ]
+
+[ 2019-04-18T09:59:24+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0390s ]
+
+[ 2019-04-18T10:00:22+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0390s ]
+
+[ 2019-04-18T10:00:41+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0380s ]
+
+[ 2019-04-18T10:04:47+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`second_verify_time`,`deadline`,`borrow_money`,`repayment_type`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1857','1832','1679','1547','1851','1681','1836','1838','1852','1692','1842','1843','1853','1698','1703','1856','1705','1810','1823','1811','1812','1813','1814','1855','1816','1817','1818','1821','1819','1788','1710','1642','1740','1640','1789','1680','1764','1827','1825','1829','1830','1569') ORDER BY second_verify_time  [ RunTime:0.3350s ]
+
+[ 2019-04-18T10:04:59+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0390s ]
+
+[ 2019-04-18T10:07:25+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`second_verify_time`,`deadline`,`borrow_money`,`repayment_type`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1857','1832','1679','1547','1851','1681','1836','1838','1852','1692','1842','1843','1853','1698','1703','1856','1705','1810','1823','1811','1812','1813','1814','1855','1816','1817','1818','1821','1819','1788','1710','1642','1740','1640','1789','1680','1764','1827','1825','1829','1830','1569') ORDER BY second_verify_time  [ RunTime:0.0930s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1547') )  [ RunTime:0.0140s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1569') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1640') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1642') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1679') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1680') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1681') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1692') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1698') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1703') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1705') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1710') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1740') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1764') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1788') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1789') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1810') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1811') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1812') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1813') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1814') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1816') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1817') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1818') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1819') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1821') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1823') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1825') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1827') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1829') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1830') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1832') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1836') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1838') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1842') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1843') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1851') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1852') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1853') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1855') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1856') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1857') )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2019-04-18T10:53:24+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`second_verify_time`,`borrow_status`,`deadline`,`borrow_money`,`repayment_type`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1857','1832','1679','1547','1851','1681','1836','1838','1852','1692','1842','1843','1853','1698','1703','1856','1705','1810','1823','1811','1812','1813','1814','1855','1816','1817','1818','1821','1819','1788','1710','1642','1740','1640','1789','1680','1764','1827','1825','1829','1830','1569') ORDER BY second_verify_time  [ RunTime:0.0950s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1547') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1569') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1640') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1642') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1679') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1680') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1681') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1692') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1698') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1703') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1705') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1710') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1740') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1764') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1788') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1789') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1810') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1811') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1812') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1813') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1814') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1816') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1817') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1818') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1819') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1821') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1823') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1825') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1827') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1829') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1830') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1832') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1836') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1838') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1842') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1843') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1851') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1852') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1853') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1855') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1856') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1857') )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-18T10:56:01+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0080s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`second_verify_time`,`borrow_status`,`deadline`,`borrow_money`,`repayment_type`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1857','1832','1679','1547','1851','1681','1836','1838','1852','1692','1842','1843','1853','1698','1703','1856','1705','1810','1823','1811','1812','1813','1814','1855','1816','1817','1818','1821','1819','1788','1710','1642','1740','1640','1789','1680','1764','1827','1825','1829','1830','1569') ORDER BY second_verify_time  [ RunTime:0.0920s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1547') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1569') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1640') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1642') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1679') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1680') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1681') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1692') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1698') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1703') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1705') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1710') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1740') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1764') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1788') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1789') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1810') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1811') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1812') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1813') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1814') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1816') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1817') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1818') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1819') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1821') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1823') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1825') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1827') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1829') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1830') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1832') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1836') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1838') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1842') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1843') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1851') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1852') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1853') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1855') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1856') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1857') )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2019-04-18T10:58:39+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1551369600 AND 1554047999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0050s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1551369600 AND 1554047999 ORDER BY repayment_time  [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`second_verify_time`,`borrow_status`,`deadline`,`borrow_money`,`repayment_type`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1857','1832','1679','1547','1851','1681','1836','1838','1852','1692','1842','1843','1853','1698','1703','1856','1705','1810','1823','1811','1812','1813','1814','1855','1816','1817','1818','1821','1819','1788','1710','1642','1740','1640','1789','1680','1764','1827','1825','1829','1830','1569') ORDER BY second_verify_time  [ RunTime:0.0890s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1547') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1569') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1640') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1642') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1679') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1680') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1681') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1692') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1698') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1703') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1705') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1710') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1740') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1764') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1788') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1789') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1810') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1811') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1812') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1813') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1814') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1816') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1817') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1818') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1819') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1821') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1823') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1825') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1827') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1829') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1830') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1832') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1836') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1838') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1842') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1843') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1851') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1852') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1853') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1855') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1856') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1551369600 AND 1554047999) AND (`borrow_id` = '1857') )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-04-18T11:15:50+08:00 ] ::1 /TP/home/GongXiang/next_sub
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT `id` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1554048000 AND 1556639999 ORDER BY second_verify_time  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM `lzh_investor_detail` WHERE `repayment_time` BETWEEN 1554048000 AND 1556639999 ORDER BY repayment_time  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`zhaiquan_idcard`,`cell_phone`,`second_verify_time`,`borrow_status`,`deadline`,`borrow_money`,`repayment_type`,`zhaiquan_name`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id  WHERE bi.id IN ('1858','1859','1860','1832','1686','1547','1718','1723','1724','1836','1838','1728','415','1731','1732','1733','1842','1737','1856','1810') ORDER BY second_verify_time  [ RunTime:0.0590s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '415') )  [ RunTime:0.0110s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1547') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1686') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1718') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1723') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1724') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1728') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1731') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1732') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1733') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1737') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1810') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1832') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1836') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1838') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1842') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1856') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1858') )  [ RunTime:0.0000s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1859') )  [ RunTime:0.0010s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1554048000 AND 1556639999) AND (`borrow_id` = '1860') )  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2019-04-18T15:08:45+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0070s ]
+SQL: SELECT * FROM lzh_borrow_info bi WHERE bi.id = 1834  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `lzh_investor_detail` WHERE ( borrow_id=1834 )  [ RunTime:0.0160s ]
+NOTIC: [8] Undefined variable: new D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 75 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: newss D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined variable: new1 D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] array_slice() expects parameter 1 to be array, null given D:\wwwroot\TP\Application\Home\Controller\IndexController.class.php 第 90 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wwwroot\TP\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `repayment_time`,`deadline`,`id` FROM `lzh_investor_detail` WHERE `borrow_id` IN () 
+

@@ -269,13 +269,11 @@ header("Content-type: text/html; charset=utf-8");
 		//百行征信存量数据C1、D2、D3
 		public function baihang_stock()
 		{
-			if(true){
+			if(false){
 				//C1贷款申请信息接口
-				$status['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
-				$status['cell_phone'] = array('neq','');
-				//$status['lz.type'] = 1;//自然人
-				//$status['bi.id'] = 1534;
-				//$status['bi.id'] = array('in',array('1227','1534'));
+				// $status['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
+				// $status['cell_phone'] = array('neq','');
+				$status['bi.id'] = array('in',array('1644','1650','1054','1059','1226','1227','1003','1021','1818','1821'));
 				
 				$list_apply = M("lzh_borrow_info bi")
 					->order('second_verify_time')
@@ -285,15 +283,15 @@ header("Content-type: text/html; charset=utf-8");
 					->where($status)
 					//->limit(4)
 					->select();
-				echo M()->getLastSql(); //die;
+				//echo M()->getLastSql(); //die;
 				$loanApplyInfo = "#loanApplyInfo"."\r\n";
 				
 				
 				$regx = "/^[\u4E00-\u9FA5\uf900-\ufa2d·s]{2,20}$/";
 				foreach ($list_apply as $m => $n) {
-					if(!preg_match("/^[\x{4e00}-\x{9fa5}]+$/u",$n['real_name'])){
-						$res[] = $n['borrow_uid'];
-					}
+					// if(!preg_match("/^[\x{4e00}-\x{9fa5}]+$/u",$n['real_name'])){
+					// 	$res[] = $n['borrow_uid'];
+					// }
 					$apply['reqID'] = $n['borrow_id']."C1"."U".$n['borrow_uid'];//记录唯一标识
 					$apply['uploadTs'] = '';//记录生成时间  非必填
 					$apply['name'] = $n['real_name'];//姓名：只能为合法的中国姓名
@@ -310,11 +308,11 @@ header("Content-type: text/html; charset=utf-8");
 					$apply['workAddress'] = '';//工作单位地址
 					$apply['workPhone'] = '';//工作单位电话
 					$apply['device'] = array('deviceType'=>'','imei'=>'','mac'=>'','ipAddress'=>'','osName'=>'');//设备信息	
-					$loanApplyInfo .= $this->toJson($apply);
-					echo 'debug<br><pre>'; print_r($apply);
+					$loanApplyInfo .= $this->toJson($apply)."\r\n";
+					//echo 'debug<br><pre>'; print_r($apply);
 				}
-				//echo $loanApplyInfo;
-				echo 'debug<br><pre>'; print_r($res);
+				echo $loanApplyInfo;
+				//echo 'debug<br><pre>'; print_r($res);
 			}
 			
 			
@@ -396,12 +394,12 @@ header("Content-type: text/html; charset=utf-8");
 			}
 			//die;
 			
-			if(false){
+			if(true){
 				//D3贷款贷后还款数据
-				$where['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
-				$where['cell_phone'] = array('neq','');
-				$where['lz.type'] = 1;
-				//$where['bi.id'] = 1534;
+				// $where['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
+				// $where['cell_phone'] = array('neq','');
+				// $where['lz.type'] = 1;
+				$where['bi.id'] = 1522;//1240
 				//$where['bi.id'] = array('in',array('1227','1534'));
 				
 				//获取以上标的 还款明细  id.repayment_time, id.borrow_id, id.investor_uid,, id.sort_order, id.total, id.status, id.deadline, id.capital, id.interest, id.receive_capital, id.receive_interest
@@ -442,6 +440,7 @@ header("Content-type: text/html; charset=utf-8");
 							$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_capital'] += $vvv['receive_capital'];
 						}else{
 							//非先息后本提前还款
+							//echo 111;die;
 							$arr2[date('Y-m-d',$vvv['repayment_time'])]['plan_interest'] += $vvv['interest'];
 							$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_interest'] += $vvv['receive_interest'];
 							$arr2[date('Y-m-d',$vvv['repayment_time'])]['repayment_time'] = $vvv['repayment_time'];
@@ -452,6 +451,7 @@ header("Content-type: text/html; charset=utf-8");
 							$arr2[date('Y-m-d',$vvv['repayment_time'])]['receive_capital'] += $vvv['receive_capital'];
 						}
 					}
+					//print_r($arr2);die;
 					unset($arr2['1970-01-01']);//删除还未还款的期数
 					//组装接口数据
 					foreach ($arr2 as $kkkk=>$vvvv){
@@ -471,7 +471,7 @@ header("Content-type: text/html; charset=utf-8");
 						$parama['targetRepaymentDate'] = date('Y-m-d',$vvvv['deadline']);//本期应还款日
 						$parama['realRepaymentDate'] = date('Y-m-d\TH:i:s',$vvvv['repayment_time']);//实际还款时间
 						$parama['plannedPayment'] = $vvvv['plan_capital']+$vvvv['plan_interest'];//本期计划应还款金额
-						$parama['targetRepayment'] = $vvvv['plan_capital']+$vvvv['plan_interest'];//本期剩余应还款金额
+						$parama['targetRepayment'] = $vvvv['receive_capital']+$vvvv['receive_interest'];//本期剩余应还款金额
 						$parama['realRepayment'] = $vvvv['receive_capital']+$vvvv['receive_interest'];//本次还款金额
 						$parama['overdueStatus'] = '';//当前逾期天数
 						$parama['statusConfirmAt'] = date('Y-m-d\TH:i:s',strtotime("+1 hour",  $vvvv['repayment_time']));//本笔还款状态确认时间
@@ -509,38 +509,9 @@ header("Content-type: text/html; charset=utf-8");
 		}
 		
 		
-		//新增贷款、还款记录上报表操作
-		public function post_table(){
-			//查询标的数据
-			$borrow_id = intval($_GET['borrow_id']);
-			$where['bi.id'] = $borrow_id;
-			$result = M('borrow_info bi')
-				->field('bi.repayment_type,bi.total,bi.has_pay')
-				->where($where)
-				->find();
-			echo 'debug<br><pre>'; print_r($result);// exit;
-			
-			//数据入库lah_borrow_baihang
-			$list = M('borrow_baihang')
-				->where('borrow_id='.$borrow_id)
-				->find();
-			if(empty($list)){
-				$data['borrow_id'] = $borrow_id;
-				$data['request_id'] = $this->randReqID($borrow_id);//reqId   string (0,40]  机构本条记录的唯一标识，且由数字和字母构成，不含数字及字母以外的字符。
-				$data['repay_type'] = $result['repayment_type'];
-				$data['has_repay'] = $result['has_pay'];
-				$data['total'] = $result['total'];
-				$data['status_add'] = 0;
-				$data['status_repay'] = 0;
-				$data['send_time'] = date('Y-m-d',strtotime("+1 day",  time()));
-				
-				//echo 'debug<br><pre>'; print_r($data);exit;
-				M('borrow_baihang')->data($data)->add();
-			}else{
-				$data['send_time'] = date('Y-m-d',strtotime("+2 day",  time()));
-				M('borrow_baihang')->where('borrow_id='.$borrow_id)->save($data);
-			}
-		}
+		
+		//查询末期本息提前还款利息不对的标的
+		
 		
 		function getFloatValue($f,$len)
 		{
