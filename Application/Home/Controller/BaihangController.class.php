@@ -319,9 +319,9 @@ header("Content-type: text/html; charset=utf-8");
 			
 			//die;
 
-			if(false){
+			if(true){
 				//D2贷款账户信息
-				$map['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
+				$map['second_verify_time&borrow_status&repayment_type&borrow_duration'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('6','7','9')),array('eq','5'),array('gt',12),'_multi'=>true);
 				$map['cell_phone'] = array('neq','');
 				//$map['lz.type'] = 1;//自然人
 				$list_account = M('lzh_borrow_info bi')
@@ -332,9 +332,11 @@ header("Content-type: text/html; charset=utf-8");
 					->join('left join lzh_members as m on m.id = bi.borrow_uid')
 					->join("left join lzh_zhaiquan lz on lz.zhaiquan_tid = bi.id")
 					->where($map)
-					->limit(4)
+					//->limit(4)
+					//->count();
+				//echo $list_account;die;
 					->select();
-				echo M()->getLastSql().'<br>';
+				echo M()->getLastSql().'<br>';die;
 				$singleLoanAccountInfo = "#singleLoanAccountInfo"."\r\n";//D2数据头
 				if(!empty($list_account)){
 					foreach ($list_account as $key => $value) {
@@ -394,7 +396,7 @@ header("Content-type: text/html; charset=utf-8");
 			}
 			//die;
 			
-			if(true){
+			if(false){
 				//D3贷款贷后还款数据
 				// $where['second_verify_time&borrow_status'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),'_multi'=>true);
 				// $where['cell_phone'] = array('neq','');
