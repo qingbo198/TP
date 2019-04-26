@@ -8,7 +8,7 @@ header("Content-type: text/html; charset=utf-8");
 
 class GongXiangController extends Controller
 {
-	//信息共享平台接口(首次报送)。。
+	//信息共享平台接口(首次报送)
 	//截止到报送月月初的还款中标的数据
 	public function first_sub()
 	{
