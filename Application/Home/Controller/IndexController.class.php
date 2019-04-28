@@ -19,6 +19,7 @@
         
         public function index()
         {
+        	echo phpinfo();
 			$product = M('product');
 			$count = $product->count();
 			//echo $count;
