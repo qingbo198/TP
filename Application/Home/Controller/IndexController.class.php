@@ -7,19 +7,18 @@
 	header("Content-type: text/html; charset=utf-8");
     class IndexController extends Controller
     {
-
-				// public function _initialize() {
-				// 		// 判断用户是否登陆
-				// 		$user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
-				// 		if (!$user) {
-				// 				$this->success('未登录，请登录', U('User/login'), 2);
-				// 				exit;
-				// 		}
-				// }
+		// public function _initialize() {
+		// 		// 判断用户是否登陆
+		// 		$user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
+		// 		if (!$user) {
+		// 				$this->success('未登录，请登录', U('User/login'), 2);
+		// 				exit;
+		// 		}
+		// }
         
         public function index()
         {
-        	echo phpinfo();
+        	//echo phpinfo();
 			$product = M('product');
 			$count = $product->count();
 			//echo $count;
