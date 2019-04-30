@@ -68,5 +68,48 @@
 			echo "当前队列数据为： <br />";
 			print_r($strCount);
 		}
+	
+	
+		//查询当天借款、还款数据接口
+		public function search_data(){
+			$start_time = strtotime(date("Y-m-d"),time());
+			//echo $start_time;die;
+			$end_time = strtotime(date("Y-m-d"),time())+86400;
+			//今日借款
+			$where['second_verify_time'] = array('between',array($start_time,$end_time));
+			$reg_list = M('lzh_borrow_info')
+				->field('id,second_verify_time')
+				->where($where)
+				->select();
+			//echo M()->getLastSql();die;
+			if(!empty($reg_list)){
+				$data_reg = '';
+				foreach ($reg_list as $k=>$v){
+					$data_reg .= $v['id']."|";
+				}
+				echo "今日借款标的".$data_reg."<br>";
+			}else{
+				echo "今日无借款"."<br>";
+			}
+			//今日还款
+			$status['repayment_time'] = array('between',array($start_time,$end_time));
+			$repay_list = M('lzh_investor_detail id')
+				->distinct(true)
+				->field('borrow_id')
+				->where($status)
+				->select();
+			if(!empty($repay_list)){
+				$data_repay = '';
+				foreach ($repay_list as $k=>$v){
+					$data_repay .= $v['borrow_id']."|";
+				}
+				echo "今日还款标的".$data_repay;
+			}else{
+				echo "今日无还款";
+			}
+		
+		}
+		
+		
     }
 		
