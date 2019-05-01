@@ -1,0 +1,42 @@
+[ 2019-05-01T18:14:25+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 1146:Table 'thinkphp.product' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `product`
+ERR: 1146:Table 'thinkphp.product' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `product`
+
+[ 2019-05-01T18:15:05+08:00 ] ::1 /TP/home/redis/search_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0180s ]
+SQL: SELECT `id`,`second_verify_time` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1556640000 AND 1556726400  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0170s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM lzh_investor_detail id WHERE `repayment_time` BETWEEN 1556640000 AND 1556726400  [ RunTime:0.2930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-05-01T18:15:41+08:00 ] ::1 /TP/home/redis/search_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.037002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`second_verify_time` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1556553600 AND 1556640000  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0150s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM lzh_investor_detail id WHERE `repayment_time` BETWEEN 1556553600 AND 1556640000  [ RunTime:0.2300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
