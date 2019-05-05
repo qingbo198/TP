@@ -520,6 +520,30 @@ class BaihangController extends Controller
 	}
 	
 	
+	
+	//百行征信存量代偿标的
+	public function baihang_daichang(){
+		//总共待传增量标的
+		$status['second_verify_time&borrow_status&cell_phone&lid.substitute_money'] = array(array('gt',strtotime('2016-08-24 23:59:59')),array('in',array('7','9')),array('neq',''),array('neq',0),'_multi'=>true);
+		$list = M('lzh_investor_detail lid')
+			->group('borrow_id')
+			->field('borrow_id,cell_phone,repayment_time,lid.substitute_money')
+			->join("left join lzh_member_info mi on mi.uid = lid.borrow_uid")
+			->join('left join lzh_borrow_info lbi on lbi.id = lid.borrow_id')
+			->where($status)
+			->select();
+		echo M()->getLastSql();//die;
+		foreach ($list as $k=>$v){
+			$list_array[] = $v['borrow_id'];
+		}
+		echo 'debug<br><pre>'; print_r($list_array); exit;
+		
+		
+		
+		
+	}
+	
+	
 	//查询末期本息提前还款利息不对的标的
 	
 	

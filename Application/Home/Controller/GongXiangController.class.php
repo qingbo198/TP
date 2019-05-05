@@ -392,6 +392,228 @@ class GongXiangController extends Controller
 	}
 	
 	
+	
+	//信息共享平台接口(再次报送)
+	//报送四月份数据
+	public function next_sub_apr()
+	{
+		$hide = 1;
+		//echo phpinfo();die;
+		$start_time = strtotime(date('Y-m-01 00:00:00', strtotime('-1 month')));//上月第一天开始时间
+		$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-1 month')));//上月最后一天结束时间
+		$april_time = strtotime('2019-04-01 00:00:00');
+		$march_time = strtotime('2019-03-1 00:00:00');
+		// $start_time = strtotime('2019-04-01 00:00:00');
+		// $end_time = strtotime('2019-04-30 23:59:59');
+		//echo $start_time."---".$end_time;die;
+		
+		
+		//截止到当前time()处在还款中的标的：所要上报月份的标的状态也一定处在还款中
+		//四月结束之前注册且处在还款中的标的
+		$status['second_verify_time&borrow_status'] = array(array('lt', $end_time), array('eq', 6), '_multi' => true);
+		//$status['bi.id'] = 1547;
+		$list = M("lzh_borrow_info bi")
+			->order('second_verify_time')
+			->field("bi.id as borrow_id")
+			->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
+			->where($status)
+			//->limit(4)
+			->select();
+		if (!empty($list)) {
+			foreach ($list as $k => $v) {
+				$list_array[] = $v['borrow_id'];
+			}
+		}
+		echo 'debug<br><pre>'; print_r($list_array); //exit;
+		
+		//上月有还款且状态为结束的标的（有可能实际结束时间不是上个月而是当月）
+		$where_feb['repayment_time&borrow_status'] = array(array('between', array($start_time,$end_time)), array('in', array('7', '9')), '_multi' => true);
+		$last = M('lzh_investor_detail id')
+			->field('repayment_time,borrow_id')
+			->join('left join lzh_borrow_info as lbi on id.borrow_id = lbi.id')
+			->where($where_feb)
+			->select();
+		
+		//echo M()->getLastSql();die;
+		
+		foreach ($last as $k => $v) {
+			$last_array[] = $v['borrow_id'];
+		}
+		$last_array = array_unique($last_array);
+		echo '1 debug<br><pre>'; print_r($last_array); exit;
+		
+		
+		//当月还款结束的标的（在上月的状态为还款中）
+		$where_mar['repayment_time&borrow_status'] = array(array('gt', $end_time), array('in', array('7', '9')), '_multi' => true);
+		$present = M('lzh_investor_detail id')
+			->field('repayment_time,borrow_id')
+			->join('left join lzh_borrow_info as lbi on id.borrow_id = lbi.id')
+			->where($where_mar)
+			->select();
+		
+		//echo M()->getLastSql();die;
+		echo 'debug<br><pre>'; print_r($present); //exit;
+		foreach ($present as $k => $v) {
+			$present_array[] = $v['borrow_id'];
+		}
+		//四月之后结束的标的
+		$present_array = array_unique($present_array);
+		//echo '2 debug<br><pre>'; print_r($mar_array); exit;
+		//三月份结束的标的
+		//$last_real_array = array_diff($last_array, $present_array);
+		//echo 'debug<br><pre>'; print_r($march_array); exit;
+		
+		//合并还款中标的和2月之后结束的标的
+		$arr = array_merge($list_array, $last_array);
+		
+		$status_last['bi.id'] = array('in', $arr);
+		//$status_last['bi.id'] =1679;
+		$list = M("lzh_borrow_info bi")
+			->order('second_verify_time')
+			->field("bi.id as borrow_id,borrow_uid,cell_phone,second_verify_time,borrow_status,deadline,borrow_money,repayment_type,mi.real_name,mi.idcard")
+			->join("left join lzh_member_info mi on mi.uid = bi.borrow_uid")
+			->where($status_last)
+			//->limit(4)
+			->select();
+		//->count();
+		//echo $list;die;
+		//echo M()->getLastSql(); die;
+		
+		//excel头部
+		$row = array();
+		$row[0] = array('姓名', '证件类型', '证件号码', '业务发生机构', '业务号', '业务类型', '业务种类', '开户日期', '到期日期', '授信额度', '业务发生日期', '余额', '当前逾期总额', '本月还款状态');
+		$i = 1;
+		
+		
+		$info = '';
+		foreach ($list as $key => $value) {
+			if ($hide) {
+				$real_name = mb_substr($value['real_name'], 0, 1, 'utf-8') . $this->choose_name();
+				if (substr($value['idcard'], 17, 1) == 'x') {
+					$idcard = substr($value['idcard'], 0, 17) . 'X';
+					$idcard = substr($idcard, 0, 2) . "9999" . substr($idcard, 6, 12);
+				} else {
+					$idcard = $value['idcard'];//身份证号码
+					$idcard = substr($idcard, 0, 2) . "9999" . substr($idcard, 6, 12);
+				}
+			} else {
+				$real_name = $value['real_name'];
+				if (substr($value['idcard'], 17, 1) == 'x') {
+					$idcard = substr($value['idcard'], 0, 17) . 'X';
+				} else {
+					$idcard = $value['idcard'];//身份证号码
+				}
+			}
+			//业务类型
+			if ($value['repayment_type'] == 4) {
+				$borrow_type = 2;//2 分期还款；先息后本
+			} elseif ($value['repayment_type'] == 5) {
+				$borrow_type = 3;//3 一次性还款；末期本息
+			}
+			$where['repayment_time&borrow_id'] = array(array('between', array($start_time, $end_time)), array('eq', $value['borrow_id']), '_multi' => true);
+			$result = M('lzh_investor_detail')->field('repayment_time,borrow_id')->where($where)->select();
+			//echo M()->getLastSql(); die;
+			//print_r($result);//die;
+			
+			
+			//业务发生日期、当月还款状态、余额
+			//当月产生标的
+			if ($value['second_verify_time'] > $start_time && $value['second_verify_time'] < $end_time) {
+				$happenday = date('Ymd', $value['second_verify_time']);//新开立的债权融资业务
+				$repay_status = "*";
+				$last_money = $value['borrow_money'];
+			}
+			//还款中的标的
+			if (!empty($result)) {
+				if ($value['borrow_status'] == 6) {
+					if ($value['repayment_type'] == 4) {
+						$happenday = date('Ymd', $result[0]['repayment_time']);//先息后本当期发生还款 标的未结束
+						$repay_status = "N";
+						$last_money = $value['borrow_money'];
+					} elseif ($value['repayment_type'] == 5) {
+						$happenday = date('Ymd', $end_time);
+						$repay_status = "*";
+						$last_money = $value['borrow_money'];
+					}
+				}
+			} elseif ($value['repayment_type'] == 5 && $value['borrow_status'] == 6) {//末期本息当期未发生还款
+				$happenday = date('Ymd', $end_time);
+				$repay_status = "*";
+				$last_money = $value['borrow_money'];
+			}
+			//三月四月结束还款的
+			if (in_array($value['borrow_id'], $last_array)) {
+				if (!in_array($value['borrow_id'], $present_array)) {    //上月发生还款标的结束
+					$happenday = date('Ymd', $result[0]['repayment_time']);
+					$repay_status = "C";//结清
+					$last_money = 0;
+				} else { //当月还款结束的标的
+					if ($value['repayment_type'] == 4) {
+						$happenday = date('Ymd', $result[0]['repayment_time']);//先息后本当期发生还款 标的未结束
+						$repay_status = "N";
+						$last_money = $value['borrow_money'];
+					} elseif ($value['repayment_type'] == 5) {
+						$happenday = date('Ymd', $end_time);
+						$repay_status = "*";
+						$last_money = $value['borrow_money'];
+					}
+				}
+			}
+			
+			//输出信息
+			$info .= $real_name . "," .//姓名
+				"0" . "," .//证件类型
+				$idcard . "," .//证件号码
+				"91320200323591589D" . "," .//业务发生机构:社会信用代码;
+				$value['borrow_id'] . "," .//业务号:系统内唯一标识贷款账户的标识符。
+				$borrow_type . "," .//业务类型
+				"11" . "," .//业务种类
+				date('Ymd', $value['second_verify_time']) . "," .//开户日期:当业务类型为 2、3、5 时，该数据项为首次放款日期；
+				date('Ymd', $value['deadline']) . "," .//到期日期
+				intval($value['borrow_money']) . "," .//授信额度
+				$happenday . "," .//业务发生日期
+				intval($last_money) . "," .//余额
+				"0" . "," .//当前逾期总额
+				$repay_status//本月还款状态
+				. "\r\n";
+			
+			//导出excel;
+			if (false) {
+				$export = 1;//设置导出；
+				$row[$i]['A'] = $real_name;
+				$row[$i]['B'] = 0;
+				$row[$i]['C'] = $idcard;
+				$row[$i]['D'] = "91320200323591589D";
+				$row[$i]['E'] = $value['borrow_id'];
+				$row[$i]['F'] = $borrow_type;
+				$row[$i]['G'] = 11;//实际还款时间
+				$row[$i]['H'] = date('Ymd', $value['second_verify_time']);
+				$row[$i]['I'] = date('Ymd', $value['deadline']);
+				$row[$i]['J'] = intval($value['borrow_money']);
+				$row[$i]['K'] = $happenday;
+				$row[$i]['L'] = intval($last_money);
+				$row[$i]['M'] = 0;
+				$row[$i]['N'] = $repay_status;
+				$i++;
+			}
+		}
+		$filename = 'Mar';
+		//echo $info;
+		$txtname = "121EXPORTTRADEINFO.txt";
+		$this->creZip($txtname, $info);
+		
+		if ($export) {
+			import("ORG.Io.Excel");
+			$xls = new Excel_XML('UTF-8', false, $filename);
+			$xls->addArray($row);
+			$xls->generateXML($filename);
+			echo 'OK';
+			exit;
+		}
+		
+	}
+	
+	
 	//信息共享平台生成生成txt并压缩成zip文件
 	private function creZip($filename, $txtcontent)
 	{
