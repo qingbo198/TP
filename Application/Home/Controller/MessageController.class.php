@@ -141,10 +141,18 @@ class MessageController extends Controller
 		// $ii = strtotime('2016-9-25');
 		// echo $ii;die;
 		$beg = strtotime('2016-8-24 23:59:59');//2016.8.24  1472054399
-		$begin = strtotime('2016-9-24 23:59:59');
-		$end = strtotime('2016-9-25 23:59:59'); //1472140799
+		
+		
+		
+		
+		$begin =strtotime('2019-4-26 00:00:00');
+		$end =  strtotime('2019-4-26 23:59:59'); //1472140799
+		
+		
+		
+		
 		//for($i = 1;$i<10;$i++){
-		$where['second_verify_time&borrow_status'] = array(array('between', array($begin, $end)), array('in', array('7', '9')), '_multi' => true);
+		$where['second_verify_time&borrow_status'] = array(array('between', array($begin, $end)), array('in', array('6','7', '9')), '_multi' => true);
 		$list = M('lzh_borrow_info bi')
 			->field('bi.id')
 			->join('LEFT JOIN lzh_member_jshbank as lmj on bi.borrow_uid = lmj.uid')
@@ -194,7 +202,7 @@ class MessageController extends Controller
 			print_r($new_array);
 			echo "<br>";
 		}
-		
+		echo date('y-m-d',$begin)."---->".count($new_array);die;
 		if (!empty($new_array)) {
 			$status2['bi.id'] = array('in', $new_array);
 			//$status2['bi.id'] = 1266;
@@ -209,6 +217,7 @@ class MessageController extends Controller
 				->order('id asc')
 				->where($status2)
 				->select();
+				
 			//echo M()->getLastSql();
 			//print_r($list_new_array);die;
 			$borrow_info = '';//项目信息

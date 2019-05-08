@@ -70,11 +70,11 @@
 		}
 	
 	
-		//查询当天借款、还款数据接口
+		//查询昨天借款、还款数据接口
 		public function search_data(){
-			$start_time = strtotime(date("Y-m-d"),time());
+			$start_time = strtotime(date("Y-m-d"),time())-86400;
 			//echo $start_time;die;
-			$end_time = strtotime(date("Y-m-d"),time())+86400;
+			$end_time = strtotime(date("Y-m-d"),time());
 			//今日借款
 			$where['second_verify_time'] = array('between',array($start_time,$end_time));
 			$reg_list = M('lzh_borrow_info')
