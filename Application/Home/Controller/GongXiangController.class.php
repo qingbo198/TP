@@ -12,10 +12,10 @@ class GongXiangController extends Controller
 	//截止到报送月月初的还款中标的数据..
 	public function first_sub()
 	{
-		$hide = 1;
-		$start_time = strtotime('2019-02-01 00:00:00');
-		$end_time = strtotime('2019-02-28 23:59:59');
-		$march_time = strtotime('2019-03-1 00:00:00');
+		$hide = 0;
+		$start_time = strtotime('2019-04-01 00:00:00');
+		$end_time = strtotime('2019-04-30 23:59:59');
+		$march_time = strtotime('2019-05-1 00:00:00');
 		//三月之前注册且处在还款中的标的
 		$status['second_verify_time&borrow_status'] = array(array('lt', $end_time), array('eq', 6), '_multi' => true);
 		//$status['bi.id'] = 1547;
@@ -177,8 +177,8 @@ class GongXiangController extends Controller
 	{
 		$hide = 1;
 		//echo phpinfo();die;
-		$start_time = strtotime(date('Y-m-01 00:00:00', strtotime('-1 month')));//上月第一天开始时间
-		$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-1 month')));//上月最后一天结束时间
+		$start_time = strtotime(date('Y-m-01 00:00:00', strtotime('-2 month')));//上月第一天开始时间
+		$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-2 month')));//上月最后一天结束时间
 		$april_time = strtotime('2019-04-01 00:00:00');
 		$march_time = strtotime('2019-03-1 00:00:00');
 		// $start_time = strtotime('2019-04-01 00:00:00');
@@ -440,7 +440,7 @@ class GongXiangController extends Controller
 			$last_array[] = $v['borrow_id'];
 		}
 		$last_array = array_unique($last_array);
-		echo '1 debug<br><pre>'; print_r($last_array); exit;
+		echo '1 debug<br><pre>'; print_r($last_array); //exit;
 		
 		
 		//当月还款结束的标的（在上月的状态为还款中）
