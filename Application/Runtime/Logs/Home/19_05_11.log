@@ -1,0 +1,24 @@
+[ 2019-05-11T09:13:49+08:00 ] ::1 /tp/home/message/search_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 非法操作:search_data
+
+[ 2019-05-11T09:14:59+08:00 ] ::1 /tp/home/Redis/search_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0320s ]
+SQL: SELECT `id`,`second_verify_time` FROM `lzh_borrow_info` WHERE `second_verify_time` BETWEEN 1557417600 AND 1557504000  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0300s ]
+SQL: SELECT DISTINCT  `borrow_id` FROM lzh_investor_detail id WHERE `repayment_time` BETWEEN 1557417600 AND 1557504000  [ RunTime:0.1690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
