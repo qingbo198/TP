@@ -397,7 +397,7 @@ class GongXiangController extends Controller
 	//报送四月份数据
 	public function next_sub_apr()
 	{
-		$hide = 1;
+		$hide = 0;
 		//echo phpinfo();die;
 		$start_time = strtotime(date('Y-m-01 00:00:00', strtotime('-1 month')));//上月第一天开始时间
 		$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-1 month')));//上月最后一天结束时间
@@ -467,7 +467,7 @@ class GongXiangController extends Controller
 		$arr = array_merge($list_array, $last_array);
 		
 		$status_last['bi.id'] = array('in', $arr);
-		//$status_last['bi.id'] =1679;
+		//$status_last['bi.id'] =1830;
 		$list = M("lzh_borrow_info bi")
 			->order('second_verify_time')
 			->field("bi.id as borrow_id,borrow_uid,cell_phone,second_verify_time,borrow_status,deadline,borrow_money,repayment_type,mi.real_name,mi.idcard")
@@ -598,7 +598,7 @@ class GongXiangController extends Controller
 			}
 		}
 		$filename = 'Mar';
-		//echo $info;
+		//echo $info;die;
 		$txtname = "121EXPORTTRADEINFO.txt";
 		$this->creZip($txtname, $info);
 		
