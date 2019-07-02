@@ -397,12 +397,12 @@ class GongXiangController extends Controller
 	//报送四月份数据
 	public function next_sub_apr()
 	{
-		$hide = 0;
+		$hide = 0; // 1.隐藏 0.显示
 		//echo phpinfo();die;
 		$start_time = strtotime(date('Y-m-01 00:00:00', strtotime('-1 month')));//上月第一天开始时间
 		$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-1 month')));//上月最后一天结束时间
-		$april_time = strtotime('2019-04-01 00:00:00');
-		$march_time = strtotime('2019-03-1 00:00:00');
+		// $april_time = strtotime('2019-04-01 00:00:00');
+		// $march_time = strtotime('2019-03-1 00:00:00');
 		// $start_time = strtotime('2019-04-01 00:00:00');
 		// $end_time = strtotime('2019-04-30 23:59:59');
 		//echo $start_time."---".$end_time;die;
@@ -424,7 +424,7 @@ class GongXiangController extends Controller
 				$list_array[] = $v['borrow_id'];
 			}
 		}
-		echo 'debug<br><pre>'; print_r($list_array); //exit;
+		//echo 'debug<br><pre>'; print_r($list_array); exit;
 		
 		//上月有还款且状态为结束的标的（有可能实际结束时间不是上个月而是当月）
 		$where_feb['repayment_time&borrow_status'] = array(array('between', array($start_time,$end_time)), array('in', array('7', '9')), '_multi' => true);
@@ -440,7 +440,7 @@ class GongXiangController extends Controller
 			$last_array[] = $v['borrow_id'];
 		}
 		$last_array = array_unique($last_array);
-		echo '1 debug<br><pre>'; print_r($last_array); //exit;
+		//echo '111 debug<br><pre>'; print_r($last_array); exit;
 		
 		
 		//当月还款结束的标的（在上月的状态为还款中）
@@ -452,7 +452,7 @@ class GongXiangController extends Controller
 			->select();
 		
 		//echo M()->getLastSql();die;
-		echo 'debug<br><pre>'; print_r($present); //exit;
+		//echo 'debug<br><pre>'; print_r($present); //exit;
 		foreach ($present as $k => $v) {
 			$present_array[] = $v['borrow_id'];
 		}
@@ -464,7 +464,13 @@ class GongXiangController extends Controller
 		//echo 'debug<br><pre>'; print_r($march_array); exit;
 		
 		//合并还款中标的和2月之后结束的标的
-		$arr = array_merge($list_array, $last_array);
+		if(!empty($last_array)){
+			$arr = array_merge($list_array, $last_array);
+		}else{
+			$arr = $list_array;
+		}
+		
+		//echo 'debug<br><pre>'; print_r($arr); exit;
 		
 		$status_last['bi.id'] = array('in', $arr);
 		//$status_last['bi.id'] =1830;
@@ -477,7 +483,7 @@ class GongXiangController extends Controller
 			->select();
 		//->count();
 		//echo $list;die;
-		//echo M()->getLastSql(); die;
+		// echo M()->getLastSql(); die;
 		
 		//excel头部
 		$row = array();
