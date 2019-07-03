@@ -59,7 +59,7 @@
             <th>状态</th>
             <th>操作</th>
         </tr>
-        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+        <?php if(!empty($list)): if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
                 <td><?php echo ($vo["id"]); ?></td>
                 <!--<td><?php echo ($vo["sort"]); ?></td>-->
                 <td><?php echo ($vo["name"]); ?></td>
@@ -80,7 +80,8 @@
                     <a class="delete" data-id="<?php echo ($vo["id"]); ?>">删除</a>
                 </td>
 
-            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+            </tr><?php endforeach; endif; else: echo "" ;endif; endif; ?>
+        <?php if(empty($list)): ?><tr><td colspan="10">暂无商品</td></tr><?php endif; ?>
         <tr class="content">
             <!--<td colspan="3" bgcolor="#FFFFFF">&nbsp;<?php echo ($page); ?></td>-->
             <td colspan="11" bgcolor="#FFFFFF">

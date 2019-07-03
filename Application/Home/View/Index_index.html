@@ -26,7 +26,7 @@
 			body {font-size: 13px;font-family: "Microsoft Yahei";color: #333;}
 			*{margin: 0px;}
 			.clear{clear: both;}
-			.header{height: 40px;width: 100%;line-height: 40px;background: #333333;}
+			.header{height: 40px;width: 100%;line-height: 40px;background: #333333;position: fixed;top: 0;}
 			.header a{text-decoration: none;color:#b0b0b0;}
 			.user_login span{float:right;padding-right: 7px;}
 			.nav li{float:left;margin-left: 7px;list-style: none;}
@@ -86,9 +86,11 @@
 	</head>
 	<body>
 		<!--		  <a href="{:U('Message/index')}">留言板</a><a>登录</a><a>注册</a>-->
+		<!--通过添加父元素并且设置高度和header一样实现元素不遮挡-->
+		<div style="height: 40px;">
 		<div class="header">
 			<ul class="nav">
-				<li><a>小米商城</a><span>|</span></li>
+				<li><a href="__Home__/Index/index">小米商城</a><span>|</span></li>
 				<li><a>MIUI</a><span>|</span></li>
 				<li><a>loT</a><span>|</span></li>
 				<li><a>云服务</a><span>|</span></li>
@@ -127,6 +129,8 @@
 				?>
 			</div>
 		</div>
+		</div>
+		
 		<div class="header_nav_out">
 			<div class="header_nav">
 				<div class="logo_mi"></div>

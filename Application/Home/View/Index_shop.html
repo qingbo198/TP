@@ -47,10 +47,10 @@
 <div class="list">
     <a class="add_pro">购物车列表</a>
     <table class="list_tab">
-        <if condition="$list eq ''">
+        <if condition="$total eq 0 ">
             <tr>
                 <!--<th>ID</th>-->
-                <th>购物车暂无商品</th>
+                <th><h2>购物车暂无商品</h2></th>
             </tr>
         <else />
             <tr>
@@ -171,13 +171,14 @@
                 btn:['确定','取消'],
                 yes:function(){
                     $.ajax({
-                        url:'delete',
+                        url:"{:U('Index/delete')}",
                         type:'post',
                         data:{id:id},
                         dataType:'json',
                         success:function(data){
                             if(data.status=='1'){
                                 layer.msg(data.msg,{icon:1});
+                                window.location.reload();
                             }else if(data.status=='2'||data.status=='3'){
                                 layer.msg(data.msg,{icon:2});
                             }

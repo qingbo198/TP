@@ -178,6 +178,7 @@
                 }
             }else{
                 $this->assign('list',$_SESSION['shop']);
+                $this->assign('total',$_SESSION['shop']['total']);
                 $this->display();
             }
         }
@@ -197,6 +198,20 @@
             }
             
         }
+        
+        //删除商品
+		function delete(){
+        	$id = $_POST['id'];
+        	//print_r($_SESSION['shop']);die;
+        	$_SESSION['shop']['total'] -= $_SESSION['shop'][$id]['num'];
+        	unset($_SESSION['shop'][$id]);
+			$msg = [
+				'status'=>'1',
+				'msg'=>'删除成功'
+			];
+			echo json_encode($msg);
+			exit;
+		}
         
         //修改提前还款的实际利息
 		public function inde(){

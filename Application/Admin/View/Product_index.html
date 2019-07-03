@@ -59,6 +59,7 @@
             <th>状态</th>
             <th>操作</th>
         </tr>
+        <notempty name="list">
         <volist name="list" id="vo">
             <tr>
                 <td>{$vo.id}</td>
@@ -87,6 +88,10 @@
 
             </tr>
         </volist>
+        </notempty>
+        <empty name="list">
+            <tr><td colspan="10">暂无商品</td></tr>
+        </empty>
         <tr class="content">
             <!--<td colspan="3" bgcolor="#FFFFFF">&nbsp;{$page}</td>-->
             <td colspan="11" bgcolor="#FFFFFF">

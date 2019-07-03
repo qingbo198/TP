@@ -83,7 +83,7 @@
 		<!--		  <a href="<?php echo U('Message/index');?>">留言板</a><a>登录</a><a>注册</a>-->
 		<div class="header">
 			<ul class="nav">
-				<li><a>小米商城</a><span>|</span></li>
+				<li><a href="/TP/Home/Index/index">小米商城</a><span>|</span></li>
 				<li><a>MIUI</a><span>|</span></li>
 				<li><a>loT</a><span>|</span></li>
 				<li><a>云服务</a><span>|</span></li>
@@ -129,9 +129,9 @@
 <div class="list">
     <a class="add_pro">购物车列表</a>
     <table class="list_tab">
-        <?php if($list == ''): ?><tr>
+        <?php if($total == 0 ): ?><tr>
                 <!--<th>ID</th>-->
-                <th>购物车暂无商品</th>
+                <th><h2>购物车暂无商品</h2></th>
             </tr>
         <?php else: ?>
             <tr>
@@ -320,13 +320,14 @@
                 btn:['确定','取消'],
                 yes:function(){
                     $.ajax({
-                        url:'delete',
+                        url:"<?php echo U('Index/delete');?>",
                         type:'post',
                         data:{id:id},
                         dataType:'json',
                         success:function(data){
                             if(data.status=='1'){
                                 layer.msg(data.msg,{icon:1});
+                                window.location.reload();
                             }else if(data.status=='2'||data.status=='3'){
                                 layer.msg(data.msg,{icon:2});
                             }
