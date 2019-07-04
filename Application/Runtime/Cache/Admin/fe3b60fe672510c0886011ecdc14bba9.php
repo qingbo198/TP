@@ -28,10 +28,10 @@
 							<td><?php echo ($vo['title']); ?></td>
 							<td><?php echo ($vo['writer']); ?></td>
 							<td><?php echo ($vo['name']); ?></td>
-							<td><?php echo ($vo['lasttime']); ?></td>
+							<td><?php echo ($vo['last_time']); ?></td>
 							<td>
 								<a href="add?id=<?php echo $vo['id'] ?>" class="button_add">新增</a>
-								<a href="edit?fid=<?php echo $vo['fid']?>&id=<?php echo $vo['id'] ?>" class="button_edit">编辑</a>
+								<a href="edit?pid=<?php echo $vo['pid']?>&id=<?php echo $vo['id'] ?>" class="button_edit">编辑</a>
 								<a href="del?id=<?php echo $vo['id']?>" class="button_del">删除</a>
 							</td>
 						</tr><?php endforeach; endif; else: echo "" ;endif; ?>

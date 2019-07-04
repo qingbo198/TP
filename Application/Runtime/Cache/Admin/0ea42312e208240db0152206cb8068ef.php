@@ -31,7 +31,7 @@
 		<td width="500px" align="right"> <label for="username">所属分类</label></td>
 		<td>
 			<?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><input type="text" name="father" value=<?php echo ($vo["name"]); ?>  readonly="readonly">
-				<input type="hidden" name="fid" value=<?php echo ($vo["id"]); ?>><?php endforeach; endif; else: echo "" ;endif; ?>
+				<input type="hidden" name="pid" value=<?php echo ($vo["id"]); ?>><?php endforeach; endif; else: echo "" ;endif; ?>
 		</td>
 	</tr>
 	<tr>

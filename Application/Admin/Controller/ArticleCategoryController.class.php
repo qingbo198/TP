@@ -23,7 +23,7 @@
 			$result = findson($result,0,0);
 			if(isset($_POST['submit'])){
 				$select = I("param.select");
-				$select = 0 ? $data['fid'] = 0 : $data['fid'] = I("param.select");
+				$select = 0 ? $data['pid'] = 0 : $data['pid'] = I("param.select");
 				$data['name'] = I("param.name");
 				if($insertId = $category->add($data)){
 					$this->success("操作成功","index");
@@ -40,13 +40,13 @@
 		//编辑文章分类
 		public function edit(){
 			$id = $_GET['id'];
-			$fid = $_GET['fid'];
+			$pid = $_GET['pid'];
 			$cate = M('category');
 			$category = M('category')->find($id);
 			$all = M('category')->select();
-			$result = father($all,$fid);
+			$result = father($all,$pid);
 			if(isset($_POST['submit'])){
-				$data['fid'] = I("param.fid");
+				$data['pid'] = I("param.pid");
 				$id = I("param.id");
 				$data['name'] = I("param.name");
 				if($insertId = $cate->where('id='.$id)->data($data)->save()){
@@ -66,7 +66,7 @@
 		public function del(){
 			$id = $_GET['id'];
 			$category = M('category');
-			if($result = $category->where('fid='.$id)->select()){
+			if($result = $category->where('pid='.$id)->select()){
 				$this->error('有子类无法删除','index');
 			}else if($result =$category->where('id='.$id)->delete()){
 				$this->success('操作成功','index');
