@@ -399,12 +399,12 @@ class GongXiangController extends Controller
 	{
 		$hide = 0; // 1.隐藏 0.显示
 		//echo phpinfo();die;
-		$start_time = strtotime(date('Y-m-01 00:00:00', strtotime('-1 month')));//上月第一天开始时间
-		$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-1 month')));//上月最后一天结束时间
+		//$start_time = strtotime(date('Y-m-01 00:00:00', strtotime('-1 month')));//上月第一天开始时间
+		//$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-1 month')));//上月最后一天结束时间
 		// $april_time = strtotime('2019-04-01 00:00:00');
 		// $march_time = strtotime('2019-03-1 00:00:00');
-		// $start_time = strtotime('2019-04-01 00:00:00');
-		// $end_time = strtotime('2019-04-30 23:59:59');
+		 $start_time = strtotime('2019-09-01 00:00:00');
+		 $end_time = strtotime('2019-09-30 23:59:59');
 		//echo $start_time."---".$end_time;die;
 		
 		
@@ -440,7 +440,7 @@ class GongXiangController extends Controller
 			$last_array[] = $v['borrow_id'];
 		}
 		$last_array = array_unique($last_array);
-		//echo '111 debug<br><pre>'; print_r($last_array); exit;
+		echo '111 debug<br><pre>'; print_r($last_array); exit;
 		
 		
 		//当月还款结束的标的（在上月的状态为还款中）
@@ -458,14 +458,18 @@ class GongXiangController extends Controller
 		}
 		//四月之后结束的标的
 		$present_array = array_unique($present_array);
-		//echo '2 debug<br><pre>'; print_r($mar_array); exit;
+		//echo '2 debug<br><pre>'; print_r($present_array); exit;
 		//三月份结束的标的
 		//$last_real_array = array_diff($last_array, $present_array);
 		//echo 'debug<br><pre>'; print_r($march_array); exit;
 		
 		//合并还款中标的和2月之后结束的标的
-		if(!empty($last_array)){
-			$arr = array_merge($list_array, $last_array);
+		if(!empty($last_array) && !empty($present_array)){
+			$arr = array_merge($list_array, $last_array,$present_array);
+		}elseif(empty($last_array)){
+			$arr = array_merge($list_array,$present_array);
+		}elseif (empty($present_array)){
+			$arr = array_merge($list_array,$last_array);
 		}else{
 			$arr = $list_array;
 		}
@@ -473,7 +477,7 @@ class GongXiangController extends Controller
 		//echo 'debug<br><pre>'; print_r($arr); exit;
 		
 		$status_last['bi.id'] = array('in', $arr);
-		//$status_last['bi.id'] =1830;
+		//$status_last['bi.id'] =1790;
 		$list = M("lzh_borrow_info bi")
 			->order('second_verify_time')
 			->field("bi.id as borrow_id,borrow_uid,cell_phone,second_verify_time,borrow_status,deadline,borrow_money,repayment_type,mi.real_name,mi.idcard")
@@ -547,7 +551,7 @@ class GongXiangController extends Controller
 				$repay_status = "*";
 				$last_money = $value['borrow_money'];
 			}
-			//三月四月结束还款的
+			//针对先息后本（本月还款结束）
 			if (in_array($value['borrow_id'], $last_array)) {
 				if (!in_array($value['borrow_id'], $present_array)) {    //上月发生还款标的结束
 					$happenday = date('Ymd', $result[0]['repayment_time']);
@@ -563,6 +567,13 @@ class GongXiangController extends Controller
 						$repay_status = "*";
 						$last_money = $value['borrow_money'];
 					}
+				}
+				//针对末期本息（本月还款结束）
+			}elseif (in_array($value['borrow_id'], $present_array)){
+				if ($value['repayment_type'] == 5) {
+					$happenday = date('Ymd', $end_time);
+					$repay_status = "*";
+					$last_money = $value['borrow_money'];
 				}
 			}
 			

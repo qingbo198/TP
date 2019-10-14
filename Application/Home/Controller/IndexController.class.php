@@ -29,6 +29,8 @@
 			foreach($result as $key=>$value){
 				$result[$key]['img'] = json_decode($value['img']);
 			}
+			$res['appoint'] = "userCenter";
+			$this->assign('res',$res);
 			$this->assign('result',$result);
 			$this->assign('page',$p->show());
 			$this->display();

@@ -59,4 +59,18 @@ use Think\Controller;
 			/*******关联文章标题展示结束****/
 			
 		}
+		
+		//提前还款查询测试
+		public function search(){
+			$filed = "FROM_UNIXTIME(repayment_time,'%Y-%m-%d') as repayment_time,SUM(receive_interest) as interest,sort_order,SUM(receive_capital) as capital";
+			$result = M('lzh_investor_detail');
+			$res = $result
+				->distinct(true)
+				->field($filed)
+				->where('borrow_id=1227')
+				->group("FROM_UNIXTIME(repayment_time,'%Y-%m-%d')")
+				->select();
+			//echo $result->getLastSql();die;
+			echo 'debug<br><pre>'; print_r($res); exit;
+		}
 	}

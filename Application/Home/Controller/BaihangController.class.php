@@ -8,6 +8,10 @@ header("Content-type: text/html; charset=utf-8");
 
 class BaihangController extends Controller
 {
+	
+	
+	
+	
 	//贷款申请信息(增量数据)C1
 	public function SendtoBaiHang_C1()
 	{

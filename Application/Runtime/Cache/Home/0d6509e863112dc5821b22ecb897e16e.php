@@ -145,6 +145,7 @@
 					<li><a>服务</a><li>
 					<li><a>智能硬件</a><li>
 					<li><a>社区</a><li>
+					<li><a href="dsmm://dsmm/<?php echo ($res["appoint"]); ?>">test</a><li>
 				</ul>
 			</div>
 			<div class="banner">
