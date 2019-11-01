@@ -393,8 +393,7 @@ class GongXiangController extends Controller
 	
 	
 	
-	//信息共享平台接口(再次报送)
-	//报送四月份数据
+	//信息共享每月数据报送
 	public function next_sub_apr()
 	{
 		$hide = 0; // 1.隐藏 0.显示
@@ -403,8 +402,8 @@ class GongXiangController extends Controller
 		//$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-1 month')));//上月最后一天结束时间
 		// $april_time = strtotime('2019-04-01 00:00:00');
 		// $march_time = strtotime('2019-03-1 00:00:00');
-		 $start_time = strtotime('2019-09-01 00:00:00');
-		 $end_time = strtotime('2019-09-30 23:59:59');
+		 $start_time = strtotime('2019-10-01 00:00:00');
+		 $end_time = strtotime('2019-10-31 23:59:59');
 		//echo $start_time."---".$end_time;die;
 		
 		
@@ -440,7 +439,7 @@ class GongXiangController extends Controller
 			$last_array[] = $v['borrow_id'];
 		}
 		$last_array = array_unique($last_array);
-		echo '111 debug<br><pre>'; print_r($last_array); exit;
+		echo '111 debug<br><pre>'; print_r($last_array);exit;
 		
 		
 		//当月还款结束的标的（在上月的状态为还款中）
