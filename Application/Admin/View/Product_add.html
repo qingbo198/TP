@@ -68,7 +68,6 @@
     <p>
         <span>图片：</span>
         <input type="file" name="" id="choose-file" multiple="multiple"/>
-        <!--<input type="file" name="" id="choose-file" />-->
     </p>
     <p>
     <ul class="file-list ">
@@ -115,17 +114,17 @@
         $file.on('change', function (e) {
             //上传过图片后再次上传时限值数量
             var numold = $('li').length;
-            if(numold >= 6){
+            if (numold >= 6) {
                 layer.alert('最多上传6张图片');
                 return;
             }
             //限制单次批量上传的数量
             var num = e.target.files.length;
             var numall = numold + num;
-            if(num >6 ){
-               layer.alert('最多上传6张图片');
-               return;
-            }else if(numall > 6){
+            if (num > 6) {
+                layer.alert('最多上传6张图片');
+                return;
+            } else if (numall > 6) {
                 layer.alert('最多上传6张图片');
                 return;
             }
@@ -137,7 +136,7 @@
             //console.log(curFile);
             //将FileList对象变成数组
             fileList = fileList.concat(Array.from(curFile));
-            console.log(fileList);
+            //console.log(fileList);
             for (var i = 0, len = curFile.length; i < len; i++) {
                 reviewFile(curFile[i])
             }
@@ -196,30 +195,24 @@
             if (name == '') {
                 layer.alert('请输入商品名称');
                 return;
-            }
-            else if (status == null) {
+            } else if (status == null) {
                 layer.alert('请输入商品显示状态');
                 return;
-            }
-            else if (catgory == '') {
+            } else if (catgory == '') {
                 layer.alert('请输入商品分类');
                 return;
-            }
-            else if (price == '') {
+            } else if (price == '') {
                 layer.alert('请输入商品价格');
                 return;
-            }
-            else if (stock == '') {
+            } else if (stock == '') {
                 layer.alert('请输入商品库存');
                 return;
-            }
-            else if (fileList.length == 0) {
+            } else if (fileList.length == 0) {
                 layer.alert('请选择商品图片');
                 return;
-            }
-            else if(fileList.length > 6){
-                    layer.alert('最多允许上传6张图片');
-                    return;
+            } else if (fileList.length > 6) {
+                layer.alert('最多允许上传6张图片');
+                return;
             } else {
                 var formData = new FormData();
                 for (var i = 0, len = fileList.length; i < len; i++) {
@@ -233,6 +226,7 @@
                 formData.append('stock', stock);
                 formData.append('status', status);
                 //console.log(formData);
+                //return;
                 $.ajax({
                     url: 'add',
                     type: 'post',

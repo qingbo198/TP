@@ -402,8 +402,8 @@ class GongXiangController extends Controller
 		//$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-1 month')));//上月最后一天结束时间
 		// $april_time = strtotime('2019-04-01 00:00:00');
 		// $march_time = strtotime('2019-03-1 00:00:00');
-		 $start_time = strtotime('2019-10-01 00:00:00');
-		 $end_time = strtotime('2019-10-31 23:59:59');
+		 $start_time = strtotime('2019-12-01 00:00:00');
+		 $end_time = strtotime('2019-12-31 23:59:59');
 		//echo $start_time."---".$end_time;die;
 		
 		
@@ -439,7 +439,7 @@ class GongXiangController extends Controller
 			$last_array[] = $v['borrow_id'];
 		}
 		$last_array = array_unique($last_array);
-		echo '111 debug<br><pre>'; print_r($last_array);exit;
+		//echo '111 debug<br><pre>'; print_r($last_array);exit;
 		
 		
 		//当月还款结束的标的（在上月的状态为还款中）
@@ -465,15 +465,20 @@ class GongXiangController extends Controller
 		//合并还款中标的和2月之后结束的标的
 		if(!empty($last_array) && !empty($present_array)){
 			$arr = array_merge($list_array, $last_array,$present_array);
-		}elseif(empty($last_array)){
-			$arr = array_merge($list_array,$present_array);
-		}elseif (empty($present_array)){
-			$arr = array_merge($list_array,$last_array);
-		}else{
+			
+		}elseif(empty($present_array)&&empty($last_array)){
 			$arr = $list_array;
+			
+		}elseif(empty($last_array) && !empty($present_array)) {
+			
+			$arr = array_merge($list_array, $present_array);
+			
+		}elseif (!empty($last_array) && empty($present_array)){
+			
+			$arr = array_merge($list_array,$last_array);
 		}
 		
-		//echo 'debug<br><pre>'; print_r($arr); exit;
+		echo 'debug<br><pre>'; print_r($arr); exit;
 		
 		$status_last['bi.id'] = array('in', $arr);
 		//$status_last['bi.id'] =1790;

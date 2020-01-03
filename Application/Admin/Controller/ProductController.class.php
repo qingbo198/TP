@@ -52,8 +52,8 @@
             $pro_cat = findson($pro_cat,0,0);
             //print_r($pro_cat);die;
             if($_POST){
-                //print_r($_FILES);
-                //print_r($_POST);die;
+                print_r($_FILES);
+                print_r($_POST);die;
                 $product = M('product');
                 if ($_FILES['upfile']['name'][0] == "") {
                     exit("请上传文件！");
