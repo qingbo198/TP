@@ -12,7 +12,7 @@
 		// 		// 判断用户是否登陆
 		// 		$user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
 		// 		if (!$user) {
-		// 				$this->success('未登录，请登录', U('User/login'), 2);
+		// 				$this->success('未登录，请登录', U('User/login'), 2) ;
 		// 				exit;
 		// 		}
 		// }
