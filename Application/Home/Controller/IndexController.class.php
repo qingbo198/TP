@@ -3,7 +3,8 @@
     
     namespace Home\Controller;
     
-    use Think\Controller;
+    use app\admin\model\J_store;
+	use Think\Controller;
 	header("Content-type: text/html; charset=utf-8");
     class IndexController extends Controller
     {
@@ -18,6 +19,22 @@
         
         public function index()
         {
+        	$storee = M('j_storee');
+        	$result = $storee->field('name,store_id')->select();
+        	$store = M('j_store');
+        	$res = $store->field('title')->select();
+        	foreach ($res as $key=>$value){
+				$array[] = $value['title'];
+			}
+        	foreach ($result as $more=>$m){
+        		if(!in_array($m['name'],$array)){
+        			$tem[] = $m['store_id'];
+				}
+			}
+        	echo 'debug<br><pre>'; print_r($tem); exit;
+        	
+        	
+        	//echo 'debug<br><pre>'; print_r($result); exit;
         	//echo phpinfo();
 			$product = M('product');
 			$count = $product->count();
