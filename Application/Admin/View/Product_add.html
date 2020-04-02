@@ -70,9 +70,9 @@
         <input type="file" name="" id="choose-file" multiple="multiple"/>
     </p>
     <p>
-    <ul class="file-list ">
+        <ul class="file-list ">
 
-    </ul>
+        </ul>
     </p>
     <p style="">
         <span style="display: block;">描述：</span>
@@ -237,8 +237,10 @@
                     success: function (data) {
                         if (data.status == '1') {
                             layer.msg(data.content, {icon: 6});
+                            window.location.reload();
                         } else if (data.status == '2') {
                             layer.msg(data.content, {icon: 1});
+                            window.location.reload();
                         }
                     }
                 })

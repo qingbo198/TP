@@ -66,9 +66,9 @@
         <input type="file" name="" id="choose-file" multiple="multiple"/>
     </p>
     <p>
-    <ul class="file-list ">
+        <ul class="file-list ">
 
-    </ul>
+        </ul>
     </p>
     <p style="">
         <span style="display: block;">描述：</span>

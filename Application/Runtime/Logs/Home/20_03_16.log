@@ -1,0 +1,12 @@
+[ 2020-03-16T16:56:35+08:00 ] ::1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `j_storee` [ RunTime:0.0470s ]
+SQL: SELECT `name`,`store_id` FROM `j_storee`  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `j_store` [ RunTime:0.0720s ]
+SQL: SELECT `title` FROM `j_store`  [ RunTime:0.0020s ]
+

@@ -52,9 +52,9 @@
             $pro_cat = findson($pro_cat,0,0);
             //print_r($pro_cat);die;
             if($_POST){
-                print_r($_FILES);
-                print_r($_POST);die;
-                $product = M('product');
+                // print_r($_FILES);
+                // print_r($_POST);die;
+                // $product = M('product');
                 if ($_FILES['upfile']['name'][0] == "") {
                     exit("请上传文件！");
                 }//判断第一个文件名是否为空
@@ -85,7 +85,9 @@
                                 echo "第" . ($i + 1) . "个文件临时文件错误<br/>";
                             } else {
                                 $newname = $dir.date("YmdHis") . rand(1, 10000) . "." . $type;
+                                //echo $newname;die;
                                 $img_array[$i] = substr($newname,strpos($newname,'/TP'));
+                                //print_r($img_array);die;
                                 //在循环中给每个文件一个新名称
                                 if (!move_uploaded_file($tmp_name, $newname)) {  //对每个临时文件执行上传操作
                                     echo "第" . ($i + 1) . "个文件上传失败<br/>";
@@ -100,6 +102,7 @@
                 }
                 //print_r($img_array);die;
                 $img_array = json_encode($img_array);
+                echo 'debug<br><pre>'; print_r($img_array); exit;
                 //$img_array = json_decode($img_array);
                 //echo $img_array;
                 //die;
