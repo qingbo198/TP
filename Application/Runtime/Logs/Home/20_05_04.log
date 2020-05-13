@@ -1,0 +1,82 @@
+[ 2020-05-04T15:32:05+08:00 ] 127.0.0.1 /TP/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `j_storee` [ RunTime:0.0100s ]
+SQL: SELECT `name`,`store_id` FROM `j_storee`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `j_store` [ RunTime:0.0050s ]
+SQL: SELECT `title` FROM `j_store`  [ RunTime:0.0010s ]
+
+[ 2020-05-04T15:32:21+08:00 ] 127.0.0.1 /TP/home/GongXiang/next_sub_apr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0060s ]
+SQL: SELECT bi.id as borrow_id FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid  WHERE ( (`second_verify_time` < 1588262399) AND (`borrow_status` = 6) ) ORDER BY second_verify_time  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0070s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM lzh_investor_detail id left join lzh_borrow_info as lbi on id.borrow_id = lbi.id  WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0560s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM lzh_investor_detail id left join lzh_borrow_info as lbi on id.borrow_id = lbi.id  WHERE ( (`repayment_time` > 1588262399) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0460s ]
+NOTIC: [8] Undefined variable: present_array F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 459 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 459 行.
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`cell_phone`,`second_verify_time`,`borrow_status`,`deadline`,`borrow_money`,`repayment_type`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid  WHERE bi.id IN ('1768','1793','1867','1868','1716','1720','1762') ORDER BY second_verify_time  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0030s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1716') )  [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 560 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1720') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 560 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1762') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 560 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1768') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 576 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1793') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 576 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1867') )  [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 576 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1868') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 576 行.
+NOTIC: [8] Undefined variable: export F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 626 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.486027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.486027s ]
+
+[ 2020-05-04T15:34:30+08:00 ] 127.0.0.1 /TP/home/GongXiang/next_sub_apr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lzh_borrow_info` [ RunTime:0.0030s ]
+SQL: SELECT bi.id as borrow_id FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid  WHERE ( (`second_verify_time` < 1588262399) AND (`borrow_status` = 6) ) ORDER BY second_verify_time  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0020s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM lzh_investor_detail id left join lzh_borrow_info as lbi on id.borrow_id = lbi.id  WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0450s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM lzh_investor_detail id left join lzh_borrow_info as lbi on id.borrow_id = lbi.id  WHERE ( (`repayment_time` > 1588262399) AND (`borrow_status` IN ('7','9')) )  [ RunTime:0.0450s ]
+NOTIC: [8] Undefined variable: present_array F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 459 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 459 行.
+SQL: SELECT bi.id as borrow_id,`borrow_uid`,`cell_phone`,`second_verify_time`,`borrow_status`,`deadline`,`borrow_money`,`repayment_type`,mi.real_name,mi.idcard FROM lzh_borrow_info bi left join lzh_member_info mi on mi.uid = bi.borrow_uid  WHERE bi.id IN ('1768','1793','1867','1868','1716','1720','1762') ORDER BY second_verify_time  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lzh_investor_detail` [ RunTime:0.0030s ]
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1716') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 560 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1720') )  [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 560 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1762') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 560 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1768') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 576 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1793') )  [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 576 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1867') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 576 行.
+SQL: SELECT `repayment_time`,`borrow_id` FROM `lzh_investor_detail` WHERE ( (`repayment_time` BETWEEN 1585670400 AND 1588262399) AND (`borrow_id` = '1868') )  [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 576 行.
+NOTIC: [8] Undefined variable: export F:\wwwroot\TP\Application\Home\Controller\GongXiangController.class.php 第 626 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

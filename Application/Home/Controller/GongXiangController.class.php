@@ -402,8 +402,8 @@ class GongXiangController extends Controller
 		//$end_time = strtotime(date('Y-m-t 23:59:59', strtotime('-1 month')));//上月最后一天结束时间
 		// $april_time = strtotime('2019-04-01 00:00:00');
 		// $march_time = strtotime('2019-03-1 00:00:00');
-		 $start_time = strtotime('2020-3-01 00:00:00');
-		 $end_time = strtotime('2020-3-31 23:59:59');
+		 $start_time = strtotime('2020-4-01 00:00:00');
+		 $end_time = strtotime('2020-4-30 23:59:59');
 		//echo $start_time."---".$end_time;die;
 		
 		

@@ -232,9 +232,13 @@
                     contentType: false,
                     success: function (data) {
                         if (data.status == '1') {
-                            layer.msg(data.content, {icon: 6});
+                            layer.msg(data.content, {icon: 6},function () {
+                                window.location.reload();
+                            });
+                            // window.location.reload();
                         } else if (data.status == '2') {
                             layer.msg(data.content, {icon: 1});
+                            window.location.reload();
                         }
                     }
                 })

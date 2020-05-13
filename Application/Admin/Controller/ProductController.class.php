@@ -52,9 +52,9 @@
             $pro_cat = findson($pro_cat,0,0);
             //print_r($pro_cat);die;
             if($_POST){
-                // print_r($_FILES);
-                // print_r($_POST);die;
-                // $product = M('product');
+                 //print_r($_FILES);
+                 //print_r($_POST);die;
+                 $product = M('product');
                 if ($_FILES['upfile']['name'][0] == "") {
                     exit("请上传文件！");
                 }//判断第一个文件名是否为空
@@ -102,7 +102,7 @@
                 }
                 //print_r($img_array);die;
                 $img_array = json_encode($img_array);
-                echo 'debug<br><pre>'; print_r($img_array); exit;
+                //echo 'debug<br><pre>'; print_r($img_array); exit;
                 //$img_array = json_decode($img_array);
                 //echo $img_array;
                 //die;
