@@ -5,14 +5,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>后台管理中心</title>
 <meta name="Copyright" content="Douco Design." />
-<link href="/TP/Public/Css/public.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/TP/Public/Js/jquery.min.js"></script>
-<script type="text/javascript" src="/TP/Public/Js/global.js"></script>
+<link href="/Public/Css/public.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/Public/Js/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/Js/global.js"></script>
 </head>
 <body>
 <div id="dcWrap"> <div id="dcHead">
  <div id="head">
-  <div class="logo"><a href="Index_shouye.html"><img src="/TP/Public/Image/dclogo.gif" alt="logo"></a></div>
+  <div class="logo"><a href="Index_shouye.html"><img src="/Public/Image/dclogo.gif" alt="logo"></a></div>
   <div class="nav">
    <ul>
     <li class="M"><a href="JavaScript:void(0);" class="topAdd">新建</a>

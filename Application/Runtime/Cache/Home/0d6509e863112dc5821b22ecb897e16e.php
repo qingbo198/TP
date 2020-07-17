@@ -35,7 +35,7 @@
 			.nav span{margin-left:6px;color: #b0b0b0;}
 			.header_nav_out{border:solid red 0px;width:100%;height:100px;}
 			.header_nav{width:1230px;margin: 0 auto;height:55px;border:solid green 0px;}
-			.logo_mi{width:55px;height:55px;background: #FF6700;background-position:center center;background-image: url('/TP/Public/Image/mi-logo.png');
+			.logo_mi{width:55px;height:55px;background: #FF6700;background-position:center center;background-image: url('/Public/Image/mi-logo.png');
 				margin-top: -24px;float: left;
 				}
 			.logo_11{float: left;margin-top: -30px;margin-left: 10px;}
@@ -90,7 +90,7 @@
 		<div style="height: 40px;">
 		<div class="header">
 			<ul class="nav">
-				<li><a href="/TP/Home/Index/index">小米商城</a><span>|</span></li>
+				<li><a href="/Home/Index/index">小米商城</a><span>|</span></li>
 				<li><a>MIUI</a><span>|</span></li>
 				<li><a>loT</a><span>|</span></li>
 				<li><a>云服务</a><span>|</span></li>
@@ -106,25 +106,25 @@
  echo $_SESSION['user'] ? "
 						<span>
 							<span>
-								<a  href='/TP/Home/Index/shop' class='iconfont'>&#xe60b;
+								<a  href='/Home/Index/shop' class='iconfont'>&#xe60b;
 									<span style='display: block;margin-top: -2px;margin-left: 5px;font-size: 15px;'>(".($_SESSION['shop']['total'] ? $_SESSION['shop']['total'] : 0) .")</span>
 								</a>
 							</span>
 							<span>
 								<a>您好&nbsp&nbsp".$_SESSION['user']."</a>
-								<a href='/TP/Home/User/quit'>&nbsp退出&nbsp</a>
+								<a href='/Home/User/quit'>&nbsp退出&nbsp</a>
 							</span>":"
 
 							<span>
-								<a  href='/TP/Home/Index/shop' class='iconfont'>&#xe60b;
+								<a  href='/Home/Index/shop' class='iconfont'>&#xe60b;
 									<span style='display: block;margin-top: -2px;margin-left: 5px;font-size: 15px;'>(".($_SESSION['shop']['total'] ? $_SESSION['shop']['total'] : 0).")</span>
 								</a>
 							</span>
 							<span>
-								<a href='/TP/Home/User/login'>登录</a>
+								<a href='/Home/User/login'>登录</a>
 							</span>
 							<span>
-								<a href='/TP/Home/User/register'>注册</a>
+								<a href='/Home/User/register'>注册</a>
 							</span>"; ?>
 			</div>
 		</div>
@@ -133,7 +133,7 @@
 		<div class="header_nav_out">
 			<div class="header_nav">
 				<div class="logo_mi"></div>
-				<div class="logo_11"><img src="/TP/Public/Image/cms_15410669089659_TZmzr.gif"></div>
+				<div class="logo_11"><img src="/Public/Image/cms_15410669089659_TZmzr.gif"></div>
 				<ul>
 					<li><a>小米手机</a><li>
 					<li><a>红米</a><li>
@@ -163,7 +163,7 @@
 						<li><a>生活 箱包</a></li>
 					</ul>
 				</div>
-				<div class="banner_right"><img src="/TP/Public/Image/xmad_15427942125674_JlLUW.jpg" width="100%" height="459px;"/></div>
+				<div class="banner_right"><img src="/Public/Image/xmad_15427942125674_JlLUW.jpg" width="100%" height="459px;"/></div>
 			</div>
 			<div class="product_out">
 				<?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="product">

@@ -44,7 +44,13 @@
 			//print_r($result);die;
 			//$result = $product->select();
 			foreach($result as $key=>$value){
-				$result[$key]['img'] = json_decode($value['img']);
+                $new = array();
+                $img = json_decode($value['img']);
+                foreach($img as $v){
+                    $new[] = substr($v,3);
+                }
+				//$result[$key]['img'] = json_decode($value['img']);
+				$result[$key]['img'] = $new;
 			}
 			$res['appoint'] = "userCenter";
 			$this->assign('res',$res);

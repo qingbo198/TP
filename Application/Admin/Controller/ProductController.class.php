@@ -34,7 +34,15 @@
             $list = $product->field(true)->where($where)->order("$orderby $orderway")->limit($p->firstRow, $p->listRows)->select();
             //echo $product->getLastSql();
             foreach($list as $key=>$value){
-                $list[$key]['img'] = json_decode($value['img']);
+                $new = array();
+                $img = json_decode($value['img']);
+                foreach($img as $v){
+                    $new[] = substr($v,3);
+                }
+                //$list[$key]['img'] = json_decode($value['img']);
+                $list[$key]['img'] = $new;
+
+                //$list[$key]['img'] = json_decode($value['img']);
                 $list[$key]['type'] = $pro_cat->where('id='.$value['pid'])->getField('name');
             }
             //print_r($list);die;
