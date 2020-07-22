@@ -83,7 +83,7 @@
 		<!--		  <a href="<?php echo U('Message/index');?>">留言板</a><a>登录</a><a>注册</a>-->
 		<div class="header">
 			<ul class="nav">
-				<li><a href="/TP/Home/Index/index">小米商城</a><span>|</span></li>
+				<li><a href="/Home/Index/index">小米商城</a><span>|</span></li>
 				<li><a>MIUI</a><span>|</span></li>
 				<li><a>loT</a><span>|</span></li>
 				<li><a>云服务</a><span>|</span></li>
@@ -99,25 +99,25 @@
  echo $_SESSION['user'] ? "
 						<span>
 							<span>
-								<a  href='/TP/Home/Index/shop' class='iconfont'>&#xe60b;
+								<a  href='/Home/Index/shop' class='iconfont'>&#xe60b;
 									<span class='shop' style='display: block;margin-top: -2px;margin-left: 5px;font-size: 15px;'>(".($_SESSION['shop']['total'] ? $_SESSION['shop']['total'] : 0) .")</span>
 								</a>
 							</span>
 							<span>
 								<a>您好&nbsp&nbsp".$_SESSION['user']."</a>
-								<a href='/TP/Home/User/quit'>&nbsp退出&nbsp</a>
+								<a href='/Home/User/quit'>&nbsp退出&nbsp</a>
 							</span>":"
 
 							<span>
-								<a  href='/TP/Home/Index/shop' class='iconfont'>&#xe60b;
+								<a  href='/Home/Index/shop' class='iconfont'>&#xe60b;
 									<span class='shop' style='display: block;margin-top: -2px;margin-left: 5px;font-size: 15px;'>(".($_SESSION['shop']['total'] ? $_SESSION['shop']['total'] : 0) .")</span>
 								</a>
 							</span>
 							<span>
-								<a href='/TP/Home/User/login'>登录</a>
+								<a href='/Home/User/login'>登录</a>
 							</span>
 							<span>
-								<a href='/TP/Home/User/register'>注册</a>
+								<a href='/Home/User/register'>注册</a>
 							</span>"; ?>
 			</div>
 		</div>
@@ -238,7 +238,7 @@
 </html>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
-<script src="/TP/Public/Js/jquerysession.js"></script>
+<script src="/Public/Js/jquerysession.js"></script>
 <script>
 
 //点击查看大图
