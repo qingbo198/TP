@@ -77,6 +77,7 @@ class RedisController extends Controller
 
         //创建一个redis对象
         $redis = new \Redis();
+        $redis->connect('127.0.0.1', 6379);
 
         $redis_name = 'secKill';
 
