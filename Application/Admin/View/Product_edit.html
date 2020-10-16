@@ -9,7 +9,7 @@
     .add_div {
         width: 400px;
         height: 500px;
-        border: solid #ccc px;
+        border: solid #ccc 0px;
         margin-top: 40px;
         margin-left: 170px;
         padding-left: 20px;
@@ -286,7 +286,12 @@ ul{float: left;}
                     contentType: false,
                     success: function (data) {
                         if (data.status == '1') {
-                            layer.msg(data.msg, {icon: 1});
+                            layer.msg(data.msg, {
+                                icon: 1,
+                                time:2000
+                            },function () {
+                                window.location.href = 'index';
+                            });
                         } else if (data.status == '2') {
                             layer.msg(data.msg, {icon: 2});
                         }

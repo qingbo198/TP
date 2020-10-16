@@ -2,15 +2,15 @@
 <html>
 	<head>
 		<title>编辑文章</title>
-		<link href="/TP/Public/Css/style.css" rel="stylesheet" type="text/css" />
-		<!--<script src="/TP/Public/Js/jquery-1.9.1.js" type="text/javascript"></script>
-		<script src="/TP/Public/Js/jquery.validate.min.js" type="text/javascript"></script>
-		<script src="/TP/Public/Js/my.js" type="text/javascript"></script>-->
-		<link href="/TP/Public/Css/article/umeditor.css" type="text/css" rel="stylesheet">
-		<script type="text/javascript" src="/TP/Public/Js/article/jquery.min.js"></script>
-		<script type="text/javascript" charset="utf-8" src="/TP/Public/Js/article/umeditor.config.js"></script>
-		<script type="text/javascript" charset="utf-8" src="/TP/Public/Js/article/umeditor.min.js"></script>
-		<script type="text/javascript" src="/TP/Public/Js/article/zh-cn.js"></script>
+		<link href="/Public/Css/style.css" rel="stylesheet" type="text/css" />
+		<!--<script src="/Public/Js/jquery-1.9.1.js" type="text/javascript"></script>
+		<script src="/Public/Js/jquery.validate.min.js" type="text/javascript"></script>
+		<script src="/Public/Js/my.js" type="text/javascript"></script>-->
+		<link href="/Public/Css/article/umeditor.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="/Public/Js/article/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/Public/Js/article/umeditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/Public/Js/article/umeditor.min.js"></script>
+		<script type="text/javascript" src="/Public/Js/article/zh-cn.js"></script>
 		
 		
 			

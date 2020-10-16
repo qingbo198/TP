@@ -34,18 +34,9 @@
             $list = $product->field(true)->where($where)->order("$orderby $orderway")->limit($p->firstRow, $p->listRows)->select();
             //echo $product->getLastSql();
             foreach($list as $key=>$value){
-                $new = array();
-                $img = json_decode($value['img']);
-                foreach($img as $v){
-                    $new[] = substr($v,3);
-                }
-                //$list[$key]['img'] = json_decode($value['img']);
-                $list[$key]['img'] = $new;
-
-                //$list[$key]['img'] = json_decode($value['img']);
+                $list[$key]['img'] = json_decode($value['img']);
                 $list[$key]['type'] = $pro_cat->where('id='.$value['pid'])->getField('name');
             }
-            //print_r($list);die;
             $this->assign('list',$list);
             $this->assign('pro_cat',$pro_cat);
             $this->assign('page',$p->show());
@@ -67,7 +58,7 @@
                     exit("请上传文件！");
                 }//判断第一个文件名是否为空
                 //$dir = dirname(dirname(dirname(dirname(__FILE__)))).'/Public/Image/images/';
-                $dir = $_SERVER['DOCUMENT_ROOT']."/TP/Public/Image/images/";
+                $dir = $_SERVER['DOCUMENT_ROOT']."/Public/Image/images/";
                 //echo substr($dir,strpos($dir,'/TP'));die;
                 if (!is_dir($dir)) {
                     mkdir($dir);
@@ -94,7 +85,7 @@
                             } else {
                                 $newname = $dir.date("YmdHis") . rand(1, 10000) . "." . $type;
                                 //echo $newname;die;
-                                $img_array[$i] = substr($newname,strpos($newname,'/TP'));
+                                $img_array[$i] = substr($newname,strpos($newname,'/Public'));
                                 //print_r($img_array);die;
                                 //在循环中给每个文件一个新名称
                                 if (!move_uploaded_file($tmp_name, $newname)) {  //对每个临时文件执行上传操作
@@ -199,7 +190,7 @@
                         exit("请上传文件！");
                     }//判断第一个文件名是否为空
                     //$dir = dirname(dirname(dirname(dirname(__FILE__)))).'/Public/Image/images/';
-                    $dir = $_SERVER['DOCUMENT_ROOT']."/TP/Public/Image/images/";
+                    $dir = $_SERVER['DOCUMENT_ROOT']."/Public/Image/images/";
                     //echo substr($dir,strpos($dir,'/TP'));die;
                     if (!is_dir($dir)) {
                         mkdir($dir);
@@ -225,7 +216,7 @@
                                     echo "第" . ($i + 1) . "个文件临时文件错误<br/>";
                                 } else {
                                     $newname = $dir.date("YmdHis") . rand(1, 10000) . "." . $type;
-                                    $img_array[$i] = substr($newname,strpos($newname,'/TP'));
+                                    $img_array[$i] = substr($newname,strpos($newname,'/Public'));
                                     //在循环中给每个文件一个新名称
                                     if (!move_uploaded_file($tmp_name, $newname)) {  //对每个临时文件执行上传操作
                                         echo "第" . ($i + 1) . "个文件上传失败<br/>";

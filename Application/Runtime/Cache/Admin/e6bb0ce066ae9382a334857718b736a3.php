@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>新增文章分类</title>
-    <link href="/TP/Public/Css/style.css" rel="stylesheet" type="text/css"/>
-    <!--<script src="/TP/Public/Js/jquery-1.9.1.js" type="text/javascript"></script>
-    <script src="/TP/Public/Js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/TP/Public/Js/my.js" type="text/javascript"></script>-->
+    <link href="/Public/Css/style.css" rel="stylesheet" type="text/css"/>
+    <!--<script src="/Public/Js/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="/Public/Js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/Public/Js/my.js" type="text/javascript"></script>-->
 
 
 </head>

@@ -237,7 +237,7 @@
                     success: function (data) {
                         if (data.status == '1') {
                             layer.msg(data.content, {icon: 6},function () {
-                                window.location.reload();
+                                window.location.href = "index";
                             });
                             // window.location.reload();
                         } else if (data.status == '2') {

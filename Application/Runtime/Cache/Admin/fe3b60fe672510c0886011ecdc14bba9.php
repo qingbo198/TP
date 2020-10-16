@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<title>新闻列表</title>
-		<link href="/TP/Public/Css/style.css" rel="stylesheet" type="text/css" />
+		<link href="/Public/Css/style.css" rel="stylesheet" type="text/css" />
 			
 	</head>
 
