@@ -4,10 +4,10 @@
 <head>
     <title>后台登录页面</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script type="text/javascript" src="/TP/Public/Js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="/Public/Js/jquery-1.9.0.min.js"></script>
     <script src="https://cdn.bootcss.com/layer/3.1.0/layer.js"></script>
-    <script type="text/javascript" src="/TP/Public/Js/login.js"></script>
-    <link href="/TP/Public/Css/login2.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/Public/Js/login.js"></script>
+    <link href="/Public/Css/login2.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <h1>快速登录<sup>2018</sup></h1>
